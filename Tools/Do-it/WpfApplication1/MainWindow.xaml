@@ -1,0 +1,30 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="361.842" Width="689.157">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="127*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="65*"/>
+            <RowDefinition Height="65*"/>
+            <RowDefinition Height="68*"/>
+            <RowDefinition Height="64*"/>
+            <RowDefinition Height="55*"/>
+        </Grid.RowDefinitions>
+        <Button Content="Do it for Intel" Margin="10,14,13,6" Click="Intel"/>
+        <Button Content="Display File Data" Margin="64,7,64,5" Click="Read" Grid.Row="4" Grid.ColumnSpan="2"/>
+        <Button Content="Do it for AMD" Margin="15,14,8,6" Click="AMD" Grid.Column="1"/>
+        <Button Content="Do it for APU" Margin="10,10,13,11" Click="APU" Grid.Row="1"/>
+        <Button Content="Do it for MB" Margin="15,13,8,8" Click="MB" Grid.Row="1" Grid.Column="1"/>
+        <Button Content="Do it for GPU" Margin="10,13,13,11" Click="GPU" Grid.Row="2"/>
+        <Button Content="Do it for HD" Margin="10,13,13,11" Click="HD" Grid.Row="2" Grid.Column="1"/>
+        <Button Content="Do it for Tablet" Margin="10,13,13,7" Click="Tablet" Grid.Row="3"/>
+        <Button Content="Save the File" Margin="10,13,13,7" Click="Save" Grid.Row="3" Grid.Column="1"/>
+        <TextBox x:Name="TextBox2" Grid.Column="2" Margin="10,32,10,10" Grid.RowSpan="5" TextWrapping="Wrap" Text="" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Visible"/>
+        <TextBox x:Name="TextBox1" Grid.Column="2" Height="22" Margin="10,5,10,0" TextWrapping="Wrap" Text="C:\Users\User\Desktop\Files\Processors.Mhmd" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
