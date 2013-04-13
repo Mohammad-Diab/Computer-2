@@ -1,0 +1,51 @@
+<ScrollViewer x:Name="ScrollViewer1" HorizontalAlignment="Left" Grid.Row="1" Width="320" Background="{x:Null}" FontSize="18">
+            <Grid HorizontalAlignment="Left" Height="1474" VerticalAlignment="Top" Width="320">
+                <TextBlock FontSize="20" TextAlignment="Center" Text="Motherboard and Processor" Margin="0,15,0,0" VerticalAlignment="Top"/>
+                <ComboBox x:Name="ComboBox1" Margin="0,75,20,0" VerticalAlignment="Top" SelectionChanged="ComboBox1_SelectionChanged" IsEnabled="False" HorizontalAlignment="Right" Width="200">
+                    <ComboBoxItem Content="AMD"/>
+                    <ComboBoxItem Content="Intel"/>
+                </ComboBox>
+                <TextBlock HorizontalAlignment="Left" Height="Auto" Margin="10,50,0,0" TextWrapping="Wrap" Text="PC Kind:" VerticalAlignment="Top"/>
+                <ComboBox x:Name="ComboBox2" Margin="0,140,20,0" VerticalAlignment="Top" SelectionChanged="ComboBox2_SelectionChanged" IsEnabled="False" HorizontalAlignment="Right" Width="200"/>
+                <TextBlock HorizontalAlignment="Left" Height="Auto" Margin="10,115,0,0" TextWrapping="Wrap" Text="MB Company:" VerticalAlignment="Top" />
+                <ComboBox x:Name="ComboBox3" Margin="0,205,20,0" VerticalAlignment="Top" SelectionChanged="ComboBox3_SelectionChanged" IsEnabled="False" HorizontalAlignment="Right" Width="200"/>
+                <TextBlock HorizontalAlignment="Left" Height="Auto" Margin="10,180,0,0" TextWrapping="Wrap" Text="Motherboard:" VerticalAlignment="Top" />
+                <ComboBox x:Name="ComboBox4" Margin="0,270,20,0" VerticalAlignment="Top" SelectionChanged="ComboBox4_SelectionChanged" IsEnabled="False" HorizontalAlignment="Right" Width="200"/>
+                <TextBlock HorizontalAlignment="Left" Height="Auto" Margin="10,245,0,0" TextWrapping="Wrap" Text="CPU Model:" VerticalAlignment="Top"  />
+                <ComboBox x:Name="ComboBox5" Margin="0,335,20,0" VerticalAlignment="Top" SelectionChanged="ComboBox5_SelectionChanged" IsEnabled="False" HorizontalAlignment="Right" Width="200"/>
+                <TextBlock HorizontalAlignment="Left" Height="Auto" Margin="10,310,0,0" TextWrapping="Wrap" Text="Processor:" VerticalAlignment="Top" />
+                <TextBlock FontSize="20" TextAlignment="Center" Text="Random Access Memory (RAM)" Margin="0,380,0,0" VerticalAlignment="Top"/>
+                <ComboBox x:Name="ComboBox6" Margin="0,440,20,0" VerticalAlignment="Top" SelectionChanged="ComboBox6_SelectionChanged" IsEnabled="False" HorizontalAlignment="Right" Width="200"/>
+                <TextBlock HorizontalAlignment="Left" Height="Auto" Margin="10,415,0,0" TextWrapping="Wrap" Text="Company:" VerticalAlignment="Top" />
+                <ComboBox x:Name="ComboBox7" Margin="0,505,20,0" VerticalAlignment="Top" SelectionChanged="ComboBox7_SelectionChanged" IsEnabled="False" HorizontalAlignment="Right" Width="200"/>
+                <TextBlock HorizontalAlignment="Left" Height="Auto" Margin="10,480,0,0" TextWrapping="Wrap" Text="Model:" VerticalAlignment="Top" />
+                <TextBlock FontSize="20" TextAlignment="Center" Text="Storage Device" Margin="0,550,0,0" VerticalAlignment="Top"/>
+                <ComboBox x:Name="ComboBox8" Margin="0,610,20,0" VerticalAlignment="Top" SelectionChanged="ComboBox8_SelectionChanged" IsEnabled="False" HorizontalAlignment="Right" Width="200"/>
+                <TextBlock HorizontalAlignment="Left" Height="Auto" Margin="10,585,0,0" TextWrapping="Wrap" VerticalAlignment="Top"  Text="Type:"/>
+                <ComboBox x:Name="ComboBox9" Margin="0,675,20,0" VerticalAlignment="Top" SelectionChanged="ComboBox9_SelectionChanged" IsEnabled="False" HorizontalAlignment="Right" Width="200"/>
+                <TextBlock HorizontalAlignment="Left" Height="Auto" Margin="10,650,0,0" TextWrapping="Wrap" VerticalAlignment="Top"  Text="Company:"/>
+                <ComboBox x:Name="ComboBox10" Margin="0,740,20,0" VerticalAlignment="Top" SelectionChanged="ComboBox10_SelectionChanged" IsEnabled="False" HorizontalAlignment="Right" Width="200"/>
+                <TextBlock HorizontalAlignment="Left" Height="Auto" Margin="10,715,0,0" TextWrapping="Wrap" VerticalAlignment="Top"  Text="Model:"/>
+                <TextBlock FontSize="20" TextAlignment="Center" Text="Graphic Card" Margin="0,785,0,0" VerticalAlignment="Top"/>
+                <ComboBox x:Name="ComboBox11" Margin="0,845,20,0" VerticalAlignment="Top" SelectionChanged="ComboBox11_SelectionChanged" IsEnabled="False" HorizontalAlignment="Right" Width="200"/>
+                <TextBlock HorizontalAlignment="Left" Height="Auto" Margin="10,820,0,0" TextWrapping="Wrap" VerticalAlignment="Top"  Text="Type:"/>
+                <ComboBox x:Name="ComboBox12" Margin="0,910,20,0" VerticalAlignment="Top" SelectionChanged="ComboBox12_SelectionChanged" IsEnabled="False" HorizontalAlignment="Right" Width="200"/>
+                <TextBlock HorizontalAlignment="Left" Height="Auto" Margin="10,885,0,0" TextWrapping="Wrap" VerticalAlignment="Top"  Text="Company:"/>
+                <ComboBox x:Name="ComboBox13" Margin="0,975,20,0" VerticalAlignment="Top" SelectionChanged="ComboBox13_SelectionChanged" IsEnabled="False" HorizontalAlignment="Right" Width="200"/>
+                <TextBlock HorizontalAlignment="Left" Height="Auto" Margin="10,950,0,0" TextWrapping="Wrap" VerticalAlignment="Top"  Text="Model:"/>
+                <Rectangle Fill="White" Height="2" Margin="40,1015,40,0" VerticalAlignment="Top"/>
+                <ComboBox x:Name="ComboBox14" Margin="0,1055,20,0" VerticalAlignment="Top" SelectionChanged="ComboBox14_SelectionChanged" IsEnabled="False" HorizontalAlignment="Right" Width="200"/>
+                <TextBlock HorizontalAlignment="Left" Height="Auto" Margin="10,1030,0,0" TextWrapping="Wrap" VerticalAlignment="Top"  Text="Power Supply:"/>
+                <ComboBox x:Name="ComboBox15" Margin="0,1120,20,0" VerticalAlignment="Top" SelectionChanged="ComboBox15_SelectionChanged" IsEnabled="False" HorizontalAlignment="Right" Width="200"/>
+                <TextBlock HorizontalAlignment="Left" Height="Auto" Margin="10,1095,0,0" TextWrapping="Wrap" VerticalAlignment="Top"  Text="Case:"/>
+                <ComboBox x:Name="ComboBox16" Margin="0,1185,20,0" VerticalAlignment="Top" SelectionChanged="ComboBox16_SelectionChanged" IsEnabled="False" HorizontalAlignment="Right" Width="200"/>
+                <TextBlock HorizontalAlignment="Left" Height="Auto" Margin="10,1160,0,0" TextWrapping="Wrap" VerticalAlignment="Top"  Text="Optical Drive:"/>
+                <ComboBox x:Name="ComboBox17" Margin="0,1250,20,-29" VerticalAlignment="Top" SelectionChanged="ComboBox17_SelectionChanged" IsEnabled="False" HorizontalAlignment="Right" Width="200"/>
+                <TextBlock HorizontalAlignment="Left" Height="Auto" Margin="10,1225,0,-22" TextWrapping="Wrap" VerticalAlignment="Top"  Text="Monitor:"/>
+                <ComboBox x:Name="ComboBox18" Margin="0,1315,20,-192" VerticalAlignment="Top" SelectionChanged="ComboBox18_SelectionChanged" IsEnabled="False" HorizontalAlignment="Right" Width="200"/>
+                <TextBlock HorizontalAlignment="Left" Height="Auto" Margin="10,1290,0,-185" TextWrapping="Wrap" VerticalAlignment="Top"  Text="Mouse:"/>
+                <ComboBox x:Name="ComboBox19" Margin="0,1380,20,-242" VerticalAlignment="Top" SelectionChanged="ComboBox19_SelectionChanged" IsEnabled="False" HorizontalAlignment="Right" Width="200"/>
+                <TextBlock HorizontalAlignment="Left" Height="Auto" Margin="10,1355,0,-235" TextWrapping="Wrap" VerticalAlignment="Top"  Text="Keyboard:"/>
+                <Button x:Name="Button1" Content="Done"  IsEnabled="False" Click="Button1_Click" HorizontalAlignment="Stretch" Margin="40,1430,40,0" VerticalAlignment="Top"/>
+            </Grid>
+        </ScrollViewer>

@@ -1,0 +1,57 @@
+            int counter = 0;
+            StringBuilder MB_String = new StringBuilder();
+            MB_String.Append("                    <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" >\n                        <tr><td align=\"left\" valign=\"middle\" class=\"auto-style1\"><nobr><span class=\"subtitle\">Mother Board:</span><span class=\"\">&nbsp;</span></nobr></td>\n                            <td align=\"right\" valign=\"bottom\" width=\"80%\"><hr size=\"1\" /></td></tr>\n                        <tr><td colspan=\"2\" align=\"left\" valign=\"top\">\n                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"8\" width=\"100%\">\n                                <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Manufacturer</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            MB_String.Append(Company);
+            MB_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Name</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            MB_String.Append(Name);
+            MB_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Socket</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            MB_String.Append(Socket);
+            MB_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Chipset</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            MB_String.Append(Chipset);
+            MB_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Graphic Processor</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            MB_String.Append(Graphic_Processor);
+            MB_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Maximum Memory</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            MB_String.Append(Max_Mem);
+            MB_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Power</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            MB_String.Append(Power);
+            MB_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Lan</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            MB_String.Append(Lan);
+            MB_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">WLAN</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            MB_String.Append(WLAN);
+            MB_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Bluetooth</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            MB_String.Append(Bluetooth);
+            MB_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Slots</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            if (DIMM > 0) MB_String.Append(DIMM + " x DIMM <br/>");
+            if (VGA > 0) MB_String.Append(VGA + " x VGA <br/>");
+            if (HDMI > 0) MB_String.Append(HDMI + " x HDMI <br/>");
+            if (DVI > 0) MB_String.Append(DVI + " x DVI <br/>");
+            if (PCIe_20_x16 > 0) MB_String.Append(PCIe_20_x16 + " x PCI Express 2.0 (x16) <br/>");
+            if (PCIe_20_x4 > 0) MB_String.Append(PCIe_20_x4 + " x PCI Express 2.0 (x16) <br/>");
+            if (PCIe_30_x16 > 0) MB_String.Append(PCIe_30_x16 + " x PCI Express 3.0 (x16) <br/>");
+            if (PCIe_20_x1 > 0) MB_String.Append(PCIe_20_x1 + " x PCI Express 2.0 (x1) <br/>");
+            if (PCI_22 > 0) MB_String.Append(PCI_22 + " x PCI 2.2 <br/>");
+            if (PCI > 0) MB_String.Append(PCI + " x PCI <br/>");
+            if (SATA_6Gbs > 0) MB_String.Append(SATA_6Gbs + " x SATA 3 <br/>");
+            if (SATA_3Gbs > 0) MB_String.Append(SATA_3Gbs + " x SATA 2 <br/>");
+            MB_String.Append("<br/>");
+            MB_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Ports</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            if (External_SATA > 0) MB_String.Append(External_SATA + " x eSATA <br/>");
+            if (Channel_Audio_IO > 0) MB_String.Append(Channel_Audio_IO + " x Audio jacks <br/>");
+            if (IEEE_1394a > 0) MB_String.Append(IEEE_1394a + " x IEEE 1394a <br/>");
+            if (LAN_RJ45_port > 0) MB_String.Append(LAN_RJ45_port + " x LAN RJ45 port <br/>");
+            if (PS2_Keyboard > 0) MB_String.Append(PS2_Keyboard + " x PS2 Keyboard <br/>");
+            if (PS2_mouse > 0) MB_String.Append(PS2_mouse + " x PS2 Mouse <br/>");
+            if (USB_30 > 0) MB_String.Append(USB_30 + " x USB 3.0 <br/>");
+            if (USB_20 > 0) MB_String.Append(USB_20 + " x USB 2.0 <br/>");
+            if (LAN_RJ45_port > 0) MB_String.Append(LAN_RJ45_port + " x LAN RJ45 port <br/>");
+            MB_String.Append("<br/>");
+            MB_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Advanced Technologies</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            if (AMD_CrossFire) { counter++; MB_String.Append("AMD CrossFire"); }
+            if (NVIDIA_SLI) { if (counter > 0)MB_String.Append(", "); MB_String.Append("NVIDIA SLI"); }
+            if (Winki_3) { if (counter > 0)MB_String.Append(", "); MB_String.Append("Winki 3"); }
+            if (Auto_OC_Genie) { if (counter > 0)MB_String.Append(", "); MB_String.Append("Auto OC Genie"); }
+            if (Intel_vPro_Technology) { if (counter > 0)MB_String.Append(", "); MB_String.Append("Intel® vPro Technology"); }
+            if (EPU) { if (counter > 0)MB_String.Append(", "); MB_String.Append("EPU"); }
+            if (counter == 0) MB_String.Append("-");
+            MB_String.Append("</td></tr>\n                                </table>\n</td></tr></table>\n");
+            return MB_String.ToString();

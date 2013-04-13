@@ -1,0 +1,35 @@
+            StringBuilder HD_String = new StringBuilder();
+            HD_String.Append("                    <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" >\n                        <tr><td align=\"left\" valign=\"middle\" class=\"auto-style1\"><nobr><span class=\"subtitle\">Hard Disk:</span><span class=\"\">&nbsp;</span></nobr></td>\n                            <td align=\"right\" valign=\"bottom\" width=\"80%\"><hr size=\"1\" /></td></tr>\n                        <tr><td colspan=\"2\" align=\"left\" valign=\"top\">\n                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"8\" width=\"100%\">\n                                <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Type</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            HD_String.Append(Kind);
+            HD_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Manufacturer</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            HD_String.Append(Company);
+            HD_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Name</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            HD_String.Append(Name);
+            HD_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Socket</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            HD_String.Append(Socket);
+            HD_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Capacity</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            HD_String.Append(Capacity);
+            HD_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Code</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            HD_String.Append(Code);
+            HD_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Maximum Speed</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            HD_String.Append(Max_Speed);
+            if (Kind.Contains("SSD"))
+            {
+                HD_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Read Speed</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+                HD_String.Append(Read_Speed);
+                HD_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Write Speed</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+                HD_String.Append(Write_Speed);
+                HD_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Weight</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+                HD_String.Append(Weight);
+                HD_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Power</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+                HD_String.Append(Power);
+            }
+            else
+            {
+                HD_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Rotation Speed</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+                HD_String.Append(Rotation_Speed);
+                HD_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Buffer</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+                HD_String.Append(Buffer);
+            }
+            HD_String.Append("</td></tr>\n                                </table>\n</td></tr></table>\n");
+            return HD_String.ToString();

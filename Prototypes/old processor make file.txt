@@ -1,0 +1,55 @@
+            StringBuilder processorString = new StringBuilder();
+            processorString.Append("                    <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" >\n                        <tr><td align=\"left\" valign=\"middle\" class=\"auto-style1\"><nobr><span class=\"subtitle\">Processor:</span><span class=\"\">&nbsp;</span></nobr></td>\n                            <td align=\"right\" valign=\"bottom\" width=\"80%\"><hr size=\"1\" /></td></tr>\n                        <tr><td colspan=\"2\" align=\"left\" valign=\"top\">\n                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"8\" width=\"100%\">\n                                <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Kind</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            processorString.Append(Type);
+            processorString.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Name</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            processorString.Append(Kind + " " + Name);
+            processorString.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Speed</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            processorString.Append(Speed);
+            if (!Max_Speed.Contains("-"))
+                processorString.Append(" Up to " + Max_Speed);
+            processorString.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Number of cores</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            processorString.Append(Cores.ToString());
+            processorString.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Number of thread</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            processorString.Append(Thread.ToString());
+            if (Type.Contains("AMD"))
+            {
+                processorString.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Cache level 1</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+                processorString.Append(L1);
+                processorString.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Cache level 2</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+                processorString.Append(L2);
+                processorString.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Cache level 3</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+                processorString.Append(L3);
+            }
+            else
+            {
+                processorString.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Cache Memory</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+                processorString.Append(L1);
+            }
+            processorString.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Socket</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            processorString.Append(Socket);
+            processorString.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Graphic Processor</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            processorString.Append(Graphic_Processor);
+            processorString.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Maximum Memory</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            processorString.Append(Max_Memory);
+            processorString.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Power</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            processorString.Append(Power);
+            processorString.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Lithography</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            processorString.Append(Technique);
+            processorString.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Maximum Temperature</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            processorString.Append(Maxtmp);
+            processorString.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Direct Media Interface</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            processorString.Append(DMI);
+            processorString.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Instruction Set Extensions</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            processorString.Append(Instructions);
+            processorString.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Number of Memory Channels</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            processorString.Append(Memory_Channels);
+            processorString.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Advanced Technologies</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            if (Bit_64) processorString.Append("64-bit Instruction Set");
+            if (AMD_Virtualization_Technology) processorString.Append(", AMD Virtualization Technology");
+            if (Intel_Turbo_Boost_Technology_2) processorString.Append(", Intel® Turbo_Boost Technology 2");
+            if (Intel_Turbo_Boost_Technology) processorString.Append(", Intel® Turbo Boost Technology");
+            if (Intel_Hyper_Threading_Technology) processorString.Append(", Intel® Hyper Threading Technology");
+            if (VT_x) processorString.Append(", Intel® Virtualization Technology");
+            if (Enhanced_Intel_SpeedStep_Technology) processorString.Append(", Enhanced Intel SpeedStep® Technology");
+            processorString.Append("</td></tr>\n                                </table>\n</td></tr></table>\n");
+            return processorString.ToString();

@@ -1,0 +1,59 @@
+StringBuilder VGA_String = new StringBuilder();
+            VGA_String.Append("                    <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" >\n                        <tr><td align=\"left\" valign=\"middle\" class=\"auto-style1\"><nobr><span class=\"subtitle\">Graphic Card:</span><span class=\"\">&nbsp;</span></nobr></td>\n                            <td align=\"right\" valign=\"bottom\" width=\"80%\"><hr size=\"1\" /></td></tr>\n                        <tr><td colspan=\"2\" align=\"left\" valign=\"top\">\n                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"8\" width=\"100%\">\n                                <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Type</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            VGA_String.Append(Kind);
+            VGA_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Manufacturer</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            VGA_String.Append(Company);
+            VGA_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Name</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            VGA_String.Append(Name);
+            VGA_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Socket</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            VGA_String.Append(Socket);
+            VGA_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Graphic Processor</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            VGA_String.Append(GPU);
+            VGA_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Memory Size</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            VGA_String.Append(Mem_Size);
+            VGA_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">DDR Type</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            VGA_String.Append(DDR_Type);
+            VGA_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Memory Channal</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            VGA_String.Append(Mem_Channel);
+            VGA_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Processor Speed</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            VGA_String.Append(Processor_Speed);
+            VGA_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Memory Speed</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            VGA_String.Append(Mem_Speed);
+            VGA_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Maximum Resolution</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            VGA_String.Append(Max_Resolution);
+            VGA_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">DirectX Version</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            VGA_String.Append(DirectX_Version);
+            VGA_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">OpenGL Version</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            VGA_String.Append(OpenGL_Version);
+            VGA_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Pixel Shader Version</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            VGA_String.Append(Pixel_Shader_Version);
+            if (Kind.Contains("AMD"))
+                VGA_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Stream Cores</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            else
+                VGA_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">CUDA Cores</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            VGA_String.Append(Cores);
+            VGA_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Ports</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            if (DVI > 0) VGA_String.Append(DVI + " x DVI <br/>");
+            if (HDMI > 0)
+            {
+                VGA_String.Append(HDMI + " x ");
+                if (Mini_HDMI) VGA_String.Append("Mini ");
+                VGA_String.Append(HDMI + "HDMI <br/>");
+            }
+            if (DisplayPort > 0)
+            {
+                VGA_String.Append(DisplayPort + " x ");
+                if (Mini_HDMI) VGA_String.Append("Mini ");
+                VGA_String.Append(DisplayPort + "Display Port <br/>");
+            }
+            if (D_SUB > 0) VGA_String.Append(D_SUB + " x D-SUB <br/>");
+            VGA_String.Append("</td></tr>\n</td></tr>\n <tr><td width=\"10\">&nbsp;</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"overtext\">Advanced Technologies</td>\n                                    <td align=\"left\" valign=\"middle\" class=\"normaltext\">");
+            int counter = 0;
+            if (CrossFire) { VGA_String.Append("AMD CrossFire"); counter++; };
+            if (AMD_HD3D) { if (counter > 0)VGA_String.Append(", "); VGA_String.Append("AMD HD3D"); ; counter++; }
+            if (SLI) { if (counter > 0)VGA_String.Append(", "); VGA_String.Append("Nvidia SLI"); ; counter++; }
+            if (PhysX) { if (counter > 0)VGA_String.Append(", "); VGA_String.Append("Nvidia PhysX"); ; counter++; }
+            if (Vision_3D) { if (counter > 0)VGA_String.Append(", "); VGA_String.Append("Nvidia Vision 3D"); ; counter++; }
+            if (counter == 0) VGA_String.Append("-");
+            VGA_String.Append("</td></tr>\n                                </table>\n</td></tr></table>\n");
+            return VGA_String.ToString();

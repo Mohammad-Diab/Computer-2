@@ -1,0 +1,194 @@
+﻿<common:LayoutAwarePage x:ConnectionId='1'
+    x:Name="pageRoot"
+    x:Class="Computer_2.desktop"
+    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Computer_2"
+    xmlns:common="using:Computer_2.Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"                         >
+
+    <Page.Resources>
+
+        <!-- TODO: Delete this line if the key AppName is declared in App.xaml -->
+        <x:String x:Key="AppName">My Application</x:String>
+    </Page.Resources>
+
+    <!--
+        This grid acts as a root panel for the page that defines two rows:
+        * Row 0 contains the back button and page title
+        * Row 1 contains the rest of the page layout
+    -->
+    <Grid Style="{StaticResource LayoutRootStyle}" Background="#FF009DAE">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Back button and page title -->
+        
+        <Grid Background="#FF009DAE">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button x:ConnectionId='25' x:Name="backButton"                IsEnabled="{Binding Frame.CanGoBack, ElementName=pageRoot}" Style="{StaticResource BackButtonStyle}"/>
+            <TextBlock x:Name="pageTitle" Grid.Column="1" Text="Select Your PC Pieces" Style="{StaticResource PageHeaderTextStyle}"/>
+        </Grid>
+        
+        <ListView HorizontalAlignment="Left" Height="628" Margin="475,0,0,0" Grid.Row="1" VerticalAlignment="Top" Width="891" IsItemClickEnabled="True" IsHitTestVisible="False">
+            <TextBlock x:Name="TextBlock1" HorizontalAlignment="Left" Height="Auto" TextWrapping="Wrap" Text="Processor:" VerticalAlignment="Top" Width="881" FontSize="24"/>
+            <Grid HorizontalAlignment="Left" Height="91" VerticalAlignment="Top" Width="464">
+                <ToggleSwitch x:Name="ToggleSwitch3" Header="Can Increase CPU Speed (not Over Clocking)" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" IsHitTestVisible="False" OnContent="Yes" OffContent="No" Margin="0,0,-30,0" Width="494"/>
+                <TextBlock x:Name="TextBlock6" HorizontalAlignment="Left" Height="28" Margin="169,51,0,0" TextWrapping="Wrap" Text="Up To:" VerticalAlignment="Top" Width="293" FontSize="22"/>
+            </Grid>
+            <ToggleSwitch x:Name="ToggleSwitch2" Header="Virtualization Technology" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" IsHitTestVisible="False" OnContent="Yes" OffContent="No"/>
+            <TextBlock x:Name="TextBlock2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="MotherBoard:" VerticalAlignment="Top" Width="881" FontSize="24"/>
+            <TextBlock x:Name="TextBlock3" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Graphic Card:" VerticalAlignment="Top" Width="881" FontSize="24"/>
+            <ToggleSwitch x:Name="ToggleSwitch1" Header="Can Add More GPU (CrossFireX or SLI)" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="24" IsHitTestVisible="False" OnContent="Yes" OffContent="No"/>
+            <TextBlock x:Name="TextBlock5" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Hard Disk:" VerticalAlignment="Top" Width="891" FontSize="24"/>
+            <TextBlock x:Name="TextBlock4" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Memory:" VerticalAlignment="Top" Width="881" FontSize="24"/>
+        </ListView>
+        <ScrollViewer HorizontalAlignment="Left" Height="628" Grid.Row="1" VerticalAlignment="Top" Width="470" Background="{x:Null}">
+            <Grid HorizontalAlignment="Left" Height="1229" VerticalAlignment="Top" Width="470">
+                <TextBlock FontSize="28" TextAlignment="Center" Text="Motherboard and Processor" Width="460" Height="35" Margin="6,5,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                <Grid HorizontalAlignment="Left" Height="46" VerticalAlignment="Top" Width="460" Margin="5,50,0,0">
+                    <ComboBox x:ConnectionId='24' x:Name="ComboBox1" Height="35" Margin="192,3,0,0" VerticalAlignment="Top"                                               IsEnabled="False" HorizontalAlignment="Left" Width="263">
+                        <ComboBoxItem Content="AMD"/>
+                        <ComboBoxItem Content="Intel"/>
+                    </ComboBox>
+                    <TextBlock HorizontalAlignment="Left" Height="Auto" Margin="5,4,0,0" TextWrapping="Wrap" Text="PC Kind:" VerticalAlignment="Top" Width="187" FontSize="24"/>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Height="46" VerticalAlignment="Top" Width="460" Margin="5,100,0,0">
+                    <ComboBox x:ConnectionId='23' x:Name="ComboBox2" Height="35" Margin="192,3,0,0" VerticalAlignment="Top"                                               IsEnabled="False" HorizontalAlignment="Left" Width="263"/>
+                    <TextBlock HorizontalAlignment="Left" Height="Auto" Margin="5,4,0,0" TextWrapping="Wrap" Text="MB Company:" VerticalAlignment="Top" Width="187" FontSize="24"/>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Height="46" VerticalAlignment="Top" Width="460" Margin="5,150,0,0">
+                    <ComboBox x:ConnectionId='22' x:Name="ComboBox3" Height="35" Margin="192,3,0,0" VerticalAlignment="Top"                                               IsEnabled="False" HorizontalAlignment="Left" Width="263"/>
+                    <TextBlock HorizontalAlignment="Left" Height="Auto" Margin="5,4,0,0" TextWrapping="Wrap" Text="Motherboard:" VerticalAlignment="Top" Width="187" FontSize="24"/>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Height="46" VerticalAlignment="Top" Width="460" Margin="5,200,0,0">
+                    <ComboBox x:ConnectionId='21' x:Name="ComboBox4" Height="35" Margin="192,3,0,0" VerticalAlignment="Top"                                               IsEnabled="False" HorizontalAlignment="Left" Width="263"/>
+                    <TextBlock HorizontalAlignment="Left" Height="Auto" Margin="5,4,0,0" TextWrapping="Wrap" Text="CPU Model:" VerticalAlignment="Top" Width="187" FontSize="24"/>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Height="46" VerticalAlignment="Top" Width="460" Margin="5,250,0,0">
+                    <ComboBox x:ConnectionId='20' x:Name="ComboBox5" Height="35" Margin="192,3,0,0" VerticalAlignment="Top"                                               IsEnabled="False" HorizontalAlignment="Left" Width="263"/>
+                    <TextBlock HorizontalAlignment="Left" Height="Auto" Margin="5,4,0,0" TextWrapping="Wrap" Text="Processor:" VerticalAlignment="Top" Width="187" FontSize="24"/>
+                </Grid>
+                <TextBlock FontSize="28" TextAlignment="Center" Text="Random Access Memory (RAM)" Height="35" Margin="5,300,151,0" VerticalAlignment="Top"/>
+                <Grid HorizontalAlignment="Left" Height="46" VerticalAlignment="Top" Width="460" Margin="5,345,0,0">
+                    <ComboBox x:ConnectionId='19' x:Name="ComboBox6" Height="35" Margin="192,3,0,0" VerticalAlignment="Top"                                               IsEnabled="False" HorizontalAlignment="Left" Width="263"/>
+                    <TextBlock HorizontalAlignment="Left" Height="Auto" Margin="5,4,0,0" TextWrapping="Wrap" Text="Company:" VerticalAlignment="Top" Width="187" FontSize="24"/>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Height="46" VerticalAlignment="Top" Width="460" Margin="5,395,0,0">
+                    <ComboBox x:ConnectionId='18' x:Name="ComboBox7" Height="35" Margin="192,3,0,0" VerticalAlignment="Top"                                               IsEnabled="False" HorizontalAlignment="Left" Width="263"/>
+                    <TextBlock HorizontalAlignment="Left" Height="Auto" Margin="5,4,0,0" TextWrapping="Wrap" Text="Model:" VerticalAlignment="Top" Width="187" FontSize="24"/>
+                </Grid>
+                <TextBlock FontSize="28" TextAlignment="Center" Text="Storage Device" Width="460" Height="35" Margin="5,445,6,0" VerticalAlignment="Top"/>
+                <Grid HorizontalAlignment="Left" Height="46" VerticalAlignment="Top" Width="460" Margin="5,490,0,0">
+                    <ComboBox x:ConnectionId='17' x:Name="ComboBox8" Height="35" Margin="192,3,0,0" VerticalAlignment="Top"                                               HorizontalAlignment="Left" Width="263" IsEnabled="False"/>
+                    <TextBlock HorizontalAlignment="Left" Height="Auto" Margin="5,4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187" FontSize="24" Text="Type:"/>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Height="46" VerticalAlignment="Top" Width="460" Margin="5,540,0,0">
+                    <ComboBox x:ConnectionId='16' x:Name="ComboBox9" Height="35" Margin="192,3,0,0" VerticalAlignment="Top"                                               HorizontalAlignment="Left" Width="263" IsEnabled="False"/>
+                    <TextBlock HorizontalAlignment="Left" Height="Auto" Margin="5,4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187" FontSize="24" Text="Company:"/>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Height="46" VerticalAlignment="Top" Width="460" Margin="5,590,0,0">
+                    <ComboBox x:ConnectionId='15' x:Name="ComboBox10" Height="35" Margin="192,3,0,0" VerticalAlignment="Top"                                                HorizontalAlignment="Left" Width="263" IsEnabled="False"/>
+                    <TextBlock HorizontalAlignment="Left" Height="Auto" Margin="5,4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187" FontSize="24" Text="Model:"/>
+                </Grid>
+                <TextBlock FontSize="28" TextAlignment="Center" Text="Graphic Card" Width="460" Height="35" Margin="6,640,5,0" VerticalAlignment="Top"/>
+                <Grid HorizontalAlignment="Left" Height="46" VerticalAlignment="Top" Width="460" Margin="5,685,0,0">
+                    <ComboBox x:ConnectionId='14' x:Name="ComboBox11" Height="35" Margin="192,3,0,0" VerticalAlignment="Top"                                                HorizontalAlignment="Left" Width="263" IsEnabled="False"/>
+                    <TextBlock HorizontalAlignment="Left" Height="Auto" Margin="5,4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187" FontSize="24" Text="Type:"/>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Height="46" VerticalAlignment="Top" Width="460" Margin="5,735,0,0">
+                    <ComboBox x:ConnectionId='13' x:Name="ComboBox12" Height="35" Margin="192,3,0,0" VerticalAlignment="Top"                                                HorizontalAlignment="Left" Width="263" IsEnabled="False"/>
+                    <TextBlock HorizontalAlignment="Left" Height="Auto" Margin="5,4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187" FontSize="24" Text="Company:"/>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Height="46" VerticalAlignment="Top" Width="460" Margin="5,785,0,0">
+                    <ComboBox x:ConnectionId='12' x:Name="ComboBox13" Height="35" Margin="192,3,0,0" VerticalAlignment="Top"                                                HorizontalAlignment="Left" Width="263" IsEnabled="False"/>
+                    <TextBlock HorizontalAlignment="Left" Height="Auto" Margin="5,4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187" FontSize="24" Text="Model:"/>
+                </Grid>
+                <Rectangle Fill="White" Height="2" Margin="39,835,39,0" VerticalAlignment="Top"/>
+                <Grid HorizontalAlignment="Left" Height="46" VerticalAlignment="Top" Width="460" Margin="5,850,0,0">
+                    <ComboBox x:ConnectionId='11' x:Name="ComboBox14" Height="35" Margin="192,3,0,0" VerticalAlignment="Top"                                                HorizontalAlignment="Left" Width="263" IsEnabled="False"/>
+                    <TextBlock HorizontalAlignment="Left" Height="Auto" Margin="5,4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187" FontSize="24" Text="Power Supply:"/>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Height="46" VerticalAlignment="Top" Width="460" Margin="5,900,0,0">
+                    <ComboBox x:ConnectionId='10' x:Name="ComboBox15" Height="35" Margin="192,3,0,0" VerticalAlignment="Top"                                                HorizontalAlignment="Left" Width="263" IsEnabled="False"/>
+                    <TextBlock HorizontalAlignment="Left" Height="Auto" Margin="5,4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187" FontSize="24" Text="Case:"/>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Height="46" VerticalAlignment="Top" Width="460" Margin="5,950,0,0">
+                    <ComboBox x:ConnectionId='9' x:Name="ComboBox16" Height="35" Margin="192,3,0,0" VerticalAlignment="Top"                                                HorizontalAlignment="Left" Width="263" IsEnabled="False"/>
+                    <TextBlock HorizontalAlignment="Left" Height="Auto" Margin="5,4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187" FontSize="24" Text="Optical Drive:"/>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Height="46" VerticalAlignment="Top" Width="460" Margin="5,1000,0,0">
+                    <ComboBox x:ConnectionId='8' x:Name="ComboBox17" Height="35" Margin="192,3,0,0" VerticalAlignment="Top"                                                HorizontalAlignment="Left" Width="263" IsEnabled="False"/>
+                    <TextBlock HorizontalAlignment="Left" Height="Auto" Margin="5,4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187" FontSize="24" Text="Monitor:"/>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Height="46" VerticalAlignment="Top" Width="460" Margin="5,1050,0,0">
+                    <ComboBox x:ConnectionId='7' x:Name="ComboBox18" Height="35" Margin="192,3,0,0" VerticalAlignment="Top"                                                HorizontalAlignment="Left" Width="263" IsEnabled="False"/>
+                    <TextBlock HorizontalAlignment="Left" Height="Auto" Margin="5,4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187" FontSize="24" Text="Mouse:"/>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Height="46" VerticalAlignment="Top" Width="460" Margin="5,1100,0,0">
+                    <ComboBox x:ConnectionId='6' x:Name="ComboBox19" Height="35" Margin="192,3,0,0" VerticalAlignment="Top"                                                HorizontalAlignment="Left" Width="263" IsEnabled="False"/>
+                    <TextBlock HorizontalAlignment="Left" Height="Auto" Margin="5,4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="187" FontSize="24" Text="Keyboard:"/>
+                </Grid>
+                <Button x:ConnectionId='5' x:Name="Button1" Content="Done" FontSize="24" IsEnabled="False"                       HorizontalAlignment="Stretch" Margin="39,1150,39,0" VerticalAlignment="Top" Height="60"/>
+            </Grid>
+        </ScrollViewer>
+        <Page>
+            <Page.BottomAppBar>
+                <AppBar Grid.Row="1" Padding="10,0,10,0" Height="90" VerticalAlignment="Bottom">
+                    <GridView Margin="0,0,0,0" IsItemClickEnabled="True" Height="90" VerticalAlignment="Bottom">
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Height="90">
+                            <Button x:ConnectionId='4' x:Name="Button2" HorizontalAlignment="Left" VerticalAlignment="Top"                       Style="{StaticResource NewFile}" Height="90" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Height="90">
+                            <Button x:ConnectionId='3' x:Name="Button3"  HorizontalAlignment="Left" VerticalAlignment="Top"                        Style="{StaticResource SaveAppBarButtonStyle}" Height="90" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Height="90">
+                            <Button x:ConnectionId='2' x:Name="Button4"  HorizontalAlignment="Left" VerticalAlignment="Top"                        Style="{StaticResource YesAppBarButtonStyle}" Height="90" />
+                        </StackPanel>
+                    </GridView>
+        </AppBar>
+            </Page.BottomAppBar>
+        </Page>
+        <VisualStateManager.VisualStateGroups>
+
+            <!-- Visual states reflect the application's view state -->
+            <VisualStateGroup x:Name="ApplicationViewStates">
+                <VisualState x:Name="FullScreenLandscape"/>
+                <VisualState x:Name="Filled"/>
+
+                <!-- The entire page respects the narrower 100-pixel margin convention for portrait -->
+                <VisualState x:Name="FullScreenPortrait">
+                    <Storyboard>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="backButton" Storyboard.TargetProperty="Style">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PortraitBackButtonStyle}"/>
+                        </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+
+                <!-- The back button and title have different styles when snapped -->
+                <VisualState x:Name="Snapped">
+                    <Storyboard>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="backButton" Storyboard.TargetProperty="Style">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SnappedBackButtonStyle}"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="pageTitle" Storyboard.TargetProperty="Style">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SnappedPageHeaderTextStyle}"/>
+                        </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+    </Grid>
+</common:LayoutAwarePage>
+
