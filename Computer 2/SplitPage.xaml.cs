@@ -108,7 +108,7 @@ namespace Computer_2
         /// otherwise.</returns>
         private bool UsingLogicalPageNavigation(ApplicationViewState? viewState = null)
         {
-            if (viewState == null) 
+            if (viewState == null)
                 viewState = ApplicationView.Value;
             return viewState == ApplicationViewState.FullScreenPortrait || viewState == ApplicationViewState.Snapped;
         }

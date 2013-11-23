@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
-  <Identity Name="Computer2" Publisher="CN=Dr.Mohammad" Version="2.1.0.0" />
+  <Identity Name="b0198faa-9f01-45fe-a8ea-929811d4232d" Publisher="CN=pal" Version="1.0.0.0" />
   <Properties>
     <DisplayName>Computer 2</DisplayName>
-    <PublisherDisplayName>Dr.Mohammad</PublisherDisplayName>
+    <PublisherDisplayName>pal</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Prerequisites>
@@ -15,21 +15,38 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Computer_2.App">
-      <Extensions>
-        <Extension Category="windows.search" />
-      </Extensions>
-      <m2:VisualElements DisplayName="Computer 2" Description="an app to choose your own technical device (Desktop PC,Laptop PC ,Tablet ,Mobile or Mac Devices)." BackgroundColor="#2E8AEF" ForegroundText="light" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png">
-        <m2:DefaultTile ShortName="Computer" Wide310x150Logo="Assets\WideLogo.png">
+      <m2:VisualElements DisplayName="Computer 2" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\SmallLogo.png" Description="Computer 2" ForegroundText="light" BackgroundColor="#308FEF">
+        <m2:DefaultTile DefaultSize="wide310x150Logo" ShortName="Computer" Square310x310Logo="Assets\Square310x310Logo.png" Wide310x150Logo="Assets\Wide310x150Logo.png" Square70x70Logo="Assets\Square70x70Logo.png">
           <m2:ShowNameOnTiles>
             <m2:ShowOn Tile="square150x150Logo" />
             <m2:ShowOn Tile="wide310x150Logo" />
+            <m2:ShowOn Tile="square310x310Logo" />
           </m2:ShowNameOnTiles>
         </m2:DefaultTile>
+        <m2:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#308FEF" />
         <m2:InitialRotationPreference>
           <m2:Rotation Preference="landscape" />
         </m2:InitialRotationPreference>
-        <m2:SplashScreen BackgroundColor="#2E8AEF" Image="Assets\SplashScreen.png" />
+        <m2:ApplicationView MinWidth="width320" />
       </m2:VisualElements>
+      <Extensions>
+        <Extension Category="windows.fileSavePicker">
+          <FileSavePicker>
+            <SupportedFileTypes>
+              <SupportsAnyFileType />
+            </SupportedFileTypes>
+          </FileSavePicker>
+        </Extension>
+        <Extension Category="windows.fileOpenPicker">
+          <FileOpenPicker>
+            <SupportedFileTypes>
+              <SupportsAnyFileType />
+            </SupportedFileTypes>
+          </FileOpenPicker>
+        </Extension>
+        <Extension Category="windows.search" />
+        <Extension Category="windows.printTaskSettings" />
+      </Extensions>
     </Application>
   </Applications>
   <Capabilities>

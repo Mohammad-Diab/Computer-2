@@ -115,7 +115,7 @@ namespace Computer_2
                 int j;
                 for (j = 0; current_file[j].Contains("لمس"); j++)
                     temp.Ports = current_file[j];
-                temp.Touch_Screen = !(current_file[j+1].Equals("-"));
+                temp.Touch_Screen = !(current_file[j + 1].Equals("-"));
                 temp.OS = current_file[j + 3];
                 temp.Battary = current_file[j + 5] + " " + current_file[j + 6];
                 temp.Dimensions = current_file[j + 8];
