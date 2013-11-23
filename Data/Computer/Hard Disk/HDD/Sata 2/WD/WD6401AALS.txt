@@ -1,0 +1,18 @@
+﻿WD Caviar Black 640 GB SATA Hard 
+Drives
+
+الشركة
+Western Digital
+الرمز
+WD6401AALS
+السعة
+640 GB
+سرعة الدوران
+7200 RPM
+ذاكرة Buffer
+32 MB
+سرعة النقل العظمى
+3 GB/s
+المنفذ
+Sata 2
+

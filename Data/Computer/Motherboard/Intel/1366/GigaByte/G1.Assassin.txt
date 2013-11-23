@@ -1,0 +1,40 @@
+﻿Gigabyte G1.Assassin
+
+الشركة
+Gigabyte
+اسم اللوحة
+G1.Assassin
+نوع مقبس المعالج
+Intel 1366
+الشريحة
+Intel® X58+ ICH10R
+الذاكرة
+24 GB DDR3 Max
+كرت الشاشة
+-
+كرت الشبكة
+Bigfoot Killer E2100 chip
+الشقوق
+6 x DIMM
+2 x PCI e 2.0 x16
+2 x PCI e 2.0 x16 (x8 mode)
+3 x PCI e 2.0 x1
+1 x PCI
+6 x SATA 3Gb/s
+2 x SATA 6Gb/s
+المنافذ
+1 x PS/2 Keyboard
+1 x PS/2 Mouse
+1 x LAN (RJ45)
+4 x USB 3.0 
+4 x USB 2.0
+5 x Audio jacks
+Bluetooth
+-
+WLAN
+-
+تقنيات أخرى
+3-Way/2-Way NVIDIA SLI , 4-Way/3-Way/2-Way ATI CrossFireX™
+صورة اللوحة
+ 
+

@@ -1,0 +1,36 @@
+﻿Gigabyte GV-N590D5-3GD-B
+نوع الكرت
+Gigabyte
+اسم الكرت
+GV-N590D5-3GD-B
+معالج الرسومات
+GeForce GTX 590
+الشق المتوافق
+PCI Express x16 2.0
+حجم الذاكرة
+3072 MB
+نوع الذاكرة
+GDDR5
+قناة الذاكرة
+768 bits
+سرعة المعالج
+607 MHz
+سرعة الذاكرة
+3414 MHz
+الدقة العظمى
+2560 x 1600
+اصدار DirectX
+11
+اصدار OpenGL
+4.1
+اصدار Pixel Shader
+5.0
+عدد أنوية CUDA
+1024
+التقنيات المدعومة
+SLI , Quad SLI , PhysX , 3D Vision , CUDA
+المنافذ
+3 x DVI , 1 x Mini Displayport
+صورة الكرت
+ 
+

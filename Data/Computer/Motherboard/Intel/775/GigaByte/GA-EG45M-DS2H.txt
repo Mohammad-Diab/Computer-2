@@ -1,0 +1,43 @@
+﻿Gigabyte GA-EG45M-DS2H
+
+الشركة
+Gigabyte
+اسم اللوحة
+GA-EG45M-DS2H
+نوع مقبس المعالج
+Intel 775
+الشريحة
+Intel®G45 + ICH10R
+الذاكرة
+16 GB DDR2 Max
+كرت الشاشة
+Intel GMA X4500 HD
+كرت الشبكة
+Realtek 8111C
+الشقوق
+4 x DIMM
+1 x PCI e 2.0 x4
+1 x PCI e 2.0 x1
+2 x PCI
+1 x IDE
+5 x SATA 3Gb/s
+1 x Floppy Disk Drive
+المنافذ
+1 x PS/2 Keyboard/Mouse
+1 x D-Sub
+1 x DVI-D
+1 x HDMI
+6 x USB 2.0
+1 x IEEE 1394a
+1 x eSATA 3Gb/s
+1 x LAN (RJ45)
+6 x audio jacks
+Bluetooth
+-
+WLAN
+-
+تقنيات أخرى
+-
+صورة اللوحة
+ 
+

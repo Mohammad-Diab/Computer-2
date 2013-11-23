@@ -1,0 +1,38 @@
+﻿ Gigabyte GA-M68MT-S2
+
+الشركة
+Gigabyte
+اسم اللوحة
+GA-M68MT-S2
+نوع مقبس المعالج
+AM3+
+الشريحة
+NVIDIA® GeForce 7025/nForce 630a chipset
+الذاكرة
+8 GB DDR3 Max
+كرت الشاشة
+NVIDIA GeForce 7025
+كرت الشبكة
+Realtek RTL8211CL
+الشقوق
+2 x DIMM
+1 x PCI e 2.0 x16
+2 x PCI e 2.0 x1
+1 x PCI
+4 x SATA 3Gb/s
+المنافذ
+1 x PS/2 Keyboard
+1 x PS/2 Mouse
+1 x D-Sub
+1 x LAN(RJ45)
+4 x USB 2.0
+3 x Audio jacks
+Bluetooth
+-
+WLAN
+-
+تقنيات أخرى
+-
+صورة اللوحة
+ 
+

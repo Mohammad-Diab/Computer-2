@@ -1,0 +1,39 @@
+﻿ ASUS P7H55/USB3
+
+الشركة
+ASUS
+اسم اللوحة
+P7H55/USB3
+نوع مقبس المعالج
+Intel 1156
+الشريحة
+Intel® H55 Express
+الذاكرة
+16 GB DDR3 Max
+كرت الشاشة
+-
+كرت الشبكة
+Realtek® 8112L Gigabit LAN controller featuring AI NET 2
+الشقوق
+4 x DIMM
+1 x PCI e 2.0 x16
+1 x PCI e 2.0 x16 (x4 speed, 2.5GT/s)
+2 x PCI e 2.0 x1 (2.5GT/s)
+2 x PCI
+6 x SATA 3Gb/s
+المنافذ
+1 x PS/2 Keyboard
+1 x PS/2 Mouse
+1 x LAN(RJ45)
+6 x USB 2.0
+8 -Channel Audio I/O
+2 x USB 3.0
+Bluetooth
+-
+WLAN
+-
+تقنيات أخرى
+Support CrossFireX Technology , EPU
+صورة اللوحة
+ 
+

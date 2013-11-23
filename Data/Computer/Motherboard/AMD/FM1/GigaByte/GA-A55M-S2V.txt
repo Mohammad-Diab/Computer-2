@@ -1,0 +1,38 @@
+﻿ Gigabyte GA-A55M-S2V
+
+الشركة
+Gigabyte
+اسم اللوحة
+GA-A55M-S2V
+نوع مقبس المعالج
+FM1
+الشريحة
+AMD A55
+الذاكرة
+32 GB DDR3 Max
+كرت الشاشة
+Build in Processor
+كرت الشبكة
+Realtek RTL8111E
+الشقوق
+2 x DIMM
+1 x PCI e 2.0 x16
+1 x PCI e 2.0 x1
+1 x PCI
+6 x SATA 3Gb/s
+المنافذ
+1 x PS/2 Keyboard/Mouse Combo
+1 x DVI-D
+1 x D-Sub
+1 x LAN(RJ45)
+4 x USB 2.0
+3 x Audio jacks
+Bluetooth
+-
+WLAN
+-
+تقنيات أخرى
+AMD Dual Graphics technology
+صورة اللوحة
+ 
+

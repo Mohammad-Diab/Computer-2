@@ -1,0 +1,39 @@
+﻿ Previous Generation Intel® Core™ i7-870S
+
+المعالج
+Previous Generation Intel® Core™
+النوع
+i7-870S
+عدد النوى
+4
+عدد الخيوط
+8
+السرعة
+2.66 GHz
+السرعة العظمى
+3.6 GHz
+ذاكرة الكاش
+8 MB
+سرعة الناقل
+2.5 GT/s
+التقنية
+64 bit
+التعليمات
+SSE4.2
+تقنية التصنيع
+45 nm
+الاستطاعة
+82 W
+الذاكرة العظمى
+16 GB
+قنوات الذاكرة
+2
+درجة الحرارة العظمى
+-
+رسوميات المعالج
+-
+المقبس
+LGA1156
+التقنيات المدعومة
+Intel® Turbo Boost Technology , Intel® Hyper-Threading Technology , VT-x , VT-d , Enhanced Intel SpeedStep® Technology
+

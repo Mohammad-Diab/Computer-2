@@ -1,0 +1,36 @@
+﻿MSI N590GTX-P3D3GD5
+نوع الكرت
+MSI
+اسم الكرت
+N590GTX-P3D3GD5
+معالج الرسومات
+GeForce GTX 590
+الشق المتوافق
+PCI Express x16 2.0
+حجم الذاكرة
+3072 MB
+نوع الذاكرة
+GDDR5
+قناة الذاكرة
+768 bits
+سرعة المعالج
+607 MHz
+سرعة الذاكرة
+3414 MHz
+الدقة العظمى
+2560 x 1600
+اصدار DirectX
+11
+اصدار OpenGL
+4.1
+اصدار Pixel Shader
+5.0
+عدد أنوية CUDA
+1024
+التقنيات المدعومة
+SLI , 3-way SLI , PhysX , 3D Vision , CUDA
+المنافذ
+3 x DVI , 1 x Mini Displayport
+صورة الكرت
+ 
+

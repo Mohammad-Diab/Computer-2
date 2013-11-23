@@ -1,0 +1,36 @@
+﻿Gigabyte GV-N450OC-1GI
+نوع الكرت
+Gigabyte
+اسم الكرت
+GV-N450OC-1GI -mouse pad edition-
+معالج الرسومات
+GeForce GTS 450
+الشق المتوافق
+PCI Express x16 2.0
+حجم الذاكرة
+1024 MB
+نوع الذاكرة
+GDDR5
+قناة الذاكرة
+128 bits
+سرعة المعالج
+830 MHz
+سرعة الذاكرة
+3608 MHz
+الدقة العظمى
+2560 x 1600
+اصدار DirectX
+11
+اصدار OpenGL
+4.0
+اصدار Pixel Shader
+5.0
+عدد أنوية CUDA
+
+التقنيات المدعومة
+SLI , PhysX , CUDA
+المنافذ
+2 x DVI , 1 x Mini HDMI
+صورة الكرت
+ 
+

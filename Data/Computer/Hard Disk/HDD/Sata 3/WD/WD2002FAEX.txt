@@ -1,0 +1,18 @@
+﻿WD Caviar  Blue 2 TB SATA Hard 
+Drives
+
+الشركة
+Western Digital
+الرمز
+WD2002FAEX
+السعة
+2048 GB
+سرعة الدوران
+7200 RPM
+ذاكرة Buffer
+64 MB
+سرعة النقل العظمى
+6 GB/s
+المنفذ
+Sata 3
+

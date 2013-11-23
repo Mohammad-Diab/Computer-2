@@ -1,0 +1,18 @@
+﻿WD Caviar Green 2 TB SATA Hard 
+Drives
+
+الشركة
+Western Digital
+الرمز
+WD20EARX
+السعة
+2048 GB
+سرعة الدوران
+IntelliPower
+ذاكرة Buffer
+64 MB
+سرعة النقل العظمى
+6 GB/s
+المنفذ
+Sata 3
+

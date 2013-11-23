@@ -1,0 +1,39 @@
+﻿ ASUS Maximus IV Extreme-Z
+
+الشركة
+ASUS
+اسم اللوحة
+Maximus IV Extreme-Z
+نوع مقبس المعالج
+Intel 1155
+الشريحة
+Intel® Z68
+الذاكرة
+32 GB DDR3 Max
+كرت الشاشة
+-
+كرت الشبكة
+Intel®, 2 x Gigabit LAN
+الشقوق
+4 x DIMM
+4 x PCI e 2.0 x16
+1 x PCI e 2.0 x4
+1 x PCI e 2.0 x 1
+2 x SATA 6Gb/s
+4 x SATA 3Gb/s
+المنافذ
+1 x PS/2 keyboard/mouse combo
+2 x eSATA 3Gb/s
+2 x LAN (RJ45) port(s)
+8 x USB 3.0
+1 x USB 2.0
+6 x Audio jack(s)
+Bluetooth
+Bluetooth V2.1+EDR
+WLAN
+-
+تقنيات أخرى
+SLI , CrossFireX
+صورة اللوحة
+ 
+

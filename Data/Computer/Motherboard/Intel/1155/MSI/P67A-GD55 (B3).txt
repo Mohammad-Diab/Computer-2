@@ -1,0 +1,39 @@
+﻿ MSI P67A-GD55 (B3)
+
+الشركة
+MSI
+اسم اللوحة
+P67A-GD55 (B3)
+نوع مقبس المعالج
+Intel 1155
+الشريحة
+Intel® P67 (B3)
+الذاكرة
+32 GB DDR3 Max
+كرت الشاشة
+-
+كرت الشبكة
+Realtek 8111E
+الشقوق
+4 x DIMM
+2 x PCI e 2.0 x16
+3 x PCI e 2.0 x1
+2 x PCI
+4 x SATA 3Gb/s
+2 x SATA 6Gb/s
+المنافذ
+1 x PS/2 Mouse/Keyboard
+2 x USB 3.0
+8 x USB 2.0
+1 x IEEE1394
+1 x RJ45 LAN
+1 x 6 Audio jacks
+Bluetooth
+-
+WLAN
+-
+تقنيات أخرى
+AMD CrossFire , NVIDIA SLI , OC Genie II
+صورة اللوحة
+ 
+

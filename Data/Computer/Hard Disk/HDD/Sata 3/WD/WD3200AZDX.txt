@@ -1,0 +1,18 @@
+﻿WD Caviar Green 320 GB SATA Hard 
+Drives
+
+الشركة
+Western Digital
+الرمز
+WD3200AZDX
+السعة
+320 GB
+سرعة الدوران
+IntelliPower
+ذاكرة Buffer
+32 MB
+سرعة النقل العظمى
+6 GB/s
+المنفذ
+Sata 3
+

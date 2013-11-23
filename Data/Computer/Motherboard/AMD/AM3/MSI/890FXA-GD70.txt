@@ -1,0 +1,41 @@
+﻿ MSI 890FXA-GD70
+
+الشركة
+MSI
+اسم اللوحة
+890FXA-GD70
+نوع مقبس المعالج
+AM3
+الشريحة
+AMD® 890FX and SB850
+الذاكرة
+32 GB DDR3 Max
+كرت الشاشة
+-
+كرت الشبكة
+2 x Realtek 8111DL
+الشقوق
+4 x DIMM
+5 x PCI e 2.0 x16 
+1 x PCI e x 1
+1 x PCI
+1 x IDE
+6 x SATA 6Gb/s
+1 x SATA 3Gb/s
+المنافذ
+1 x PS/2 Keyboard
+1 x PS/2 Mouse
+5 x USB 2.0
+2 x USB 3.0
+1 x eSATA / USB 2.0 Combo
+2 x RJ45 LAN
+1 x 6 in 1 audio
+Bluetooth
+-
+WLAN
+-
+تقنيات أخرى
+ATI CrossFireX , Auto OC Genie , Winki 2.0
+صورة اللوحة
+ 
+

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="Computer2" Publisher="CN=Dr.Mohammad" Version="2.0.0.0" />
+  <Properties>
+    <DisplayName>Computer 2</DisplayName>
+    <PublisherDisplayName>Dr.Mohammad</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Computer_2.App">
+      <VisualElements DisplayName="Computer 2" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="an app to choose your own technical device (Desktop PC,Laptop PC ,Tablet ,Mobile or Mac Devices)." ForegroundText="light" BackgroundColor="#2E8AEF">
+        <DefaultTile ShowName="allLogos" WideLogo="Assets\WideLogo.png" ShortName="Computer" />
+        <SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#2E8AEF" />
+        <InitialRotationPreference>
+          <Rotation Preference="landscape" />
+        </InitialRotationPreference>
+      </VisualElements>
+      <Extensions>
+        <Extension Category="windows.search" />
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

@@ -1,0 +1,56 @@
+﻿اسم الشركة
+Asus
+اسم الجهاز
+TAICHI 31
+المعالج
+Intel Core i7;Intel Core i7;Intel Core i5
+3537U;3517U;3317U
+السرعة
+?1.4GHz;?1.2GHz;?1.4GHz
+السرعة العظمى
+?2.0GHz;?1.8GHz;?2.0GHz
+ذاكرة الكاش
+?6MB;?6MB;?3MB
+الشريحة
+Intel QS77 Express 
+الذاكرة
+4GB 1600MHz DDR3
+القرص الصلب
+256GB SSD;128GB SSD
+سرعة الدوران
+-;-
+محرك أقراص مضغوطة
+-
+كرت الشاشة
+Intel HD Graphics 4000 
+ذاكرة كرت الشاشة
+-
+ذاكرة كرت الشاشة العظمى
+1.7GB
+كاميرا
+5MP with Auto Focus 1080P
+الشاشة
+13.3 Full HD
+دقة الشاشة
+1920 x 1080
+المخارج
+2 x USB 3.0
+-
+micro HDMI
+Mini VGA Port 
+Bluetooth 4.0
+Card Reader
+-
+شاشة لمس
+Yes
+نظام التشغيل
+Microsoft Windows 8 Pro;Microsoft Windows 8
+بطارية
+53 Whrs Polymer Battery
+5 hours
+الابعاد
+33.92 x 22.8 x 17.4 cm (WxDxH)
+الوزن
+1.56 kg
+الفئة
+Thin and Light

@@ -1,0 +1,36 @@
+﻿EVGA GeForce GTX 460 2Win
+نوع الكرت
+EVGA
+اسم الكرت
+460 2Win
+معالج الرسومات
+GeForce GTX 460
+الشق المتوافق
+PCI Express x16 2.0
+حجم الذاكرة
+2048 MB
+نوع الذاكرة
+GDDR5
+قناة الذاكرة
+512 bits
+سرعة المعالج
+700 MHz
+سرعة الذاكرة
+3600 MHz
+الدقة العظمى
+2560 x 1600
+اصدار DirectX
+11
+اصدار OpenGL
+4.1
+اصدار Pixel Shader
+5.0
+عدد أنوية CUDA
+672
+التقنيات المدعومة
+SLI , PhysX , 3D Vision , CUDA
+المنافذ
+3 x DVI , 1 x Mini HDMI
+صورة الكرت
+ 
+

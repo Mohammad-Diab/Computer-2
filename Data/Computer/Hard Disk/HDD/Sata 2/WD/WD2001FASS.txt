@@ -1,0 +1,18 @@
+﻿WD Caviar Black 2 TB SATA Hard 
+Drives
+
+الشركة
+Western Digital
+الرمز
+WD2001FASS
+السعة
+2048 GB
+سرعة الدوران
+7200 RPM
+ذاكرة Buffer
+64 MB
+سرعة النقل العظمى
+3 GB/s
+المنفذ
+Sata 2
+

@@ -1,0 +1,18 @@
+﻿WD Caviar Blue 750 GB SATA Hard 
+Drives
+
+الشركة
+Western Digital
+الرمز
+WD7502AAEX
+السعة
+750 GB
+سرعة الدوران
+7200 RPM
+ذاكرة Buffer
+64 MB
+سرعة النقل العظمى
+6 GB/s
+المنفذ
+Sata 3
+

@@ -1,0 +1,39 @@
+﻿ ASUS Crosshair V Formula
+
+الشركة
+ASUS
+اسم اللوحة
+Crosshair V Formula
+نوع مقبس المعالج
+AM3+ up to 140 W
+الشريحة
+AMD 990FX/SB950
+الذاكرة
+32 GB DDR3 Max
+كرت الشاشة
+-
+كرت الشبكة
+Intel® Gigabit LAN
+الشقوق
+4 x DIMM
+3 x PCI e 2.0 x16 (dual x16 or x16, x8, x8)
+1 x PCI e 2.0 x16 (x4 mode)
+1 x PCI e 2.0 x1
+1 x PCI
+6 x SATA 6Gb/s
+المنافذ
+1 x PS/2 keyboard/mouse combo
+1 x eSATA 6Gb/s
+1 x LAN(RJ45)
+4 x USB 3.0
+8 x USB 2.0
+6 x Audio jacks
+Bluetooth
+-
+WLAN
+-
+تقنيات أخرى
+NVIDIA® 3-Way SLI™ Technology , AMD 3-Way CrossFireX™ Technology
+صورة اللوحة
+ 
+

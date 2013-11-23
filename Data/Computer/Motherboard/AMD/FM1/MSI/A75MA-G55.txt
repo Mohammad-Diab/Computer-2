@@ -1,0 +1,40 @@
+﻿ Gigabyte A75MA-G55
+
+الشركة
+Gigabyte
+اسم اللوحة
+A75MA-G55
+نوع مقبس المعالج
+FM1
+الشريحة
+AMD A75
+الذاكرة
+32 GB DDR3 Max
+كرت الشاشة
+Build in Processor
+كرت الشبكة
+Realtek RTL8111E
+الشقوق
+4 x DIMM
+2 x PCI e 2.0 x16
+2 x PCI e 2.0 x1
+1  PCI
+6 x SATA 6Gb/s
+المنافذ
+1 x PS/2 Keyboard/Mouse Combo
+1 x Graphic Card Port
+1 x DVI-D
+1 x HDMI
+1 x LAN(RJ45)
+4 x USB 2.0
+2 x USB 3.0
+6 x Audio jacks
+Bluetooth
+-
+WLAN
+-
+تقنيات أخرى
+AMD Dual Graphics , OC Genie II , AMD CrossFire™ , Winki 3
+صورة اللوحة
+ 
+

@@ -1,0 +1,39 @@
+﻿ MSI H61M-P33 (B3)
+
+الشركة
+MSI
+اسم اللوحة
+H61M-P33 (B3)
+نوع مقبس المعالج
+Intel 1155
+الشريحة
+Intel® H61 (B3)
+الذاكرة
+16 GB DDR3 Max
+كرت الشاشة
+Built in Processor
+كرت الشبكة
+Realtek 8111E
+الشقوق
+2 x DIMM
+1 x PCI e 2.0 x16
+3 x PCI e 2.0 x1
+1 x PCI
+2 x SATA 3Gb/s
+2 x SATA 6Gb/s
+المنافذ
+1 x PS/2 Mouse/Keyboard
+1 x VGA
+1 x DVI-D
+4 x USB 2.0
+1 x RJ45 LAN
+1 x 3 Audio jacks
+Bluetooth
+-
+WLAN
+-
+تقنيات أخرى
+OC Genie II , Winki 3
+صورة اللوحة
+ 
+

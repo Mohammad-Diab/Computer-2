@@ -1,0 +1,40 @@
+﻿ ASUS M5A97 EVO
+
+الشركة
+ASUS
+اسم اللوحة
+M5A97 EVO
+نوع مقبس المعالج
+AMD AM3+ up to 140 W
+الشريحة
+AMD 970/SB950
+الذاكرة
+32 GB DDR3 Max
+كرت الشاشة
+Integrated ATI Radeon™ HD 4250 GPU
+كرت الشبكة
+Realtek® 8111E
+الشقوق
+4 x DIMM
+2 x PCI e 2.0 x16
+2 x PCI e 2.0 x1
+2 x PCI
+6 x SATA 6Gb/s
+2 x eSATA 6Gb/s
+المنافذ
+1 x PS/2 keyboard/mouse combo
+2 x eSATA 3Gb/s
+1 x IEEE 1394a
+1 x LAN (RJ45)
+2 x USB 3.0 
+8 x USB 2.0 
+6 x Audio jack(s)
+Bluetooth
+-
+WLAN
+-
+تقنيات أخرى
+USB 3.0 Boost , CrossFireX
+صورة اللوحة
+ 
+

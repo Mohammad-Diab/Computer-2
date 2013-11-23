@@ -1,0 +1,44 @@
+﻿ Gigabyte GA-790XTA-UD4
+
+الشركة
+Gigabyte
+اسم اللوحة
+GA-790XTA-UD4
+نوع مقبس المعالج
+AM3
+الشريحة
+AMD 790X + SB75
+الذاكرة
+16 GB DDR3 Max
+كرت الشاشة
+-
+كرت الشبكة
+Realtek 8111D
+الشقوق
+4 x DIMM
+1 x PCI e 2.0 x16
+1 x PCI e 2.0 x16 (x8 mode)
+2 x PCI e 2.0 x1
+3 x PCI
+1 x IDE
+1 x floppy disk drive connector
+6 x SATA 3Gb/s
+2 x SATA 6Gb/s
+المنافذ
+1 x PS/2 Keyboard
+1 x PS/2 Mouse
+6 x USB 2.0
+2 x USB 3.0
+2 x IEEE 1394a
+2 x eSATA 3Gb/s
+1 x LAN(RJ45)
+6 x Audio jacks
+Bluetooth
+-
+WLAN
+-
+تقنيات أخرى
+ATI CrossFireX™ , GIGABYTE innovative technology
+صورة اللوحة
+ 
+

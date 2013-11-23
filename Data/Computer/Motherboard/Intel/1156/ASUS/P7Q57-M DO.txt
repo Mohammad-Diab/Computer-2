@@ -1,0 +1,40 @@
+﻿ ASUS P7Q57-M DO
+
+الشركة
+ASUS
+اسم اللوحة
+P7Q57-M DO
+نوع مقبس المعالج
+Intel 1156
+الشريحة
+Intel® Q57 Express
+الذاكرة
+16 GB DDR3 Max
+كرت الشاشة
+Build in Processor
+كرت الشبكة
+Intel WG82578DM C0 Gigabit LAN
+الشقوق
+4 x DIMM
+1 x PCI e 2.0 x16
+1 x PCI e 2.0 x1
+2 x PCI 
+6 x SATA 3Gb/s
+المنافذ
+1 x DVI
+1 x VGA
+1 x HDMI
+1 x LAN(RJ45)
+6 x USB 2.0
+6 -Channel Audio I/O
+1 x PS/2 Keyboard
+1 x PS/2 mouse
+Bluetooth
+-
+WLAN
+-
+تقنيات أخرى
+Intel® vPro Technology
+صورة اللوحة
+ 
+

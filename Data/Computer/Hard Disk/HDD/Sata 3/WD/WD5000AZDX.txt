@@ -1,0 +1,18 @@
+﻿WD Caviar Green 500 GB SATA Hard 
+Drives
+
+الشركة
+Western Digital
+الرمز
+WD5000AZDX
+السعة
+500 GB
+سرعة الدوران
+IntelliPower
+ذاكرة Buffer
+32 MB
+سرعة النقل العظمى
+6 GB/s
+المنفذ
+Sata 3
+

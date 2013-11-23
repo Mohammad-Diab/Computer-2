@@ -1,0 +1,36 @@
+﻿MSI N560GTX-448 Twin Frozr III Power Edition
+نوع الكرت
+MSI
+اسم الكرت
+N560GTX-448 Twin Frozr III Power Edition
+المعالج الرسومي
+GeForce GTX 560 Ti
+الشق المتوافق
+PCI Express x16 2.0
+حجم الذاكرة
+1280 MB
+نوع الذاكرة
+GDDR5
+قناة الذاكرة
+320 bits
+سرعة العالج
+732 MHz
+سرعة الذاكرة
+3800 MHz
+الدقة العظمى
+2560 x 1600
+اصدار DirectX
+11
+اصدار OpenGL
+4.1
+اصدار Pixel Shader
+5.0
+عدد أنوية CUDA
+448
+التقنيات المدعومة
+SLI , 3-Way SLI , PhysX , 3D Vision , CUDA
+المنافذ
+2 x DVI , 1 x Mini HDMI
+صورة الكرت
+ 
+

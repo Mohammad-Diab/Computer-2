@@ -1,0 +1,36 @@
+﻿MSI N450GTS Cyclone 1GD5/OC
+نوع الكرت
+MSI
+اسم الكرت
+N450GTS Cyclone 1GD5/OC
+معالج الرسومات
+GeForce GTS 450
+الشق المتوافق
+PCI Express x16 2.0
+حجم الذاكرة
+1024 MB
+نوع الذاكرة
+GDDR5
+قناة الذاكرة
+128 bits
+سرعة المعالج
+850 MHz
+سرعة الذاكرة
+3920 MHz
+الدقة العظمى
+2560 x 1600
+اصدار DirectX
+11
+اصدار OpenGL
+4.1
+اصدار Pixel Shader
+5.0
+عدد أنوية CUDA
+-
+التقنيات المدعومة
+PhysX , 3D VISION , SLI , CUDA
+المنافذ
+2 x DVI , 1 x Mini HDMI
+صورة الكرت
+ 
+

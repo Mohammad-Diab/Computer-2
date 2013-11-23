@@ -1,0 +1,40 @@
+﻿ Gigabyte GA-990FXA-UD
+
+الشركة
+Gigabyte
+اسم اللوحة
+GA-990FXA-UD
+نوع مقبس المعالج
+AM3+
+الشريحة
+AMD® 990FX and SB950
+الذاكرة
+32 GB DDR3 Max
+كرت الشاشة
+-
+كرت الشبكة
+Realtek RTL8111E
+الشقوق
+4 x DIMM
+2 x PCI e 2.0 x16
+2 x PCI e 2.0 x16 (x4 mode)
+2 x PCI e 2.0 x1
+1 x PCI
+6 x SATA 6Gb/s
+المنافذ
+1 x PS/2 Keyboard/Mouse Combo
+2 x eSATA USB 2 Combo
+2 x IEEE 1394
+1 x LAN(RJ45)
+2 x USB 3.0
+6 x USB 2.0
+6 x Audio jacks
+Bluetooth
+-
+WLAN
+-
+تقنيات أخرى
+2-Way AMD CrossFireX™ and NVIDIA SLI™ Technology
+صورة اللوحة
+ 
+

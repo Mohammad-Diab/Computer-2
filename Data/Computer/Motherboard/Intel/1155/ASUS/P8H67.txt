@@ -1,0 +1,40 @@
+﻿ ASUS P8H67
+
+الشركة
+ASUS
+اسم اللوحة
+P8H67
+نوع مقبس المعالج
+Intel 1155
+الشريحة
+Intel® H67(B3)
+الذاكرة
+32 GB DDR3 Max
+كرت الشاشة
+-
+كرت الشبكة
+Realtek® 8111E
+الشقوق
+4 x DIMM
+1 x PCI e 2.0 x16 
+1 x PCI e 2.0 x16 (x4 mode) 
+2 x PCI e 2.0 x1
+3 x PCI
+4 x SATA 3Gb/s
+2 x SATA 6Gb/s
+المنافذ
+1 x PS/2 keyboard
+1 x PS/2 mouse
+1 x LAN (RJ45)
+2 x USB 3.0 
+6 x USB 2.0 
+6 x Audio jacks
+Bluetooth
+-
+WLAN
+-
+تقنيات أخرى
+EPU , Quad-GPU CrossFireX™ Support
+صورة اللوحة
+ 
+

@@ -1,0 +1,36 @@
+﻿Gigabyte GV-N560OC-1GI
+نوع الكرت
+Gigabyte
+اسم الكرت
+GV-N560OC-1GI
+معالج الرسومات
+GeForce GTX 560 Ti
+الشق المتوافق
+PCI Express x16 2.0
+حجم الذاكرة
+1024 MB
+نوع الذاكرة
+GDDR5
+قناة الذاكرة
+256 bits
+سرعة المعالج
+900 MHz
+سرعة الذاكرة
+4000 MHz
+الدقة العظمى
+2560 x 1600
+اصدار DirectX
+11
+اصدار OpenGL
+4.1
+اصدار Pixel Shader
+5.0
+عدد أنوية CUDA
+448
+التقنيات المدعومة
+SLI , PhysX , 3D Vision , CUDA
+المنافذ
+2 x DVI , 1 x Mini HDMI
+صورة الكرت
+ 
+

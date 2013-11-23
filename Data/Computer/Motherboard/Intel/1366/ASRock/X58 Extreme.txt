@@ -1,0 +1,41 @@
+﻿ASRock X58 Extreme
+
+الشركة
+ASRock
+اسم اللوحة
+X58 Extreme
+نوع مقبس المعالج
+Intel 1366
+الشريحة
+Intel® X58/ ICH10R
+الذاكرة
+24 GB DDR3 Max
+كرت الشاشة
+-
+كرت الشبكة
+Realtek PCIEx1 LAN 8103EL / 8102EL
+الشقوق
+6 x DIMM
+3 x PCI e 2.0 x16
+1 x PCI e 2.0 x1
+2 x PCI
+1 x IDE
+1 x Floppy Disk Drive
+6 x SATA 3Gb/s
+المنافذ
+1 x PS/2 Keyboard
+1 x PS/2 Mouse
+7 x USB 2.0
+1 x Powered eSATA/USB Combo
+1 x IEEE 1394
+1 x LAN (RJ45)
+6 x audio jacks
+Bluetooth
+-
+WLAN
+-
+تقنيات أخرى
+ATI™ 3-Way CrossFireX™ and Quad CrossFireX™ , NVIDIA® SLI™ and Quad SLI™
+صورة اللوحة
+ 
+

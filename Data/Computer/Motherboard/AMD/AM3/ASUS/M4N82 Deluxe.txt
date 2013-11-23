@@ -1,0 +1,39 @@
+﻿ ASUS M4N82 Deluxe
+
+الشركة
+ASUS
+اسم اللوحة
+M4N82 Deluxe
+نوع مقبس المعالج
+AMD AM3/AM2+/AM2
+الشريحة
+NVIDIA nForce 980a
+الذاكرة
+16 GB DDR3 Max
+كرت الشاشة
+Integrated NVIDIA® GeForce® 8 series
+كرت الشبكة
+NVIDIA Gigabit MAC Realtek 8211CL
+الشقوق
+4 x DIMM
+3 x PCI e 2.0 x16 
+1 x PCI e 2.0 x1
+2 x PCI 2.2
+5 x SATA 3Gb/s
+المنافذ
+1 x PS/2 Keyboard 
+1 x PS/2 Mouse 
+1 x External SATA 
+1 x IEEE 1394a 
+1 x LAN(RJ45) port 
+6 x USB 2.0 
+8 -Channel Audio I/O 
+Bluetooth
+-
+WLAN
+-
+تقنيات أخرى
+NVIDIA® 3-Way SLI™ Technology
+صورة اللوحة
+ 
+

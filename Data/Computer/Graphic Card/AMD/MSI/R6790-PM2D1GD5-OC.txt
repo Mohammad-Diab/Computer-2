@@ -1,0 +1,36 @@
+﻿MSI R6790-PM2D1GD5/OC
+نوع الكرت
+MSI
+اسم الكرت
+R6790-PM2D1GD5/OC
+معالج الرسومات
+AMD Radeon HD 6790
+الشق المتوافق
+PCI Express x16 2.1
+حجم الذاكرة
+1024 MB
+نوع الذاكرة
+GDDR5
+قناة الذاكرة
+256 bits
+سرعة المعالج
+920 MHz
+سرعة الذاكرة
+4200 MHz
+الدقة العظمى
+4 x 1920x1200
+اصدار DirectX
+11
+اصدار OpenGL
+4.1
+اصدار Pixel Shader
+5.0
+عدد أنوية Stream
+800
+التقنيات المدعومة
+AMD HD3D , CrossFire , AMD Stream
+المنافذ
+2 x DVI , 1 x DisplayPort , 1 x HDMI
+صورة الكرت
+ 
+

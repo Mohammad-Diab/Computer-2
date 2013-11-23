@@ -1,0 +1,55 @@
+﻿Asus
+اسم الجهاز
+VivoBook S200E
+المعالج
+Intel Core i3;Intel Pentium;Intel Celeron
+3217U;987;847
+السرعة
+?1.4GHz;1.2GHz;1.2GHz
+السرعة العظمى
+-
+ذاكرة الكاش
+3MB;2MB;2MB
+الشريحة
+Intel HM76 Express*i3*;Intel HM70 Express*Pentium+Celeron*
+الذاكرة
+2GB 1333MHz DDR3;4GB 1333MHz DDR3
+القرص الصلب
+320GB;500GB
+سرعة الدوران
+5400 RPM
+محرك أقراص مضغوطة
+-
+كرت الشاشة
+Intel HD Graphic
+ذاكرة كرت الشاشة
+-
+ذاكرة كرت الشاشة العظمى
+1.7GB
+كاميرا
+HD Web
+الشاشة
+11.6 LED Backlight
+دقة الشاشة
+1366 x 768
+المخارج
+1 x USB 3.0
+2 x USB 2.0
+HDMI
+VGA port/Mini D-sub 15-pin
+Bluetooth 4
+شاشة لمس
+Yes
+نظام التشغيل
+Microsoft Windows 8
+بطارية
+2 Cells 5136 mAh 38 Whrs Polymer Battery
+-
+الابعاد
+30.3 x 20.0 x 2.17 cm (WxDxH)
+الوزن
+1.40 kg (with 2 cell battery)
+الفئة
+Thin and Light
+السعر
+10

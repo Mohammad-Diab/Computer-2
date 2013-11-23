@@ -1,0 +1,36 @@
+﻿SAPPHIRE HD 6670 2GB DDR3
+نوع الكرت
+SAPPHIRE
+اسم الكرت
+6560
+معالج الرسومات
+ATI Radeon HD 6670
+الشق المتوافق
+PCI Express x16 2.0
+حجم الذاكرة
+2048 MB up to 3840 MB (with Hyper Memory Support)
+نوع الذاكرة
+DDR3
+قناة الذاكرة
+128 bits
+سرعة المعالج
+800 MHz
+سرعة الذاكرة
+1600 MHz
+الدقة العظمى
+2560x1600
+اصدار DirectX
+11
+اصدار OpenGL
+4.1
+اصدار Pixel Shader
+5.0
+عدد أنوية Stream
+480
+التقنيات المدعومة
+CrossFire , AMD Stream , AMD HD3D
+المنافذ
+1 x DVI , 1 x D-SUB , 1 x HDMI
+صورة الكرت
+ 
+

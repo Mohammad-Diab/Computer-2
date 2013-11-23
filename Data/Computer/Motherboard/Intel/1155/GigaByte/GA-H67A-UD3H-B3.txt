@@ -1,0 +1,45 @@
+﻿Gigabyte GA-H67A-UD3H-B3
+
+الشركة
+Gigabyte
+اسم اللوحة
+GA-H67A-UD3H-B3
+نوع مقبس المعالج
+Intel 1155
+الشريحة
+Intel® H67
+الذاكرة
+32 GB DDR3 Max
+كرت الشاشة
+Build in Processor
+كرت الشبكة
+Realtek RTL8111E
+الشقوق
+4 x DIMM
+1 x PCI e 2.0 x16
+1 x PCI e 2.0 x16 (x4 mode)
+2 x PCI e 2.0 x1
+3 x PCI
+3 x SATA 3Gb/s
+2 x SATA 6Gb/s
+المنافذ
+1 x PS/2 Keyboard/Mouse port
+1 x D-Sub
+1 x DVI-D
+1 x HDMI
+1 x Display Port
+4 x USB 2.0
+2 x USB 3.0
+1 x IEEE 1394a
+1 x eSATA 3Gb/s
+1 x LAN (RJ45)
+6 x audio jacks
+Bluetooth
+-
+WLAN
+-
+تقنيات أخرى
+ATI CrossFireX™
+صورة اللوحة
+ 
+

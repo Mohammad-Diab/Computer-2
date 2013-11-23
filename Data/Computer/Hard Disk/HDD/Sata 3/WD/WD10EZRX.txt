@@ -1,0 +1,18 @@
+﻿WD Caviar Green 1 TB SATA Hard 
+Drives
+
+الشركة
+Western Digital
+الرمز
+WD10EZRX
+السعة
+1024 GB
+سرعة الدوران
+IntelliPower
+ذاكرة Buffer
+64 MB
+سرعة النقل العظمى
+6 GB/s
+المنفذ
+Sata 3
+

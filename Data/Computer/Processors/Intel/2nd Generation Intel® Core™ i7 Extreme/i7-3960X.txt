@@ -1,0 +1,39 @@
+﻿2nd Generation Intel® Core™ i7 Extreme 3960X
+
+المعالج
+2nd Generation Intel® Core™ Extreme Edition
+النوع
+i7-3960X
+عدد النوى
+6
+عدد الخيوط
+12
+السرعة
+3.3 GHz
+السرعة العظمى
+3.9 GHz
+ذاكرة الكاش
+15 MB
+سرعة الناقل
+-
+التقنية
+64 bit
+التعليمات
+SSE4.2 , AVX
+تقنية التصنيع
+32 nm
+الاستطاعة
+130 W
+الذاكرة العظمى
+32 GB
+قنوات الذاكرة
+4
+درجة الحرارة العظمى
+-
+رسوميات المعالج
+-
+المقبس
+FCLGA2011
+التقنيات المدعومة
+Intel® Turbo Boost Technology 2 , Intel® Hyper-Threading Technology , VT-x
+

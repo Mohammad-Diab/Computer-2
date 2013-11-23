@@ -1,0 +1,39 @@
+﻿ MSI Big Bang-Fuzion
+
+الشركة
+MSI
+اسم اللوحة
+Big Bang-Fuzion
+نوع مقبس المعالج
+Intel 1156
+الشريحة
+Intel® P55+Lucid® LT24102
+الذاكرة
+16 GB DDR3 Max
+كرت الشاشة
+-
+كرت الشبكة
+2 x Realtek 8111DL
+الشقوق
+4 x DIMM
+3 x PCI e 2.0 x16
+2 x PCI e 2.0 x1
+2 x PCI
+6 x SATA 3Gb/s
+المنافذ
+1 x PS/2 Mouse
+1 x PS/2 Keyboard
+2 x eSATA / USB Combo
+8 x USB 2.0
+1 x IEEE1394
+2 x RJ45 LAN
+1 x 7 Audio jacks
+Bluetooth
+-
+WLAN
+-
+تقنيات أخرى
+AMD CrossFire , OC Genie II
+صورة اللوحة
+ 
+

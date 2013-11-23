@@ -1,0 +1,36 @@
+﻿ASUS EAH6990/3DI4S/4GD5
+نوع الكرت
+ASUS
+اسم الكرت
+EAH6990/3DI4S/4GD5
+معالج الرسومات
+AMD Radeon HD 6990
+الشق المتوافق
+PCI Express x16 2.1
+حجم الذاكرة
+4096 MB
+نوع الذاكرة
+GDDR5
+قناة الذاكرة
+2 x 256 bits
+سرعة المعالج
+830 MHz
+سرعة الذاكرة
+5000 MHz
+الدقة العظمى
+2560 x 1600
+اصدار DirectX
+11
+اصدار OpenGL
+4.1
+اصدار Pixel Shader
+5.0
+عدد أنوية Stream
+3072
+التقنيات المدعومة
+CrossFire  , AMD HD3D , AMD Stream
+المنافذ
+1 x DVI , 4 x DisplayPort , 1 x HDMI
+صورة الكرت
+ 
+

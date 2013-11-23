@@ -1,0 +1,40 @@
+﻿ MSI Big Bang-XPower
+
+الشركة
+MSI
+اسم اللوحة
+Big Bang-XPower
+نوع مقبس المعالج
+Intel 1366
+الشريحة
+Intel® X58+ICH10R
+الذاكرة
+24 GB DDR3 Max
+كرت الشاشة
+-
+كرت الشبكة
+2 x Realtek 8111DL
+الشقوق
+6 x DIMM
+6 x PCI e 2.0 x16
+1 x PCI e 1.1 x1
+6 x SATA 3Gb/s
+2 x SATA 6Gb/s
+المنافذ
+1 x PS/2 Keyboard
+1 x PS/2 Mouse
+2 x USB 3.0
+5 x USB 2.0
+1 x eSATA
+1 x eSATA / USB Combo
+1 x IEEE1394
+2 x RJ45 LAN
+Bluetooth
+-
+WLAN
+-
+تقنيات أخرى
+AMD CrossFire , NVIDIA SLI , OC Genie
+صورة اللوحة
+ 
+

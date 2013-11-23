@@ -1,0 +1,39 @@
+﻿2nd Generation Intel® Core™ i3-2100
+
+المعالج
+2nd Generation Intel® Core™
+النوع
+i3-2100
+عدد النوى
+2
+عدد الخيوط
+4
+السرعة
+3.1 GHz
+السرعة العظمى
+-
+ذاكرة الكاش
+3 MB
+سرعة الناقل
+5 GT/s
+التقنية
+64 bit
+التعليمات
+SSE4.1/4.2, AVX
+تقنية التصنيع
+32 nm
+الاستطاعة
+65 W
+الذاكرة العظمى
+32 GB
+قنوات الذاكرة
+2
+درجة الحرارة العظمى
+72.6° C
+رسوميات المعالج
+Intel® HD Graphics 2000
+المقبس
+FCLGA1155
+التقنيات المدعومة
+Intel® Hyper-Threading Technology , VT-x , Enhanced Intel SpeedStep® Technology
+

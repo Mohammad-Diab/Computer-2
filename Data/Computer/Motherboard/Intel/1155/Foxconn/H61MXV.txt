@@ -1,0 +1,37 @@
+﻿Foxconn H61MXV
+
+الشركة
+Foxconn
+اسم اللوحة
+H61MXV
+نوع مقبس المعالج
+Intel 1155
+الشريحة
+Intel® H61
+الذاكرة
+16 GB DDR3 Max
+كرت الشاشة
+Build in Processor
+كرت الشبكة
+Gigabit Lan
+الشقوق
+2 x DIMM
+1 x PCI e 2.0 x16
+2 x PCI e 2.0 x1
+4 x SATA 3Gb/s
+المنافذ
+1 x PS/2 Keyboard/Mouse Combo
+6 x USB 2.0
+1 x VGA
+1 x DVI-D
+1 x LAN (RJ45)
+6 x audio jacks
+Bluetooth
+-
+WLAN
+-
+تقنيات أخرى
+-
+صورة اللوحة
+ 
+

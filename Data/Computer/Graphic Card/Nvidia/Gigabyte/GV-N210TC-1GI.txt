@@ -1,0 +1,36 @@
+﻿Gigabyte GV-N210TC-1GI
+نوع الكرت
+Gigabyte
+اسم الكرت
+GV-N210TC-1GI
+معالج الرسومات
+GeForce 210
+الشق المتوافق
+PCI Express x16 2.0
+حجم الذاكرة
+Up to 1024 MB (on board 512 MB DDR3)
+نوع الذاكرة
+DDR3
+قناة الذاكرة
+64 bits
+سرعة المعالج
+590 MHz
+سرعة الذاكرة
+1600 MHz
+الدقة العظمى
+2560 x 1600
+اصدار DirectX
+10.1
+اصدار OpenGL
+3.1
+اصدار Pixel Shader
+4.1
+عدد أنوية CUDA
+16
+التقنيات المدعومة
+CUDA
+المنافذ
+1 x DVI , 1 x HDMI , 1 x D-SUB
+صورة الكرت
+ 
+

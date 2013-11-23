@@ -1,0 +1,38 @@
+﻿ ASUS Rampage III Black Edition
+
+الشركة
+ASUS
+اسم اللوحة
+Rampage III Black Edition
+نوع مقبس المعالج
+Intel 1366
+الشريحة
+Intel® X58/ICH10R
+الذاكرة
+48 GB DDR3 Max
+كرت الشاشة
+-
+كرت الشبكة
+Intel® Gigabit LAN
+الشقوق
+6 x DIMM
+4 x PCI e 2.0 x16
+2 x PCI e 2.0 x1
+6 x SATA 3Gb/s
+2 x SATA 6Gb/s
+المنافذ
+1 x PS/2 keyboard
+2 x eSATA 3Gb/s
+1 x LAN (RJ45)
+2 x USB 3.0 
+7 x USB 2.0
+6 x Audio jack(s)
+Bluetooth
+Bluetooth V3.0+HS
+WLAN
+Wi-Fi 802.11 b/g/n
+تقنيات أخرى
+NVIDIA® 3-Way SLI™ Technology , AMD CrossFireX™ Technology
+صورة اللوحة
+ 
+

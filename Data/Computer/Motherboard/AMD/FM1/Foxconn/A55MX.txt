@@ -1,0 +1,38 @@
+﻿ Foxconn A55MX
+
+الشركة
+Foxconn
+اسم اللوحة
+A55MX
+نوع مقبس المعالج
+FM1
+الشريحة
+AMD A55
+الذاكرة
+32 GB DDR3 Max
+كرت الشاشة
+Build in Processor
+كرت الشبكة
+Gbe Lan
+الشقوق
+2 x DIMM
+1 x PCI e 2.0 x16
+1 x PCI e 2.0 x1
+1 x PCI
+4 x SATA 3Gb/s
+المنافذ
+1 x PS/2 Keyboard
+1 x VGA
+1 x HDMI
+1 x LAN(RJ45)
+6 x USB 2.0
+3 x Audio jacks
+Bluetooth
+-
+WLAN
+-
+تقنيات أخرى
+-
+صورة اللوحة
+ 
+

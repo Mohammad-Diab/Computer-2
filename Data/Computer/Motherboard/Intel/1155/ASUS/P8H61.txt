@@ -1,0 +1,37 @@
+﻿ ASUS P8H61
+
+الشركة
+ASUS
+اسم اللوحة
+P8H61
+نوع مقبس المعالج
+Intel 1155
+الشريحة
+Intel® H61(B3)
+الذاكرة
+16 GB DDR3 Max
+كرت الشاشة
+-
+كرت الشبكة
+Realtek® 8111E
+الشقوق
+2 x DIMM
+1 x PCI e 2.0 x16
+2 x PCI e 2.0 x1
+3 x PCI
+4 x SATA 3Gb/s
+المنافذ
+1 x PS/2 keyboard
+1 x PS/2 mouse
+1 x LAN (RJ45)
+4 x USB 2.0 
+3 x Audio jacks
+Bluetooth
+-
+WLAN
+-
+تقنيات أخرى
+ASUS EPU
+صورة اللوحة
+ 
+

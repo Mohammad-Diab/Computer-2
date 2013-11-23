@@ -1,0 +1,40 @@
+﻿Gigabyte GA-G1975X-C
+
+الشركة
+Gigabyte
+اسم اللوحة
+GA-G1975X-C
+نوع مقبس المعالج
+Intel 775
+الشريحة
+Intel® 975X Express/ ICH7R
+الذاكرة
+8 GB DDR2 Max
+كرت الشاشة
+-
+كرت الشبكة
+Realtek 8211CL
+الشقوق
+4 x DIMM
+2 x PCI e 2.0 x16
+2 x PCI e 2.0 x4
+2 x PCI
+2 x IDE
+4 x SATA 3Gb/s
+1 x Floppy Disk Drive
+المنافذ
+1 x PS/2 Keyboard/Mouse Combo
+2 x USB 2.0
+1 x LAN (RJ45)
+1 X IEEEa 1394
+4 x audio jacks
+Bluetooth
+-
+WLAN
+-
+تقنيات أخرى
+-
+صورة اللوحة
+ 
+
+

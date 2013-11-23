@@ -1,0 +1,36 @@
+﻿ASUS ENGTX560 DCII OC/2DI/1GD5
+نوع الكرت
+ASUS
+اسم الكرت
+ENGTX560 DCII OC/2DI/1GD5
+معالج الرسومات
+GeForce GTX 560
+الشق المتوافق
+PCI Express x16 2.0
+حجم الذاكرة
+1024 MB
+نوع الذاكرة
+GDDR5
+قناة الذاكرة
+256 bits
+سرعة المعالج
+850 MHz
+سرعة الذاكرة
+4200 MHz
+الدقة العظمى
+2560 x 1600
+اصدار DirectX
+11
+اصدار OpenGL
+4.1
+اصدار Pixel Shader
+5.0
+عدد أنوية CUDA
+336
+التقنيات المدعومة
+SLI , PhysX , 3D Vision , CUDA
+المنافذ
+2 x DVI , 1 x HDMI
+صورة الكرت
+ 
+

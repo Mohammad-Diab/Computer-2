@@ -1,0 +1,36 @@
+﻿EVGA GeForce GTX 560
+نوع الكرت
+EVGA
+اسم الكرت
+560
+معالج الرسومات
+GeForce GTX 560
+الشق المتوافق
+PCI Express x16 2.0
+حجم الذاكرة
+1024 MB
+نوع الذاكرة
+GDDR5
+قناة الذاكرة
+256 bits
+سرعة المعالج
+810 MHz
+سرعة الذاكرة
+4008 MHz
+الدقة العظمى
+2560 x 1600
+اصدار DirectX
+11
+اصدار OpenGL
+4.1
+اصدار Pixel Shader
+5.0
+عدد أنوية CUDA
+336
+التقنيات المدعومة
+SLI , PhysX , 3D Vision , CUDA
+المنافذ
+2 x DVI , 1 x Mini HDMI
+صورة الكرت
+ 
+

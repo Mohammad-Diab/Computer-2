@@ -1,0 +1,39 @@
+﻿2nd Generation Intel® Core™ i5-2500
+
+المعالج
+2nd Generation Intel® Core™
+النوع
+i5-2500
+عدد النوى
+4
+عدد الخيوط
+4
+السرعة
+2.3 GHz
+السرعة العظمى
+3.3 GHz
+ذاكرة الكاش
+6 MB
+سرعة الناقل
+5 GT/s
+التقنية
+64 bit
+التعليمات
+SSE4.1/4.2, AVX
+تقنية التصنيع
+32 nm
+الاستطاعة
+45 W
+الذاكرة العظمى
+32 GB
+قنوات الذاكرة
+2
+درجة الحرارة العظمى
+69.8° C
+رسوميات المعالج
+Intel® HD Graphics 2000
+المقبس
+LGA1155
+التقنيات المدعومة
+Intel® Turbo Boost Technology 2 , VT-x , VT-d , Enhanced Intel SpeedStep® Technology
+

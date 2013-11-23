@@ -1,0 +1,36 @@
+﻿Gigabyte GV-N470D5-13I-B
+نوع الكرت
+Gigabyte
+اسم الكرت
+GV-N470D5-13I-B
+معالج الرسومات
+GeForce GTX 470
+الشق المتوافق
+PCI Express x16 2.0
+حجم الذاكرة
+1280 MB
+نوع الذاكرة
+GDDR5
+قناة الذاكرة
+320 bits
+سرعة المعالج
+607 MHz
+سرعة الذاكرة
+3348 MHz
+الدقة العظمى
+2560 x 1600
+اصدار DirectX
+11
+اصدار OpenGL
+3.2
+اصدار Pixel Shader
+5.0
+عدد أنوية CUDA
+
+التقنيات المدعومة
+SLI , PhysX , CUDA
+المنافذ
+2 x DVI , 1 x Mini HDMI
+صورة الكرت
+ 
+

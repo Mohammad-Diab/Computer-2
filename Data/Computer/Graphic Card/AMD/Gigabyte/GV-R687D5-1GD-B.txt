@@ -1,0 +1,36 @@
+﻿Gigabyte GV-R687D5-1GD-B
+نوع الكرت
+Gigabyte
+اسم الكرت
+GV-R687D5-1GD-B
+معالج الرسومات
+Radeon HD 6870
+الشق المتوافق
+PCI Express x16 2.1
+حجم الذاكرة
+1024 MB
+نوع الذاكرة
+GDDR5
+قناة الذاكرة
+256 bits
+سرعة المعالج
+900 MHz
+سرعة الذاكرة
+4200 MHz
+الدقة العظمى
+2560 x 1600
+اصدار DirectX
+11
+اصدار OpenGL
+4.1
+اصدار Pixel Shader
+5.0
+عدد أنوية Stream
+1120
+التقنيات المدعومة
+CrossFire  , AMD HD3D , AMD Stream
+المنافذ
+2 x DVI , 2 x Mini DisplayPort , 1 x HDMI
+صورة الكرت
+ 
+

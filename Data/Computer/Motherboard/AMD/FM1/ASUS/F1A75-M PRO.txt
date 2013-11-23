@@ -1,0 +1,41 @@
+﻿ ASUS F1A75-M PRO
+
+الشركة
+ASUS
+اسم اللوحة
+F1A75-M PRO
+نوع مقبس المعالج
+AMD FM1
+الشريحة
+AMD A75 FCH (Hudson D3)
+الذاكرة
+64 GB DDR3 Max
+كرت الشاشة
+Build in Processor
+كرت الشبكة
+Realtek® 8111E Gigabit LAN
+الشقوق
+4 x DIMM
+1 x PCI e 2.0 x16
+1 x PCI e 2.0 x16 (x4 mode)
+1 x PCI e 2.0 x1
+1 x PCI
+6 x SATA 3Gb/s
+المنافذ
+1 x PS/2 keyboard/Mouse Combo
+1 x DVI-D
+1 x D-Sub
+1 x HDMI
+1 x LAN (RJ45)
+4 x USB 3.0
+2 x USB 2.0
+6 x Audio jack(s)
+Bluetooth
+-
+WLAN
+-
+تقنيات أخرى
+EPU , CrossFireX™
+صورة اللوحة
+ 
+

@@ -1,0 +1,39 @@
+﻿ MSI 990FXA-GD80
+
+الشركة
+MSI
+اسم اللوحة
+990FXA-GD80
+نوع مقبس المعالج
+AM3+
+الشريحة
+AMD® 990FX and SB950
+الذاكرة
+32 GB DDR3 Max
+كرت الشاشة
+-
+كرت الشبكة
+Realtek 8111E
+الشقوق
+4 x DIMM
+4 x PCI e 2.0 x16
+1 x PCI e 2.0 x1
+1 x PCI
+6 x SATA 6Gb/s
+المنافذ
+1 x PS/2 Keyboard
+1 x PS/2 Mouse
+2 x eSATA USB 2 Combo
+1 x LAN(RJ45)
+2 x USB 3.0
+4 x USB 2.0
+6 x Audio jacks
+Bluetooth
+-
+WLAN
+-
+تقنيات أخرى
+NVIDIA SLI , OC Genie II , AMD CrossFire , Winki 3
+صورة اللوحة
+ 
+

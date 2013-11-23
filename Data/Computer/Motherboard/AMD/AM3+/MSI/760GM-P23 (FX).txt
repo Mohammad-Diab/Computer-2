@@ -1,0 +1,39 @@
+﻿ MSI 760GM-P23 (FX)
+
+الشركة
+MSI
+اسم اللوحة
+760GM-P23 (FX)
+نوع مقبس المعالج
+AM3+
+الشريحة
+AMD® 760G and SB710
+الذاكرة
+16 GB DDR3 Max
+كرت الشاشة
+ATI Radeon™ 3000 Graphics
+كرت الشبكة
+Realtek 8111E
+الشقوق
+2 x DIMM
+1 x PCI e 2.0 x16
+1 x PCI e 2.0 x1
+1 x PCI
+6 x SATA 3Gb/s
+المنافذ
+1 x PS/2 Keyboard
+1 x PS/2 Mouse
+1 x LAN(RJ45)
+6 x USB 2.0
+1 x DVI-D
+1 x VGA
+3 x Audio jacks
+Bluetooth
+-
+WLAN
+-
+تقنيات أخرى
+Auto OC Genie , Winki 3
+صورة اللوحة
+ 
+

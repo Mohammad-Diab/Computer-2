@@ -1,0 +1,36 @@
+﻿Gigabyte GV-R455OC-1GI
+نوع الكرت
+Gigabyte
+اسم الكرت
+GV-R455OC-1GI
+معالج الرسومات
+Radeon HD 4550
+الشق المتوافق
+PCI Express x16 2.0
+حجم الذاكرة
+1024 MB
+نوع الذاكرة
+DDR3
+قناة الذاكرة
+64 bits
+سرعة المعالج
+650 MHz
+سرعة الذاكرة
+1600 MHz
+الدقة العظمى
+2560 x 1600
+اصدار DirectX
+10.1
+اصدار OpenGL
+2.1
+اصدار Pixel Shader
+4.1
+عدد أنوية Stream
+80
+التقنيات المدعومة
+CrossFire , ATI Stream
+المنافذ
+1 x DVI , 1 x D-SUB , 1 x HDMI
+صورة الكرت
+ 
+

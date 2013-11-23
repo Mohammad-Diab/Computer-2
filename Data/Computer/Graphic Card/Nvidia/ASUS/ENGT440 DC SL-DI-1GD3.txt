@@ -1,0 +1,36 @@
+﻿ASUS ENGT440 DC SL/DI/1GD3
+نوع الكرت
+ASUS
+اسم الكرت
+ENGT440 DC SL/DI/1GD3
+معالج الرسومات
+GeForce GT 440
+الشق المتوافق
+PCI Express x16 2.0
+حجم الذاكرة
+1024 MB
+نوع الذاكرة
+DDR3
+قناة الذاكرة
+128 bits
+سرعة المعالج
+810 MHz
+سرعة الذاكرة
+1800 MHz
+الدقة العظمى
+2560 x 1600
+اصدار DirectX
+11
+اصدار OpenGL
+4.1
+اصدار Pixel Shader
+5.0
+عدد أنوية CUDA
+96
+التقنيات المدعومة
+PhysX , 3D Vision , CUDA
+المنافذ
+1 x D-SUB , 1 x DVI , 1 x HDMI
+صورة الكرت
+ 
+

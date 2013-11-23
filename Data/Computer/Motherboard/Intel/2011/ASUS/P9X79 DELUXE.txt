@@ -1,0 +1,38 @@
+﻿ ASUS P9X79 DELUXE
+
+الشركة
+ASUS
+اسم اللوحة
+P9X79 DELUXE
+نوع مقبس المعالج
+Intel 2011
+الشريحة
+Intel® X79
+الذاكرة
+64 GB DDR3 Max
+كرت الشاشة
+-
+كرت الشبكة
+Realtek® 8111E Gigabit LAN + Intel® 82579V Gigabit LAN
+الشقوق
+8 x DIMM
+3 x PCI e 3.0/2.0 x16 (dual x16 or x16, x8, x8)
+1 x PCI e 3.0/2.0 x16 (x8 mode)
+2 x PCI e 2.0 x1
+4 x SATA 3Gb/s
+2 x SATA 6Gb/s
+المنافذ
+2 x Power eSATA 6Gb/s
+2 x LAN (RJ45)
+6 x USB 3.0 
+4 x USB 2.0
+6 x Audio jacks
+Bluetooth
+Bluetooth V3.0+HS
+WLAN
+Wi-Fi 802.11 b/g/n
+تقنيات أخرى
+NVIDIA® 3-Way SLI™ Technology , EPU , AMD Quad-GPU CrossFireX Technology
+صورة اللوحة
+ 
+

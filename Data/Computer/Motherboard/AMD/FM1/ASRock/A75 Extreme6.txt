@@ -1,0 +1,43 @@
+﻿ ASRock A75 Extreme6
+
+الشركة
+ASRock
+اسم اللوحة
+A75 Extreme6
+نوع مقبس المعالج
+FM1 up to 100W
+الشريحة
+AMD A75 FCH (Hudson-D3)
+الذاكرة
+32 GB DDR3 Max
+كرت الشاشة
+Build in Processor
+كرت الشبكة
+Gigabit LAN
+الشقوق
+4 x DIMM
+3 x PCI e 2.0 x16
+1 x PCI e 2.0 x1
+3 x PCI
+6 x SATA 6Gb/s
+2 x SATA 3Gb/s
+المنافذ
+1 x PS/2 Keyboard/Mouse Combo
+1 x D-Sub
+1 x DVI-D
+1 x HDMI
+2 x  USB 2.0 
+1 x eSATA 3Gb\s
+4 x  USB 3.0
+1 x LAN(RJ45)
+1 x IEEE 1394
+6 x Audio jacks
+Bluetooth
+-
+WLAN
+-
+تقنيات أخرى
+AMD Quad CrossFireX™ , 3-Way CrossFireX™ , CrossFireX™ and Dual Graphics
+صورة اللوحة
+ 
+

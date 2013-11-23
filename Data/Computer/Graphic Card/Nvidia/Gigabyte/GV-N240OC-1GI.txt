@@ -1,0 +1,36 @@
+﻿Gigabyte GV-N240OC-1GI
+نوع الكرت
+Gigabyte
+اسم الكرت
+GV-N240OC-1GI
+معالج الرسومات
+GeForce GT 240
+الشق المتوافق
+PCI Express x16 2.0
+حجم الذاكرة
+1024 MB
+نوع الذاكرة
+GDDR5
+قناة الذاكرة
+128 bits
+سرعة المعالج
+600 MHz
+سرعة الذاكرة
+3400 MHz
+الدقة العظمى
+2560 x 1600
+اصدار DirectX
+10.1
+اصدار OpenGL
+3.1
+اصدار Pixel Shader
+4.1
+عدد أنوية CUDA
+
+التقنيات المدعومة
+PhysX , CUDA
+المنافذ
+2 x DVI , 1 x HDMI , 1 x D-SUB
+صورة الكرت
+ 
+

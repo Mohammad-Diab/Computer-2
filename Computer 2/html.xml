@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="String1" xml:space="preserve">
+    <value>&lt;?xml version="1.0"?&gt;&lt;html xmlns:HTA="http://www.microsoft.com/hta" xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;head&gt;&lt;meta http-equiv="Content-Type" content="text/html; charset=unicode" /&gt;&lt;title&gt;Performance Information and Tools&lt;/title&gt;&lt;HTA:APPLICATION ID="ComputerDetails" APPLICATIONNAME="Computer Details" BORDER="thick" BORDERSTYLE="normal" CAPTION="yes" CONTEXTMENU="no" ICON="C:\Windows\system32\Perfcentercpl.ico" MAXIMIZEBUTTON="yes" MINIMIZEBUTTON="yes" SHOWINTASKBAR="yes" SINGLEINSTANCE="yes" SYSMENU="yes" VERSION="1.0" /&gt;&lt;style&gt;A:link{text-decoration: none;} A:visited{text-decoration: none;}A:hover{text-decoration: none;}A:active{text-decoration: none;}BODY{background-color: #FFFFFF;margin-top: 10px;margin-left: 10px;margin-bottom: 0px;margin-right: 10px;}DIV{}HR{width: 100%;height: 1px;color: #CCCCCC;margin-top: 5px;}TD{font-family: Segoe UI, Segoe, Tahoma, Arial, Microsoft Sans Serif;font-size: 9pt;font-weight: normal;line-height: normal;letter-spacing: normal;color: #000000;text-align: left}INPUT{font-family: Segoe UI, Segoe, Tahoma, Arial, Microsoft Sans Serif;font-size: 9pt;font-weight: normal;line-height: normal;letter-spacing: normal;color: #000000;}.HubTitle{font-family: Segoe UI, Segoe, Tahoma, Arial, Microsoft Sans Serif;font-size: 12pt;font-weight: normal;line-height: normal;letter-spacing: normal;color: #1370AB;}.Instruction{font-family: Segoe UI, Segoe, Tahoma, Arial, Microsoft Sans Serif;font-size: 9.25pt;font-weight: normal;line-height: normal;letter-spacing: normal;color: #1370AB;}.SubTitle{font-family: Segoe UI, Segoe, Tahoma, Arial, Microsoft Sans Serif;font-size: 9pt;font-weight: normal;line-height: normal;letter-spacing: normal;color: #1370AB;}.SubText{font-family: Segoe UI, Segoe, Tahoma, Arial, Microsoft Sans Serif;font-size: 9pt;font-weight: normal;line-height: normal;letter-spacing: normal;color: #4C4C4C;}.DocText{font-family: Segoe UI, Segoe, Tahoma, Arial, Microsoft Sans Serif;font-size: 9pt;font-weight: normal;line-height: normal;letter-spacing: normal;color: #000000;}.LimeText{font-family: Segoe UI, Segoe, Tahoma, Arial, Microsoft Sans Serif;font-size: 9pt;font-weight: normal;line-height: normal;letter-spacing: normal;color: #418E16;}.SYSLink, .SYSLink:link, .SYSLink:visited{font-family: Segoe UI, Segoe, Tahoma, Arial, Microsoft Sans Serif;font-size: 9pt;font-weight: normal;line-height: normal;letter-spacing: normal;color: #0000FF;}.SYSLink:hover, .SYSLink:active{font-family: Segoe UI, Segoe, Tahoma, Arial, Microsoft Sans Serif;font-size: 9pt;font-weight: normal;line-height: normal;letter-spacing: normal;color: #3333FF;}.OverallRating{font-family: Segoe UI, Segoe, Verdana, Tahoma, Arial, Microsoft Sans Serif;font-size: 32pt;font-weight: bold;line-height: normal;letter-spacing: normal;color: #FFFFFF;}.auto-style8 {      width: 173px;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        font-size: small;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    }        
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    .auto-style10 {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        font-size: x-small;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        font-weight: bold;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        color: #FFFFFF;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        background-color: #000000;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    .auto-style11 {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        color: #FFFFFF;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        font-size: x-small;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        background-color: #000000;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    .auto-style12 {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        font-size: large;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        color: #3399FF;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    .auto-style13 {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        font-size: x-small;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    .auto-style14 {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        font-family: Segoe UI, Segoe, Tahoma, Arial, Microsoft Sans Serif;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        font-size: small;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        font-weight: normal;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        line-height: normal;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        letter-spacing: normal;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        color: #1370AB;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    .auto-style15 {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        width: 80px;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        font-size: x-small;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    .auto-style16 {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        font-family: Segoe UI, Segoe, Tahoma, Arial, Microsoft Sans Serif;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        font-size: x-small;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        font-weight: normal;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        line-height: normal;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        letter-spacing: normal;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        color: #4C4C4C;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    .auto-style17 {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        font-family: Segoe UI, Segoe, Tahoma, Arial, Microsoft Sans Serif;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        font-size: small;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        font-weight: normal;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        line-height: normal;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        letter-spacing: normal;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        color: #4C4C4C;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                &lt;/style&gt;&lt;script type="text/javascript" language="javascript"&gt;openWindow(); 
+function openWindow() 
+{ var width = 800; var height = 860; if (height &gt; screen.height - 30) { height = screen.height - 30; } if (width &gt; screen.width - 30) { width = screen.width - 30; } var leftVal = (screen.width - width) / 2; var topVal = (screen.height - height) / 2; if (topVal &lt; 0) { topVal = 0; } if (leftVal &lt; 0) { leftVal = 0; } parent.window.moveTo(leftVal, topVal); parent.window.resizeTo(width, height); } 
+function ShowPrintDialog() 
+{ 
+window.print();
+}&lt;/script&gt;&lt;/head&gt;&lt;body&gt;&lt;table border="0" width="100%" height="100%" cellpadding="15" cellspacing="0"&gt;&lt;tr&gt;&lt;td align="center" valign="top"&gt;&lt;table border="0" width="620" height="100%" cellpadding="0" cellspacing="0"&gt;&lt;tr&gt;&lt;td align="center" valign="top"&gt;&lt;table border="0" width="620" height="100%" cellpadding="0" cellspacing="0" xmlns="http://www.w3.org/TR/REC-html40"&gt;&lt;tr&gt;
+&lt;td align="left" valign="bottom" width="100%" class="auto-style12"&gt;An addition information about your decice:&lt;/td&gt;&lt;td align="right" valign="bottom"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align="center" valign="top"&gt;&lt;br /&gt;&lt;table border="0" cellpadding="8" cellspacing="0" width="100%" style="border: solid 1px #CCCCCC"&gt;&lt;tr&gt;&lt;td align="left" valign="bottom" class="auto-style10" width="125" style="border-bottom: solid 1px #CCCCCC" xmlns="http://www.w3.org/TR/REC-html40"&gt;Component&lt;/td&gt;&lt;td align="left" valign="bottom" class="auto-style10" style="border-bottom: solid 1px #CCCCCC" xmlns="http://www.w3.org/TR/REC-html40"&gt;Details&lt;/td&gt;    &lt;/tr&gt;&lt;tr xmlns="http://www.w3.org/TR/REC-html40"&gt;&lt;td align="left" valign="bottom" class="auto-style11" width="125" style="border-bottom: solid 1px #FFFFFF; "&gt;Mother board&lt;/td&gt;&lt;td align="left" valign="bottom" class="auto-style13" style="border-bottom: solid 1px #FFFFFF;"&gt;</value>
+  </data>
+  <data name="String10" xml:space="preserve">
+    <value>&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width="10"&gt;&amp;nbsp;&lt;/td&gt;&lt;td align="left" valign="middle" class="auto-style15"&gt;Graphic card&lt;/td&gt;&lt;td align="left" valign="middle" class="auto-style16"&gt;</value>
+  </data>
+  <data name="String11" xml:space="preserve">
+    <value>&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;table border="0" cellpadding="0" cellspacing="0" width="100%" xmlns="http://www.w3.org/TR/REC-html40"&gt;&lt;tr&gt;&lt;td align="left" valign="middle"&gt;&lt;nobr&gt;&lt;span class="auto-style14"&gt;Processor:&lt;/span&gt;&lt;span class="SubTitle"&gt;&amp;nbsp;&lt;/span&gt;&lt;/nobr&gt;&lt;/td&gt;&lt;td align="left" valign="bottom" width="100%"&gt;&lt;hr size="1" /&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="2" align="left" valign="top"&gt;&lt;table border="0" cellpadding="0" cellspacing="8" width="100%"&gt;&lt;tr&gt;&lt;td width="10"&gt;&amp;nbsp;&lt;/td&gt;&lt;td align="left" valign="middle" class="auto-style15"&gt;Kind&lt;/td&gt;&lt;td align="left" valign="middle" class="auto-style16"&gt;</value>
+  </data>
+  <data name="String12" xml:space="preserve">
+    <value>&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width="10"&gt;&amp;nbsp;&lt;/td&gt;
+&lt;td align="left" valign="middle" class="auto-style15"&gt;Name&lt;/td&gt;&lt;td align="left" valign="middle" class="auto-style16"&gt;</value>
+  </data>
+  <data name="String13" xml:space="preserve">
+    <value>&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width="10"&gt;&amp;nbsp;&lt;/td&gt;&lt;td align="left" valign="middle" class="auto-style15"&gt;Speed&lt;/td&gt;&lt;td align="left" valign="middle" class="auto-style16"&gt;</value>
+  </data>
+  <data name="String14" xml:space="preserve">
+    <value>&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width="10"&gt;&amp;nbsp;&lt;/td&gt;&lt;td align="left" valign="middle" class="auto-style15"&gt;Cache&lt;/td&gt;&lt;td align="left" valign="middle" class="auto-style16"&gt;</value>
+  </data>
+  <data name="String15" xml:space="preserve">
+    <value>&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width="10"&gt;&amp;nbsp;&lt;/td&gt;&lt;td align="left" valign="middle" class="auto-style15"&gt;Socket&lt;/td&gt;&lt;td align="left" valign="middle" class="auto-style16"&gt;</value>
+  </data>
+  <data name="String16" xml:space="preserve">
+    <value>&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;table border="0" cellpadding="0" cellspacing="0" width="100%" xmlns="http://www.w3.org/TR/REC-html40"&gt;&lt;tr&gt;&lt;td align="left" valign="middle"&gt;&amp;nbsp;&lt;/td&gt;&lt;td align="left" valign="bottom" width="100%"&gt;&lt;hr size="1" /&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="2" align="left" valign="top"&gt;&lt;table border="0" cellpadding="0" cellspacing="8" width="100%"&gt;&lt;tr&gt;    &lt;td class="auto-style8"&gt;
+&amp;nbsp;&lt;/td&gt;&lt;td align="left" valign="middle" class="auto-style17"&gt;All Right Reserved Legend Company 2013&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align="center" valign="top"&gt;&lt;table border="0" width="620" height="100%" cellpadding="0" cellspacing="0"&gt;&lt;tr&gt;&lt;td colspan="2"&gt;&lt;br /&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align="left" valign="top" width="100%"&gt;&amp;nbsp;&lt;/td&gt;&lt;td align="right" valign="top"&gt;&lt;input type="button" value="Print this page" style="width: 150px; height: 25px;" onclick="ShowPrintDialog();" xmlns="http://www.w3.org/TR/REC-html40" /&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</value>
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value>&lt;/td&gt;&lt;/tr&gt;&lt;tr xmlns="http://www.w3.org/TR/REC-html40"&gt;
+&lt;td align="left" valign="bottom" class="auto-style11" width="125" style="border-bottom: solid 1px #FFFFFF; "&gt;Processor&lt;/td&gt;&lt;td align="left" valign="bottom" class="auto-style13" style="border-bottom: solid 1px #FFFFFF;"&gt;</value>
+  </data>
+  <data name="String3" xml:space="preserve">
+    <value>&lt;/td&gt;    &lt;/tr&gt;&lt;tr xmlns="http://www.w3.org/TR/REC-html40"&gt;&lt;td align="left" valign="bottom" class="auto-style11" width="125" style="border-bottom: solid 1px #FFFFFF; "&gt;Memory&lt;/td&gt;&lt;td align="left" valign="bottom" class="auto-style13" style="border-bottom: solid 1px #FFFFFF;"&gt;</value>
+  </data>
+  <data name="String4" xml:space="preserve">
+    <value>&lt;/td&gt;&lt;/tr&gt;&lt;tr xmlns="http://www.w3.org/TR/REC-html40"&gt;&lt;td align="left" valign="bottom" class="auto-style11" width="125" style="border-bottom: solid 1px #FFFFFF; "&gt;Graphics&lt;/td&gt;&lt;td align="left" valign="bottom" class="auto-style13" style="border-bottom: solid 1px #FFFFFF;"&gt;</value>
+  </data>
+  <data name="String5" xml:space="preserve">
+    <value>&lt;/td&gt;    &lt;/tr&gt;&lt;tr xmlns="http://www.w3.org/TR/REC-html40"&gt;&lt;td align="left" valign="bottom" class="auto-style11" width="125" style="border-bottom: solid 1px #FFFFFF; "&gt;Hard disk&lt;/td&gt;
+&lt;td align="left" valign="bottom" class="auto-style13" style="border-bottom: solid 1px #FFFFFF;"&gt;</value>
+  </data>
+  <data name="String6" xml:space="preserve">
+    <value>&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;br /&gt;&lt;table border="0" cellpadding="0" cellspacing="0" width="100%" xmlns="http://www.w3.org/TR/REC-html40"&gt;&lt;tr&gt;&lt;td align="left" valign="middle"&gt;&lt;nobr class="auto-style7"&gt;&lt;span class="auto-style14"&gt;Mother board:&amp;nbsp;&lt;/span&gt;&lt;span class="SubTitle"&gt;&amp;nbsp;&lt;/span&gt;&lt;/nobr&gt;&lt;/td&gt;&lt;td align="left" valign="bottom" width="100%"&gt;&lt;hr size="1" /&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="2" align="left" valign="top"&gt;&lt;table border="0" cellpadding="0" cellspacing="8" width="100%"&gt;&lt;tr&gt;&lt;td width="10"&gt;&amp;nbsp;&lt;/td&gt;&lt;td align="left" valign="middle" class="auto-style15"&gt;Manufacturer&lt;/td&gt;&lt;td align="left" valign="middle" class="auto-style16"&gt;</value>
+  </data>
+  <data name="String7" xml:space="preserve">
+    <value>&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width="10"&gt;&amp;nbsp;&lt;/td&gt;&lt;td align="left" valign="middle" class="auto-style15"&gt;Model&lt;/td&gt;&lt;td align="left" valign="middle" class="auto-style16"&gt;</value>
+  </data>
+  <data name="String8" xml:space="preserve">
+    <value>&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width="10"&gt;&amp;nbsp;&lt;/td&gt;&lt;td align="left" valign="middle" class="auto-style15"&gt;Socket&lt;/td&gt;
+&lt;td align="left" valign="middle" class="auto-style16"&gt;</value>
+  </data>
+  <data name="String9" xml:space="preserve">
+    <value>&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td width="10"&gt;&amp;nbsp;&lt;/td&gt;&lt;td align="left" valign="middle" class="auto-style15"&gt;Chipset&lt;/td&gt;&lt;td align="left" valign="middle" class="auto-style16"&gt;</value>
+  </data>
+</root>

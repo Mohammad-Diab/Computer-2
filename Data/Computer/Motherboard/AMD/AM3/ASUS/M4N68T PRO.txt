@@ -1,0 +1,37 @@
+﻿ ASUS M4N68T PRO
+
+الشركة
+ASUS
+اسم اللوحة
+M4N68T PRO
+نوع مقبس المعالج
+AMD AM3
+الشريحة
+NVIDIA nForce 630a
+الذاكرة
+16 GB DDR3 Max
+كرت الشاشة
+-
+كرت الشبكة
+Gb LAN
+الشقوق
+4 x DIMM
+1 x PCI e 2.0 x16 
+1 x PCI e 2.0 x1
+4 x PCI
+4 x SATA 3Gb/s
+المنافذ
+3 x Audio I/O
+1 x PS/2 Keyboard 
+1 x PS/2 Mouse 
+1 x LAN(RJ45) port 
+4 x USB 2.0 
+Bluetooth
+-
+WLAN
+-
+تقنيات أخرى
+-
+صورة اللوحة
+ 
+

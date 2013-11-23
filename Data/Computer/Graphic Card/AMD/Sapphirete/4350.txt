@@ -1,0 +1,36 @@
+﻿SAPPHIRE HD 4350 1GB DDR2 PCI-E
+نوع الكرت
+SAPPHIRE
+اسم الكرت
+4350
+معالج الرسومات
+ATI Radeon HD 4350
+الشق المتوافق
+PCI Express x16 2.0
+حجم الذاكرة
+1024 MB
+نوع الذاكرة
+DDR2
+قناة الذاكرة
+64 bits
+سرعة المعالج
+600 MHz
+سرعة الذاكرة
+-
+الدقة العظمى
+2560x1600
+اصدار DirectX
+10.1
+اصدار OpenGL
+2.0
+اصدار Pixel Shader
+4.1
+عدد أنوية Stream
+80
+التقنيات المدعومة
+CrossFire , AMD Stream
+المنافذ
+2 x DVI , 1 x TV-Out
+صورة الكرت
+ 
+

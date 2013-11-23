@@ -1,0 +1,39 @@
+﻿ ASUS M2A74-AM
+
+الشركة
+ASUS
+اسم اللوحة
+M2A74-AM
+نوع مقبس المعالج
+AMD AM3/AM2+/AM2 up to 95 W
+الشريحة
+AMD 740G/SB700
+الذاكرة
+8 GB DDR2 Max
+كرت الشاشة
+Integrated ATI Radeon™ 2100
+كرت الشبكة
+RTL8112 PCIe GbLAN
+الشقوق
+2 x DIMM
+1 x PCI e x16 2.0
+1 x PCI e x1 2.0
+2 x PCI
+4 x SATA 3Gb/s
+المنافذ
+1 x DVI 
+1 x VGA 
+1 x PS/2 Keyboard 
+1 x PS/2 Mouse 
+1 x LAN(RJ45)
+4 x USB 2.0 
+6 -Channel Audio I/O
+Bluetooth
+-
+WLAN
+-
+تقنيات أخرى
+-
+صورة اللوحة
+ 
+

@@ -1,0 +1,38 @@
+﻿ ASUS P5Q-VM
+
+الشركة
+ASUS
+اسم اللوحة
+P5Q-VM
+نوع مقبس المعالج
+Intel 775
+الشريحة
+Intel® G45 / ICH10 with Intel® FMA Technology
+الذاكرة
+16 GB DDR2 Max
+كرت الشاشة
+Integrated Intel® Graphics Media Accelerator X4500HD
+كرت الشبكة
+Realtek® 8111C PCI-E Gigabit LAN controllers, featuring AI Net2
+الشقوق
+4 x DIMM for DDR2
+1 x PCIe x16 2.0
+2 x PCIe x1
+1 x PCI 
+6 x SATA 3Gb/s
+المنافذ
+1 x PS/2 Keyboard/Mouse combo
+1 x D-Sub
+1 x DVI port
+1 x LAN (RJ45)
+6 x USB 2.0
+8-channel Audio I/O
+Bluetooth
+-
+WLAN
+-
+تقنيات أخرى
+-
+صورة اللوحة
+ 
+

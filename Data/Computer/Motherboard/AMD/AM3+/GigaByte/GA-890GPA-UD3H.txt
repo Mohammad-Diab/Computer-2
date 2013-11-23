@@ -1,0 +1,45 @@
+﻿ Gigabyte GA-890GPA-UD3H
+
+الشركة
+Gigabyte
+اسم اللوحة
+GA-890GPA-UD3H
+نوع مقبس المعالج
+AM3+
+الشريحة
+890GX + SB850
+الذاكرة
+16 GB DDR3 Max
+كرت الشاشة
+ATI Radeon HD 4280 Graphic
+كرت الشبكة
+1 x Realtek 8111D
+الشقوق
+4 x DIMM
+1 x PCI e 2.0 x16
+1 x PCI e 2.0 x16 (x8 mode)
+3 x PCI e 2.0 x1
+2 x PCI
+1 x IDE
+1 x floppy disk drive connector
+2 x SATA 3Gb/s
+6 x SATA 6Gb/s
+المنافذ
+1 x PS/2 Keyboard/Mouse Combo
+1 x D-Sub
+1 x DVI-D
+1 x HDMI
+1 x IEEE 1394a
+1 x LAN(RJ45)
+2 x USB 3.0
+4 x USB 2.0
+6 x Audio jacks
+Bluetooth
+-
+WLAN
+-
+تقنيات أخرى
+ATI CrossFireX , Hybrid CrossFireX , GIGABYTE innovative technology
+صورة اللوحة
+ 
+

@@ -1,0 +1,38 @@
+﻿ Gigabyte GA-780T-USB3
+
+الشركة
+Gigabyte
+اسم اللوحة
+GA-780T-USB3
+نوع مقبس المعالج
+AM3+
+الشريحة
+AMD 760G + SB71
+الذاكرة
+8 GB DDR3 Max
+كرت الشاشة
+-
+كرت الشبكة
+Realtek 8111E
+الشقوق
+2 x DIMM
+1 x PCI e 2.0 x16
+4 x PCI e 2.0 x1
+2 x PCI
+6 x SATA 3Gb/s
+المنافذ
+1 x PS/2 Keyboard
+1 x PS/2 Mouse
+1 x LAN(RJ45)
+2 x USB 3.0
+6 x USB 2.0
+6 x Audio jacks
+Bluetooth
+-
+WLAN
+-
+تقنيات أخرى
+GIGABYTE innovative technology
+صورة اللوحة
+ 
+

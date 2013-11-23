@@ -1,0 +1,18 @@
+﻿WD Caviar Black 750 GB SATA Hard 
+Drives
+
+الشركة
+Western Digital
+الرمز
+WD7501AALS
+السعة
+750 GB
+سرعة الدوران
+7200 RPM
+ذاكرة Buffer
+32 MB
+سرعة النقل العظمى
+3 GB/s
+المنفذ
+Sata 2
+

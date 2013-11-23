@@ -1,0 +1,40 @@
+﻿ Gigabyte GA-MA74GMT-S2
+
+الشركة
+Gigabyte
+اسم اللوحة
+GA-MA74GMT-S2
+نوع مقبس المعالج
+AM3
+الشريحة
+740G + SB710
+الذاكرة
+8 GB DDR3 Max
+كرت الشاشة
+ATI Radeon™ HD 2100 Graphics
+كرت الشبكة
+Realtek 8111D/E
+الشقوق
+2 x DIMM
+1 x PCI e 2.0 x16
+1 x PCI e 2.0 x1
+2 x PCI
+1 x IDE
+1 x floppy disk drive connector
+4 x SATA 3Gb/s
+المنافذ
+1 x PS/2 Keyboard/Mouse Combo
+1 x D-Sub
+1 x DVI-D
+1 x LAN(RJ45)
+8 x USB 2.0
+3 x Audio jacks
+Bluetooth
+-
+WLAN
+-
+تقنيات أخرى
+-
+صورة اللوحة
+ 
+

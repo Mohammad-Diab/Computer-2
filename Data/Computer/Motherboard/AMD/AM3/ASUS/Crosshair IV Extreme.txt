@@ -1,0 +1,39 @@
+﻿ ASUS Crosshair IV Extreme
+
+الشركة
+ASUS
+اسم اللوحة
+Crosshair IV Extreme
+نوع مقبس المعالج
+AM3 up to 140 W
+الشريحة
+AMD 890FX/SB850
+الذاكرة
+16 GB DDR3 Max
+كرت الشاشة
+-
+كرت الشبكة
+Intel® Gigabit LAN
+الشقوق
+4 x DIMM
+5 x PCI e 2.0 x16 
+1 x PCI 2.2
+6 x SATA 6Gb/s
+2 x SATA 3Gb/s
+المنافذ
+2 x External SATA
+1 x IEEE 1394a
+1 x LAN(RJ45) port
+8 -Channel Audio I/O
+1 x PS/2 Keyboard
+2 x USB 3.0
+7 x USB 2.0
+Bluetooth
+Bluetooth V2.0/V2.1+EDR
+WLAN
+-
+تقنيات أخرى
+CrossLinx 3 Technology , ATI CrossFireX™
+صورة اللوحة
+ 
+

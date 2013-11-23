@@ -1,0 +1,42 @@
+﻿ ASRock 880G Pro3
+
+الشركة
+ASRock
+اسم اللوحة
+880G Pro3
+نوع مقبس المعالج
+AM3+ up to 140W
+الشريحة
+AMD® 880G and SB850
+الذاكرة
+32 GB DDR3 Max
+كرت الشاشة
+AMD Radeon HD 4250 Graphics
+كرت الشبكة
+Gigabit LAN
+الشقوق
+4 x DIMM
+2 x PCI e 2.0 x16
+1 x PCI e 2.0 x1
+3 x PCI
+5 x SATA 6Gb/s
+المنافذ
+1 x PS/2 Keyboard
+1 x D-Sub
+1 x DVI-D
+1 x HDMI
+4 x  USB 2.0 
+1 x eSATA 3Gb\s
+2 x  USB 3.0
+1 x LAN(RJ45)
+1 x IEEE 1394
+6 x Audio jacks
+Bluetooth
+-
+WLAN
+-
+تقنيات أخرى
+ATI™ Quad CrossFireX™ , Hybrid CrossFireX™
+صورة اللوحة
+ 
+

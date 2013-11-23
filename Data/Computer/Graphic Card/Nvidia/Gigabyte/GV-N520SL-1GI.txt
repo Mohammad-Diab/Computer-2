@@ -1,0 +1,36 @@
+﻿Gigabyte GV-N520SL-1GI
+نوع الكرت
+Gigabyte
+اسم الكرت
+GV-N520SL-1GI
+معالج الرسومات
+GeForce GT 520
+الشق المتوافق
+PCI Express x16 2.0
+حجم الذاكرة
+1024 MB
+نوع الذاكرة
+DDR3
+قناة الذاكرة
+64 bits
+سرعة المعالج
+810 MHz
+سرعة الذاكرة
+1200 MHz
+الدقة العظمى
+2560 x 1600
+اصدار DirectX
+11
+اصدار OpenGL
+4.1
+اصدار Pixel Shader
+5.0
+عدد أنوية CUDA
+48
+التقنيات المدعومة
+PhysX , CUDA
+المنافذ
+1 x DVI , 1 x HDMI , 1 x D-SUB
+صورة الكرت
+ 
+

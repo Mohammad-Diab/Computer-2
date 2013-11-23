@@ -1,0 +1,36 @@
+﻿SAPPHIRE HD 7970 3GB GDDR5
+نوع الكرت
+SAPPHIRE
+اسم الكرت
+7970
+معالج الرسومات
+ATI Radeon HD 7970
+الشق المتوافق
+PCI Express x16 3.0
+حجم الذاكرة
+3072 MB
+نوع الذاكرة
+GDDR5
+قناة الذاكرة
+384 bits
+سرعة المعالج
+925 MHz
+سرعة الذاكرة
+5500 MHz
+الدقة العظمى
+2560x1600
+اصدار DirectX
+11
+اصدار OpenGL
+4.2
+اصدار Pixel Shader
+5.0
+عدد أنوية Stream
+2048
+التقنيات المدعومة
+CrossFire , AMD Stream , AMD HD3D
+المنافذ
+2 x DVI , 1 x D-SUB , 2 x DisplayPort , 1 x HDMI
+صورة الكرت
+ 
+
