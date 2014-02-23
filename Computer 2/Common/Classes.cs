@@ -1250,33 +1250,33 @@ namespace Computer_2
             switch (Pos)
             {
                 case "Processor":
-                    for (int i = 0; i < ItemsPage.Processors.Count; i++)
-                        if (ItemsPage.Processors[i].Name.Equals(Std))
+                    for (int i = 0; i < HubPage.Processors.Count; i++)
+                        if (HubPage.Processors[i].Name.Equals(Std))
                             return i;
                     break;
                 case "MB":
-                    for (int i = 0; i < ItemsPage.MotherBoards.Count; i++)
-                        if (ItemsPage.MotherBoards[i].Name.Equals(Std))
+                    for (int i = 0; i < HubPage.MotherBoards.Count; i++)
+                        if (HubPage.MotherBoards[i].Name.Equals(Std))
                             return i;
                     break;
                 case "VGA":
-                    for (int i = 0; i < ItemsPage.Graphigc_Cards.Count; i++)
-                        if (ItemsPage.Graphigc_Cards[i].Name.Equals(Std))
+                    for (int i = 0; i < HubPage.Graphigc_Cards.Count; i++)
+                        if (HubPage.Graphigc_Cards[i].Name.Equals(Std))
                             return i;
                     break;
                 case "HD":
-                    for (int i = 0; i < ItemsPage.Hard_Disks.Count; i++)
-                        if (ItemsPage.Hard_Disks[i].Name.Contains(Std))
+                    for (int i = 0; i < HubPage.Hard_Disks.Count; i++)
+                        if (HubPage.Hard_Disks[i].Name.Contains(Std))
                             return i;
                     break;
                 case "Laptop":
-                    for (int i = 0; i < ItemsPage.Laptops.Count; i++)
-                        if (ItemsPage.Laptops[i].Name.Equals(Std))
+                    for (int i = 0; i < HubPage.Laptops.Count; i++)
+                        if (HubPage.Laptops[i].Name.Equals(Std))
                             return i;
                     break;
                 case "Tablet":
-                    for (int i = 0; i < ItemsPage.Tablet_PCs.Count; i++)
-                        if (ItemsPage.Tablet_PCs[i].Name.Equals(Std))
+                    for (int i = 0; i < HubPage.Tablet_PCs.Count; i++)
+                        if (HubPage.Tablet_PCs[i].Name.Equals(Std))
                             return i;
                     break;
                 default:
@@ -1344,7 +1344,7 @@ namespace Computer_2
 
         static public string PCIType(int i)
         {
-            return bool2string(ItemsPage.Graphigc_Cards[i].Socket.Contains("3.0"), "(PCI-E x16 3.0)", bool2string(ItemsPage.Graphigc_Cards[i].Socket.Contains("2.1"), "(PCI-E x16 2.1)", "(PCI-E x16 2.0)"));
+            return bool2string(HubPage.Graphigc_Cards[i].Socket.Contains("3.0"), "(PCI-E x16 3.0)", bool2string(HubPage.Graphigc_Cards[i].Socket.Contains("2.1"), "(PCI-E x16 2.1)", "(PCI-E x16 2.0)"));
         }
 
         static public string bool2string(bool condition, string iftrue, string iffalse)
@@ -1396,8 +1396,6 @@ namespace Computer_2
 
         static async public void SaveFile(string File, string Type)
         {
-            if (ApplicationView.Value == ApplicationViewState.Snapped && !ApplicationView.TryUnsnap())
-                throw new Exception("File picker cannot display in snapped view.");
             FileSavePicker picker = new FileSavePicker();
             picker.FileTypeChoices.Add("HTML Document", new string[] { ".htm", ".html" });
             picker.FileTypeChoices.Add("HTML Application", new string[] { ".hta" });

@@ -1,9 +1,13 @@
-﻿using System;
+﻿using Computer_2.Common;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Core;
+using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -11,32 +15,75 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using System.Runtime.Serialization;
-using System.Windows;
-using System.Text;
-using Windows.System.Threading;
-using Windows.UI.ViewManagement;
-using Windows.UI.Core;
+
+// The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234237
 
 namespace Computer_2
 {
-    public sealed partial class desktop : Computer_2.Common.LayoutAwarePage
+    /// <summary>
+    /// A basic page that provides characteristics common to most applications.
+    /// </summary>
+    public sealed partial class Desktop : Page
     {
+
         string[] Your_PC = new string[20];
         int[] Your_PC_Index = new int[20];
         string current_path = Windows.Storage.ApplicationData.Current.RoamingFolder.Path + @"\Computer";
         bool Sata2 = true, Sata3 = false, PCI3 = false, PCI2 = true, islocked = false;
 
-        public desktop()
+        private NavigationHelper navigationHelper;
+        private ObservableDictionary defaultViewModel = new ObservableDictionary();
+
+        /// <summary>
+        /// This can be changed to a strongly typed view model.
+        /// </summary>
+        public ObservableDictionary DefaultViewModel
+        {
+            get { return this.defaultViewModel; }
+        }
+
+        /// <summary>
+        /// NavigationHelper is used on each page to aid in navigation and 
+        /// process lifetime management
+        /// </summary>
+        public NavigationHelper NavigationHelper
+        {
+            get { return this.navigationHelper; }
+        }
+
+
+        public Desktop()
         {
             this.InitializeComponent();
+            this.navigationHelper = new NavigationHelper(this);
+            this.navigationHelper.LoadState += navigationHelper_LoadState;
+            this.navigationHelper.SaveState += navigationHelper_SaveState;
         }
 
-        protected override void LoadState(Object navigationParameter, Dictionary<String, Object> pageState)
+        /// <summary>
+        /// Populates the page with content passed during navigation. Any saved state is also
+        /// provided when recreating a page from a prior session.
+        /// </summary>
+        /// <param name="sender">
+        /// The source of the event; typically <see cref="NavigationHelper"/>
+        /// </param>
+        /// <param name="e">Event data that provides both the navigation parameter passed to
+        /// <see cref="Frame.Navigate(Type, Object)"/> when this page was initially requested and
+        /// a dictionary of state preserved by this page during an earlier
+        /// session. The state will be null the first time a page is visited.</param>
+        private void navigationHelper_LoadState(object sender, LoadStateEventArgs e)
         {
         }
 
-        protected override void SaveState(Dictionary<String, Object> pageState)
+        /// <summary>
+        /// Preserves state associated with this page in case the application is suspended or the
+        /// page is discarded from the navigation cache.  Values must conform to the serialization
+        /// requirements of <see cref="SuspensionManager.SessionState"/>.
+        /// </summary>
+        /// <param name="sender">The source of the event; typically <see cref="NavigationHelper"/></param>
+        /// <param name="e">Event data that provides an empty dictionary to be populated with
+        /// serializable state.</param>
+        private void navigationHelper_SaveState(object sender, SaveStateEventArgs e)
         {
         }
 
@@ -44,14 +91,14 @@ namespace Computer_2
         {
             for (int i = 0; i < 20; i++)
                 Your_PC[i] = "-";
-            ComboBox1.IsEnabled = true;
+            pc_kind.IsEnabled = true;
             Window.Current.SizeChanged += this.WindowSizeChanged;
             Initialisation();
         }
 
         private void Clear(int level)
         {
-            Button1.IsEnabled = Button3.IsEnabled = !(islocked = true);
+            done.IsEnabled = appBar_save.IsEnabled = !(islocked = true);
             int tmp = level;
             int count = 14;
             TextBlock1.Text = "Processor:";
@@ -69,13 +116,13 @@ namespace Computer_2
             }
             if (level % 2 == 0)
             {
-                ComboBox14.IsEnabled = ComboBox15.IsEnabled = ComboBox16.IsEnabled = ComboBox17.IsEnabled = ComboBox18.IsEnabled = ComboBox19.IsEnabled = false;
-                ComboBox14.Items.Clear();
-                ComboBox15.Items.Clear();
-                ComboBox16.Items.Clear();
-                ComboBox17.Items.Clear();
-                ComboBox18.Items.Clear();
-                ComboBox19.Items.Clear();
+                power_supply.IsEnabled = _case.IsEnabled = optical_drive.IsEnabled = monitor.IsEnabled = mouse.IsEnabled = keyboard.IsEnabled = false;
+                power_supply.Items.Clear();
+                _case.Items.Clear();
+                optical_drive.Items.Clear();
+                monitor.Items.Clear();
+                mouse.Items.Clear();
+                keyboard.Items.Clear();
             }
             else
             {
@@ -85,8 +132,8 @@ namespace Computer_2
             level = level / 2;
             if (level % 2 == 0)
             {
-                ComboBox13.IsEnabled = false;
-                ComboBox13.Items.Clear();
+                gpu_model.IsEnabled = false;
+                gpu_model.Items.Clear();
             }
             else
             {
@@ -96,8 +143,8 @@ namespace Computer_2
             level = level / 2;
             if (level % 2 == 0)
             {
-                ComboBox12.IsEnabled = false;
-                ComboBox12.Items.Clear();
+                gpu_company.IsEnabled = false;
+                gpu_company.Items.Clear();
             }
             else
             {
@@ -107,8 +154,8 @@ namespace Computer_2
             level = level / 2;
             if (level % 2 == 0)
             {
-                ComboBox11.IsEnabled = false;
-                ComboBox11.Items.Clear();
+                gpu_type.IsEnabled = false;
+                gpu_type.Items.Clear();
             }
             else
             {
@@ -118,8 +165,8 @@ namespace Computer_2
             level = level / 2;
             if (level % 2 == 0)
             {
-                ComboBox10.IsEnabled = false;
-                ComboBox10.Items.Clear();
+                disk_model.IsEnabled = false;
+                disk_model.Items.Clear();
             }
             else
             {
@@ -129,8 +176,8 @@ namespace Computer_2
             level = level / 2;
             if (level % 2 == 0)
             {
-                ComboBox9.IsEnabled = false;
-                ComboBox9.Items.Clear();
+                disk_company.IsEnabled = false;
+                disk_company.Items.Clear();
             }
             else
             {
@@ -140,8 +187,8 @@ namespace Computer_2
             level = level / 2;
             if (level % 2 == 0)
             {
-                ComboBox8.IsEnabled = false;
-                ComboBox8.Items.Clear();
+                disk_type.IsEnabled = false;
+                disk_type.Items.Clear();
             }
             else
             {
@@ -151,8 +198,8 @@ namespace Computer_2
             level = level / 2;
             if (level % 2 == 0)
             {
-                ComboBox7.IsEnabled = false;
-                ComboBox7.Items.Clear();
+                ram_model.IsEnabled = false;
+                ram_model.Items.Clear();
             }
             else
             {
@@ -162,8 +209,8 @@ namespace Computer_2
             level = level / 2;
             if (level % 2 == 0)
             {
-                ComboBox6.IsEnabled = false;
-                ComboBox6.Items.Clear();
+                ram_company.IsEnabled = false;
+                ram_company.Items.Clear();
             }
             else
             {
@@ -173,8 +220,8 @@ namespace Computer_2
             level = level / 2;
             if (level % 2 == 0)
             {
-                ComboBox5.IsEnabled = false;
-                ComboBox5.Items.Clear();
+                processor.IsEnabled = false;
+                processor.Items.Clear();
             }
             else
             {
@@ -184,8 +231,8 @@ namespace Computer_2
             level = level / 2;
             if (level % 2 == 0)
             {
-                ComboBox4.IsEnabled = false;
-                ComboBox4.Items.Clear();
+                cpu_model.IsEnabled = false;
+                cpu_model.Items.Clear();
             }
             else
             {
@@ -195,8 +242,8 @@ namespace Computer_2
             level = level / 2;
             if (level % 2 == 0)
             {
-                ComboBox3.IsEnabled = false;
-                ComboBox3.Items.Clear();
+                motherboard.IsEnabled = false;
+                motherboard.Items.Clear();
             }
             else
             {
@@ -206,8 +253,8 @@ namespace Computer_2
             level = level / 2;
             if (level % 2 == 0)
             {
-                ComboBox2.IsEnabled = false;
-                ComboBox2.Items.Clear();
+                mb_company.IsEnabled = false;
+                mb_company.Items.Clear();
             }
             islocked = false;
         }
@@ -221,220 +268,220 @@ namespace Computer_2
             return ans;
         }
 
-        private void ComboBox1_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void PCKind_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (!islocked)
             {
                 Clear(8192);
                 ComboBoxItem x = new ComboBoxItem();
-                x = (ComboBoxItem)ComboBox1.SelectedItem;
+                x = (ComboBoxItem)pc_kind.SelectedItem;
                 string type = x.Content.ToString();
                 Your_PC[0] = type;
-                ComboBox2.Items.Add("ASRock");
-                ComboBox2.Items.Add("ASUS");
-                ComboBox2.Items.Add("Foxconn");
-                ComboBox2.Items.Add("GigaByte");
-                ComboBox2.Items.Add("MSI");
-                ComboBox2.IsEnabled = true;
+                mb_company.Items.Add("ASRock");
+                mb_company.Items.Add("ASUS");
+                mb_company.Items.Add("Foxconn");
+                mb_company.Items.Add("GigaByte");
+                mb_company.Items.Add("MSI");
+                mb_company.IsEnabled = true;
             }
         }
 
-        private void ComboBox2_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void MBCompany_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (!islocked)
             {
                 Clear(4096);
-                string x = (String)ComboBox2.SelectedItem;
+                string x = (String)mb_company.SelectedItem;
                 Your_PC[1] = x;
-                for (int i = 0; i < ItemsPage.MotherBoards.Count; i++)
-                    if (ItemsPage.MotherBoards[i].Kind.ToLower().Contains(Your_PC[0].ToLower()) && ItemsPage.MotherBoards[i].Company.ToLower().Contains(Your_PC[1].ToLower()))
-                        ComboBox3.Items.Add(ItemsPage.MotherBoards[i].Name);
-                ComboBox3.IsEnabled = true;
+                for (int i = 0; i < HubPage.MotherBoards.Count; i++)
+                    if (HubPage.MotherBoards[i].Kind.ToLower().Contains(Your_PC[0].ToLower()) && HubPage.MotherBoards[i].Company.ToLower().Contains(Your_PC[1].ToLower()))
+                        motherboard.Items.Add(HubPage.MotherBoards[i].Name);
+                motherboard.IsEnabled = true;
             }
         }
 
-        private void ComboBox3_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void Motherboard_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (!islocked)
             {
                 List<string> list = new List<string>();
                 Clear(2048);
-                string x = (String)ComboBox3.SelectedItem;
+                string x = (String)motherboard.SelectedItem;
                 Your_PC[2] = x;
                 Your_PC_Index[0] = Functions.Get_Index("MB", Your_PC[2]);
-                for (int i = 0; i < ItemsPage.Processors.Count; i++)
-                    if (ItemsPage.Processors[i].Company.Contains(Your_PC[0]) && Functions.Suffix(ItemsPage.Processors[i].Socket, (ItemsPage.MotherBoards[Your_PC_Index[0]].Socket)) && (!Functions.item_Existing(list, ItemsPage.Processors[i].Kind)))
+                for (int i = 0; i < HubPage.Processors.Count; i++)
+                    if (HubPage.Processors[i].Company.Contains(Your_PC[0]) && Functions.Suffix(HubPage.Processors[i].Socket, (HubPage.MotherBoards[Your_PC_Index[0]].Socket)) && (!Functions.item_Existing(list, HubPage.Processors[i].Kind)))
                     {
-                        ComboBox4.Items.Add(ItemsPage.Processors[i].Kind);
-                        list.Add(ItemsPage.Processors[i].Kind);
+                        cpu_model.Items.Add(HubPage.Processors[i].Kind);
+                        list.Add(HubPage.Processors[i].Kind);
                     }
-                ComboBox4.IsEnabled = true;
+                cpu_model.IsEnabled = true;
             }
         }
 
-        private void ComboBox4_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void CPUModel_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (!islocked)
             {
                 Clear(1024);
-                string x = (String)ComboBox4.SelectedItem;
+                string x = (String)cpu_model.SelectedItem;
                 Your_PC[3] = x;
-                for (int i = 0; i < ItemsPage.Processors.Count; i++)
-                    if (ItemsPage.Processors[i].Kind.ToLower().Contains(Your_PC[3].ToLower()) && Functions.Suffix(ItemsPage.Processors[i].Socket, (ItemsPage.MotherBoards[Your_PC_Index[0]].Socket)))
-                        ComboBox5.Items.Add(ItemsPage.Processors[i].Name);
-                ComboBox5.IsEnabled = true;
+                for (int i = 0; i < HubPage.Processors.Count; i++)
+                    if (HubPage.Processors[i].Kind.ToLower().Contains(Your_PC[3].ToLower()) && Functions.Suffix(HubPage.Processors[i].Socket, (HubPage.MotherBoards[Your_PC_Index[0]].Socket)))
+                        processor.Items.Add(HubPage.Processors[i].Name);
+                processor.IsEnabled = true;
             }
         }
 
-        private void ComboBox5_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void Processor_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (!islocked)
             {
                 Clear(512);
-                string x = (String)ComboBox5.SelectedItem;
+                string x = (String)processor.SelectedItem;
                 Your_PC[4] = x;
                 Your_PC_Index[1] = Functions.Get_Index("Processor", Your_PC[4]);
-                ComboBox6.Items.Add("ADATA");
-                ComboBox6.Items.Add("Ketron");
-                ComboBox6.Items.Add("Kingston");
-                ComboBox6.Items.Add("Other (Unfamous Company)");
-                ComboBox6.Items.Add("ZEPPLEIN");
-                ComboBox6.IsEnabled = true;
+                ram_company.Items.Add("ADATA");
+                ram_company.Items.Add("Ketron");
+                ram_company.Items.Add("Kingston");
+                ram_company.Items.Add("Other (Unfamous Company)");
+                ram_company.Items.Add("ZEPPLEIN");
+                ram_company.IsEnabled = true;
                 /*
                  * Here to put memory conditions;
                  * for (int i = 0; i < Memory.Count; i++)
-                 *   if (ItemsPage.MotherBoards[i].Type.ToLower().Contains(Your_PC[0].ToLower()) && ItemsPage.MotherBoards[i].Company.ToLower().Contains(Your_PC[1].ToLower()))
-                 *        ComboBox3.Items.Add(ItemsPage.MotherBoards[i].Name);
+                 *   if (HubPage.MotherBoards[i].Type.ToLower().Contains(Your_PC[0].ToLower()) && HubPage.MotherBoards[i].Company.ToLower().Contains(Your_PC[1].ToLower()))
+                 *        motherboard.Items.Add(HubPage.MotherBoards[i].Name);
                  */
             }
         }
 
-        private void ComboBox6_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void RamCompany_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (!islocked)
             {
                 Clear(256);
-                string x = (String)ComboBox6.SelectedItem;
+                string x = (String)ram_company.SelectedItem;
                 Your_PC[5] = x;
-                ComboBox7.Items.Add("1 GB");
-                ComboBox7.Items.Add("2 GB");
-                ComboBox7.Items.Add("3 GB");
-                ComboBox7.Items.Add("4 GB");
-                ComboBox7.IsEnabled = true;
+                ram_model.Items.Add("1 GB");
+                ram_model.Items.Add("2 GB");
+                ram_model.Items.Add("3 GB");
+                ram_model.Items.Add("4 GB");
+                ram_model.IsEnabled = true;
                 /*
                  * Here to put memory conditions;
                  * for (int i = 0; i < Memory.Count; i++)
-                 *   if (ItemsPage.MotherBoards[i].Type.ToLower().Contains(Your_PC[0].ToLower()) && ItemsPage.MotherBoards[i].Company.ToLower().Contains(Your_PC[1].ToLower()))
-                 *        ComboBox3.Items.Add(ItemsPage.MotherBoards[i].Name);
+                 *   if (HubPage.MotherBoards[i].Type.ToLower().Contains(Your_PC[0].ToLower()) && HubPage.MotherBoards[i].Company.ToLower().Contains(Your_PC[1].ToLower()))
+                 *        motherboard.Items.Add(HubPage.MotherBoards[i].Name);
                  */
             }
         }
 
-        private void ComboBox7_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void RamModel_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (!islocked)
             {
                 Clear(128);
-                string x = (String)ComboBox7.SelectedItem;
+                string x = (String)ram_model.SelectedItem;
                 Your_PC[6] = x;
-                ComboBox8.Items.Add("Hard Disk Drive");
-                ComboBox8.Items.Add("Solid State Drive");
-                ComboBox8.IsEnabled = true;
+                disk_type.Items.Add("Hard Disk Drive");
+                disk_type.Items.Add("Solid State Drive");
+                disk_type.IsEnabled = true;
             }
         }
 
-        private void ComboBox8_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void DiskType_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (!islocked)
             {
                 Clear(64);
                 string tmp = null;
                 List<string> list = new List<string>();
-                string x = (String)ComboBox8.SelectedItem;
+                string x = (String)disk_type.SelectedItem;
                 tmp = Functions.bool2string((x.Equals("Solid State Drive")), "SSD", "HDD");
                 Your_PC[7] = tmp;
-                Sata3 = (ItemsPage.MotherBoards[Your_PC_Index[0]].Sata == 3) || (ItemsPage.MotherBoards[Your_PC_Index[0]].Sata == 5);
-                Sata2 = (ItemsPage.MotherBoards[Your_PC_Index[0]].Sata == 2) || (ItemsPage.MotherBoards[Your_PC_Index[0]].Sata == 5);
+                Sata3 = (HubPage.MotherBoards[Your_PC_Index[0]].Sata == 3) || (HubPage.MotherBoards[Your_PC_Index[0]].Sata == 5);
+                Sata2 = (HubPage.MotherBoards[Your_PC_Index[0]].Sata == 2) || (HubPage.MotherBoards[Your_PC_Index[0]].Sata == 5);
                 if (Sata2)
                 {
                     list.Clear();
-                    for (int i = 0; i < ItemsPage.Hard_Disks.Count; i++)
-                        if (ItemsPage.Hard_Disks[i].Kind.Contains(tmp))
-                            if (!Functions.item_Existing(list, ItemsPage.Hard_Disks[i].Company))
+                    for (int i = 0; i < HubPage.Hard_Disks.Count; i++)
+                        if (HubPage.Hard_Disks[i].Kind.Contains(tmp))
+                            if (!Functions.item_Existing(list, HubPage.Hard_Disks[i].Company))
                             {
-                                ComboBox9.Items.Add(String.Concat(ItemsPage.Hard_Disks[i].Company, " (Sata 2)"));
-                                list.Add(ItemsPage.Hard_Disks[i].Company);
+                                disk_company.Items.Add(String.Concat(HubPage.Hard_Disks[i].Company, " (Sata 2)"));
+                                list.Add(HubPage.Hard_Disks[i].Company);
                             }
                 }
                 if (Sata3)
                 {
                     list.Clear();
-                    for (int i = 0; i < ItemsPage.Hard_Disks.Count; i++)
-                        if (ItemsPage.Hard_Disks[i].Kind.Contains(tmp))
-                            if (!Functions.item_Existing(list, ItemsPage.Hard_Disks[i].Company))
+                    for (int i = 0; i < HubPage.Hard_Disks.Count; i++)
+                        if (HubPage.Hard_Disks[i].Kind.Contains(tmp))
+                            if (!Functions.item_Existing(list, HubPage.Hard_Disks[i].Company))
                             {
-                                ComboBox9.Items.Add(String.Concat(ItemsPage.Hard_Disks[i].Company, " (Sata 3)"));
-                                list.Add(ItemsPage.Hard_Disks[i].Company);
+                                disk_company.Items.Add(String.Concat(HubPage.Hard_Disks[i].Company, " (Sata 3)"));
+                                list.Add(HubPage.Hard_Disks[i].Company);
                             }
                 }
-                ComboBox9.IsEnabled = true;
+                disk_company.IsEnabled = true;
             }
         }
 
-        private void ComboBox9_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void DiskCompany_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (!islocked)
             {
                 Clear(32);
-                string x = (String)ComboBox9.SelectedItem;
+                string x = (String)disk_company.SelectedItem;
                 Your_PC[8] = Functions.Company(x);
                 string Sata;
                 Sata = Functions.bool2string(x.Contains("Sata 2"), "Sata 2", "Sata 3");
-                for (int i = 0; i < ItemsPage.Hard_Disks.Count; i++)
-                    if ((ItemsPage.Hard_Disks[i].Kind.ToLower().Contains(Your_PC[7].ToLower())) && (ItemsPage.Hard_Disks[i].Company.ToLower().Contains(Your_PC[8].ToLower())) && (ItemsPage.Hard_Disks[i].Socket.ToLower().Contains(Sata.ToLower())))
-                        ComboBox10.Items.Add(Functions.Remove_Hard_Drive(ItemsPage.Hard_Disks[i].Name));
-                ComboBox10.IsEnabled = true;
+                for (int i = 0; i < HubPage.Hard_Disks.Count; i++)
+                    if ((HubPage.Hard_Disks[i].Kind.ToLower().Contains(Your_PC[7].ToLower())) && (HubPage.Hard_Disks[i].Company.ToLower().Contains(Your_PC[8].ToLower())) && (HubPage.Hard_Disks[i].Socket.ToLower().Contains(Sata.ToLower())))
+                        disk_model.Items.Add(Functions.Remove_Hard_Drive(HubPage.Hard_Disks[i].Name));
+                disk_model.IsEnabled = true;
             }
         }
 
-        private void ComboBox10_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void DiskModel_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (!islocked)
             {
                 Clear(16);
-                string x = (String)ComboBox10.SelectedItem;
+                string x = (String)disk_model.SelectedItem;
                 Your_PC[9] = x;
                 Your_PC_Index[2] = Functions.Get_Index("HD", Your_PC[9]);
-                if (ItemsPage.MotherBoards[Your_PC_Index[0]].Internal_Graphic)
+                if (HubPage.MotherBoards[Your_PC_Index[0]].Internal_Graphic)
                 {
-                    if (ItemsPage.MotherBoards[Your_PC_Index[0]].Graphic_Processor.Contains("Processor") && ItemsPage.Processors[Your_PC_Index[1]].Internal_Graphic)
-                        ComboBox11.Items.Add("Build-in GPU");
-                    else if (!ItemsPage.MotherBoards[Your_PC_Index[0]].Graphic_Processor.Contains("Processor"))
-                        ComboBox11.Items.Add("Build-in GPU");
+                    if (HubPage.MotherBoards[Your_PC_Index[0]].Graphic_Processor.Contains("Processor") && HubPage.Processors[Your_PC_Index[1]].Internal_Graphic)
+                        gpu_type.Items.Add("Build-in GPU");
+                    else if (!HubPage.MotherBoards[Your_PC_Index[0]].Graphic_Processor.Contains("Processor"))
+                        gpu_type.Items.Add("Build-in GPU");
                 }
-                else if (ItemsPage.Processors[Your_PC_Index[1]].Internal_Graphic)
-                    ComboBox11.Items.Add("Build-in GPU");
-                ComboBox11.Items.Add("AMD");
-                ComboBox11.Items.Add("Nvidia");
-                ComboBox11.IsEnabled = true;
+                else if (HubPage.Processors[Your_PC_Index[1]].Internal_Graphic)
+                    gpu_type.Items.Add("Build-in GPU");
+                gpu_type.Items.Add("AMD");
+                gpu_type.Items.Add("Nvidia");
+                gpu_type.IsEnabled = true;
             }
         }
 
-        private void ComboBox11_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void GPUType_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (!islocked)
             {
                 Clear(8);
-                string x = (String)ComboBox11.SelectedItem;
+                string x = (String)gpu_type.SelectedItem;
                 Your_PC[10] = x;
                 if (x.ToLower().Contains("GPU".ToLower()))
                 {
                     Your_PC_Index[3] = -1;
-                    ComboBox12.IsEnabled = false;
-                    ComboBox13.IsEnabled = false;
+                    gpu_company.IsEnabled = false;
+                    gpu_model.IsEnabled = false;
                     //Calculate how much power you will need for your PC;
-                    ComboBox14.Items.Add("??? Watt Power Supply");
-                    ComboBox14.IsEnabled = true;
+                    power_supply.Items.Add("??? Watt Power Supply");
+                    power_supply.IsEnabled = true;
                     Your_PC[11] = "0";
                     Your_PC[12] = "0";
                     return;
@@ -443,169 +490,164 @@ namespace Computer_2
                 {
                     Your_PC_Index[3] = 0;
                     List<string> list = new List<string>();
-                    PCI2 = (ItemsPage.MotherBoards[Your_PC_Index[0]].PCIe == 2) || (ItemsPage.MotherBoards[Your_PC_Index[0]].PCIe == 5);
-                    PCI3 = (ItemsPage.MotherBoards[Your_PC_Index[0]].PCIe == 3) || (ItemsPage.MotherBoards[Your_PC_Index[0]].PCIe == 5);
+                    PCI2 = (HubPage.MotherBoards[Your_PC_Index[0]].PCIe == 2) || (HubPage.MotherBoards[Your_PC_Index[0]].PCIe == 5);
+                    PCI3 = (HubPage.MotherBoards[Your_PC_Index[0]].PCIe == 3) || (HubPage.MotherBoards[Your_PC_Index[0]].PCIe == 5);
                     if (PCI3)
                     {
                         list.Clear();
-                        ComboBox12.Items.Add("ASUS");
+                        gpu_company.Items.Add("ASUS");
                         if (Your_PC[10].Equals("Nvidia"))
-                            ComboBox12.Items.Add("EVGA");
-                        ComboBox12.Items.Add("Gigabyte");
-                        ComboBox12.Items.Add("MSI");
+                            gpu_company.Items.Add("EVGA");
+                        gpu_company.Items.Add("Gigabyte");
+                        gpu_company.Items.Add("MSI");
                         if (Your_PC[10].Equals("AMD"))
-                            ComboBox12.Items.Add("Sapphirete");
+                            gpu_company.Items.Add("Sapphirete");
                     }
                     else if (PCI2)
                     {
                         list.Clear();
-                        for (int i = 0; i < ItemsPage.Graphigc_Cards.Count; i++)
-                            if (Functions.Contains(ItemsPage.Graphigc_Cards[i].Socket, "x16", "2.0") && ItemsPage.Graphigc_Cards[i].Kind.ToLower().Equals(Your_PC[10].ToLower()))
-                                if (!Functions.item_Existing(list, ItemsPage.Graphigc_Cards[i].Company))
+                        for (int i = 0; i < HubPage.Graphigc_Cards.Count; i++)
+                            if (Functions.Contains(HubPage.Graphigc_Cards[i].Socket, "x16", "2.0") && HubPage.Graphigc_Cards[i].Kind.ToLower().Equals(Your_PC[10].ToLower()))
+                                if (!Functions.item_Existing(list, HubPage.Graphigc_Cards[i].Company))
                                 {
-                                    ComboBox12.Items.Add(ItemsPage.Graphigc_Cards[i].Company);
-                                    list.Add(ItemsPage.Graphigc_Cards[i].Company);
+                                    gpu_company.Items.Add(HubPage.Graphigc_Cards[i].Company);
+                                    list.Add(HubPage.Graphigc_Cards[i].Company);
                                 }
                     }
                 }
-                ComboBox12.IsEnabled = true;
+                gpu_company.IsEnabled = true;
             }
         }
 
-        private void ComboBox12_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void GPUCompany_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (!islocked)
             {
                 Clear(4);
-                string x = (String)ComboBox12.SelectedItem;
+                string x = (String)gpu_company.SelectedItem;
                 Your_PC[11] = x;
                 String PCI = "";
                 PCI = Functions.bool2string(PCI3, ".", "2.0");
-                for (int i = 0; i < ItemsPage.Graphigc_Cards.Count; i++)
-                    if ((Functions.Contains(ItemsPage.Graphigc_Cards[i].Socket, "x16", PCI)) && ItemsPage.Graphigc_Cards[i].Kind.ToLower().Equals(Your_PC[10].ToLower()) && ItemsPage.Graphigc_Cards[i].Company.ToLower().Contains(Your_PC[11].ToLower()))
-                        ComboBox13.Items.Add(ItemsPage.Graphigc_Cards[i].Name + " " + Functions.PCIType(i));
-                ComboBox13.IsEnabled = true;
+                for (int i = 0; i < HubPage.Graphigc_Cards.Count; i++)
+                    if ((Functions.Contains(HubPage.Graphigc_Cards[i].Socket, "x16", PCI)) && HubPage.Graphigc_Cards[i].Kind.ToLower().Equals(Your_PC[10].ToLower()) && HubPage.Graphigc_Cards[i].Company.ToLower().Contains(Your_PC[11].ToLower()))
+                        gpu_model.Items.Add(HubPage.Graphigc_Cards[i].Name + " " + Functions.PCIType(i));
+                gpu_model.IsEnabled = true;
             }
         }
 
-        private void ComboBox13_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void GPUModel_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (!islocked)
             {
                 //Calculate how much power you will need for your PC;
                 Clear(2);
-                string x = (String)ComboBox13.SelectedItem;
+                string x = (String)gpu_model.SelectedItem;
                 Your_PC[12] = x;
                 Your_PC_Index[3] = Functions.Get_Index("VGA", Functions.Company(Your_PC[12]));
                 if (Your_PC_Index[3] == -1)
                     Your_PC_Index[3] = 0;
-                ComboBox14.Items.Add("??? Watt Power Supply");
-                ComboBox14.IsEnabled = true;
+                power_supply.Items.Add("??? Watt Power Supply");
+                power_supply.IsEnabled = true;
             }
         }
 
-        private void ComboBox14_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void PowerSupply_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (!islocked)
             {
                 //Put caces that compatible with your pieces;
                 Clear(1);
-                string x = (String)ComboBox14.SelectedItem;
+                string x = (String)power_supply.SelectedItem;
                 Your_PC[13] = x;
-                ComboBox15.Items.Add("Case");
-                ComboBox15.IsEnabled = true;
+                _case.Items.Add("Case");
+                _case.IsEnabled = true;
                 if (Scan_All())
                 {
-                    Button1.IsEnabled = true;
-                    Button3.IsEnabled = true;
+                    done.IsEnabled = true;
+                    appBar_save.IsEnabled = true;
                 }
             }
         }
 
-        private void ComboBox15_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void Case_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (!islocked)
             {
-                string x = (String)ComboBox15.SelectedItem;
+                string x = (String)_case.SelectedItem;
                 Your_PC[14] = x;
-                ComboBox16.Items.Add("DVD RW x24");
-                ComboBox16.Items.Add("BlueRay Combo");
-                ComboBox16.Items.Add("BlueRay RW");
-                ComboBox16.IsEnabled = true;
+                optical_drive.Items.Add("DVD RW x24");
+                optical_drive.Items.Add("BlueRay Combo");
+                optical_drive.Items.Add("BlueRay RW");
+                optical_drive.IsEnabled = true;
                 if (Scan_All())
                 {
-                    Button1.IsEnabled = true;
-                    Button3.IsEnabled = true;
+                    done.IsEnabled = true;
+                    appBar_save.IsEnabled = true;
                 }
             }
         }
 
-        private void ComboBox16_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void OpticalDrive_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (!islocked)
             {
-                string x = (String)ComboBox16.SelectedItem;
+                string x = (String)optical_drive.SelectedItem;
                 Your_PC[15] = x;
-                ComboBox17.IsEnabled = false;
-                ComboBox17.Items.Clear();
-                ComboBox18.IsEnabled = false;
-                ComboBox18.Items.Clear();
-                ComboBox19.IsEnabled = false;
-                ComboBox19.Items.Clear();
-                ComboBox17.Items.Add("Monitor");
-                ComboBox18.Items.Add("Mouse");
-                ComboBox19.Items.Add("KeyBoard");
-                ComboBox17.IsEnabled = true;
-                ComboBox18.IsEnabled = true;
-                ComboBox19.IsEnabled = true;
+                monitor.IsEnabled = false;
+                monitor.Items.Clear();
+                mouse.IsEnabled = false;
+                mouse.Items.Clear();
+                keyboard.IsEnabled = false;
+                keyboard.Items.Clear();
+                monitor.Items.Add("Monitor");
+                mouse.Items.Add("Mouse");
+                keyboard.Items.Add("KeyBoard");
+                monitor.IsEnabled = true;
+                mouse.IsEnabled = true;
+                keyboard.IsEnabled = true;
                 if (Scan_All())
                 {
-                    Button1.IsEnabled = true;
-                    Button3.IsEnabled = true;
+                    done.IsEnabled = true;
+                    appBar_save.IsEnabled = true;
                 }
             }
         }
 
-        private void ComboBox17_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void Monitor_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (!islocked)
-                Your_PC[16] = (String)ComboBox17.SelectedItem;
+                Your_PC[16] = (String)monitor.SelectedItem;
         }
 
-        private void ComboBox18_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void Mouse_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (!islocked)
-                Your_PC[17] = (String)ComboBox18.SelectedItem;
+                Your_PC[17] = (String)mouse.SelectedItem;
         }
 
-        private void ComboBox19_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void Keyboard_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (!islocked)
             {
-                Your_PC[18] = (String)ComboBox19.SelectedItem;
+                Your_PC[18] = (String)keyboard.SelectedItem;
                 if (Scan_All())
                 {
-                    Button1.IsEnabled = true;
-                    Button3.IsEnabled = true;
+                    done.IsEnabled = true;
+                    appBar_save.IsEnabled = true;
                 }
             }
         }
 
-        private void Button1_Click(object sender, RoutedEventArgs e)
+        private void Done_Click(object sender, RoutedEventArgs e)
         {
             ShowSpecification();
-            ApplicationView.TryUnsnap();
-            if (ApplicationView.Value == ApplicationViewState.Filled)
-                ScrollViewer2.Width = 700;
-            if (ApplicationView.Value == ApplicationViewState.FullScreenLandscape)
-                ScrollViewer2.Width = 885;
         }
 
         private void Button2_Click(object sender, RoutedEventArgs e)
         {
             Clear(8192);
             islocked = true;
-            ComboBox1.SelectedItem = null;
+            pc_kind.SelectedItem = null;
             islocked = false;
             AppBar1.IsOpen = false;
         }
@@ -619,9 +661,9 @@ namespace Computer_2
                 string toSaveString = string.Empty;
                 string Graphic_Card;
                 if (Your_PC[11] == "0")
-                    Graphic_Card = Functions.bool2string((ItemsPage.MotherBoards[Your_PC_Index[0]].Graphic_Processor.ToLower().Contains("processor".ToLower())), ItemsPage.Processors[Your_PC_Index[1]].Graphic_Processor, ItemsPage.MotherBoards[Your_PC_Index[0]].Graphic_Processor);
+                    Graphic_Card = Functions.bool2string((HubPage.MotherBoards[Your_PC_Index[0]].Graphic_Processor.ToLower().Contains("processor".ToLower())), HubPage.Processors[Your_PC_Index[1]].Graphic_Processor, HubPage.MotherBoards[Your_PC_Index[0]].Graphic_Processor);
                 else
-                    Graphic_Card = ItemsPage.Graphigc_Cards[Your_PC_Index[3]].Company + " " + ItemsPage.Graphigc_Cards[Your_PC_Index[3]].Name + " " + ItemsPage.Graphigc_Cards[Your_PC_Index[3]].Mem_Size;
+                    Graphic_Card = HubPage.Graphigc_Cards[Your_PC_Index[3]].Company + " " + HubPage.Graphigc_Cards[Your_PC_Index[3]].Name + " " + HubPage.Graphigc_Cards[Your_PC_Index[3]].Mem_Size;
                 toSaveString = computer.ToHTML(Your_PC[3] + " " + Your_PC[4], Your_PC[1] + " " + Your_PC[2], Graphic_Card, Your_PC[5] + " " + Your_PC[6], Your_PC[8] + " " + Your_PC[9]);
                 Functions.SaveFile(toSaveString, "Desktop");
                 AppBar1.IsOpen = false;
@@ -631,13 +673,13 @@ namespace Computer_2
         private void Get_Computer(out PC computer)
         {
             computer = new PC();
-            computer.MB = ItemsPage.MotherBoards[Your_PC_Index[0]];
-            computer.Processor = ItemsPage.Processors[Your_PC_Index[1]];
-            computer.HD = ItemsPage.Hard_Disks[Your_PC_Index[2]];
+            computer.MB = HubPage.MotherBoards[Your_PC_Index[0]];
+            computer.Processor = HubPage.Processors[Your_PC_Index[1]];
+            computer.HD = HubPage.Hard_Disks[Your_PC_Index[2]];
             computer.RAM = new RAM();
             if (Your_PC_Index[3] > -1)
             {
-                computer.VGA = ItemsPage.Graphigc_Cards[Your_PC_Index[3]];
+                computer.VGA = HubPage.Graphigc_Cards[Your_PC_Index[3]];
                 computer.Extenal_Graphic = true;
             }
             else
@@ -649,58 +691,53 @@ namespace Computer_2
 
         private void Button4_Click(object sender, RoutedEventArgs e)
         {
-            ComboBox1.SelectedIndex = Functions.GetRandomInt(ComboBox1.Items.Count);
-            ComboBox2.SelectedIndex = Functions.GetRandomInt(ComboBox2.Items.Count);
-            ComboBox3.SelectedIndex = Functions.GetRandomInt(ComboBox3.Items.Count);
-            ComboBox4.SelectedIndex = Functions.GetRandomInt(ComboBox4.Items.Count);
-            ComboBox5.SelectedIndex = Functions.GetRandomInt(ComboBox5.Items.Count);
-            ComboBox6.SelectedIndex = Functions.GetRandomInt(ComboBox6.Items.Count);
-            ComboBox7.SelectedIndex = Functions.GetRandomInt(ComboBox7.Items.Count);
-            ComboBox8.SelectedIndex = Functions.GetRandomInt(ComboBox8.Items.Count);
-            ComboBox9.SelectedIndex = Functions.GetRandomInt(ComboBox9.Items.Count);
-            ComboBox10.SelectedIndex = Functions.GetRandomInt(ComboBox10.Items.Count);
-            ComboBox11.SelectedIndex = Functions.GetRandomInt(ComboBox11.Items.Count);
+            pc_kind.SelectedIndex = Functions.GetRandomInt(pc_kind.Items.Count);
+            mb_company.SelectedIndex = Functions.GetRandomInt(mb_company.Items.Count);
+            motherboard.SelectedIndex = Functions.GetRandomInt(motherboard.Items.Count);
+            cpu_model.SelectedIndex = Functions.GetRandomInt(cpu_model.Items.Count);
+            processor.SelectedIndex = Functions.GetRandomInt(processor.Items.Count);
+            ram_company.SelectedIndex = Functions.GetRandomInt(ram_company.Items.Count);
+            ram_model.SelectedIndex = Functions.GetRandomInt(ram_model.Items.Count);
+            disk_type.SelectedIndex = Functions.GetRandomInt(disk_type.Items.Count);
+            disk_company.SelectedIndex = Functions.GetRandomInt(disk_company.Items.Count);
+            disk_model.SelectedIndex = Functions.GetRandomInt(disk_model.Items.Count);
+            gpu_type.SelectedIndex = Functions.GetRandomInt(gpu_type.Items.Count);
             if (!Your_PC[10].Contains("GPU"))
             {
-                ComboBox12.SelectedIndex = Functions.GetRandomInt(ComboBox12.Items.Count);
-                ComboBox13.SelectedIndex = Functions.GetRandomInt(ComboBox13.Items.Count);
+                gpu_company.SelectedIndex = Functions.GetRandomInt(gpu_company.Items.Count);
+                gpu_model.SelectedIndex = Functions.GetRandomInt(gpu_model.Items.Count);
             }
-            ComboBox14.SelectedIndex = Functions.GetRandomInt(ComboBox14.Items.Count);
-            ComboBox15.SelectedIndex = Functions.GetRandomInt(ComboBox15.Items.Count);
-            ComboBox16.SelectedIndex = Functions.GetRandomInt(ComboBox16.Items.Count);
-            ComboBox17.SelectedIndex = Functions.GetRandomInt(ComboBox17.Items.Count);
-            ComboBox18.SelectedIndex = Functions.GetRandomInt(ComboBox18.Items.Count);
-            ComboBox19.SelectedIndex = Functions.GetRandomInt(ComboBox19.Items.Count);
+            power_supply.SelectedIndex = Functions.GetRandomInt(power_supply.Items.Count);
+            _case.SelectedIndex = Functions.GetRandomInt(_case.Items.Count);
+            optical_drive.SelectedIndex = Functions.GetRandomInt(optical_drive.Items.Count);
+            monitor.SelectedIndex = Functions.GetRandomInt(monitor.Items.Count);
+            mouse.SelectedIndex = Functions.GetRandomInt(mouse.Items.Count);
+            keyboard.SelectedIndex = Functions.GetRandomInt(keyboard.Items.Count);
             ShowSpecification();
-            ApplicationView.TryUnsnap();
-            if (ApplicationView.Value == ApplicationViewState.Filled)
-                ScrollViewer2.Width = 700;
-            if (ApplicationView.Value == ApplicationViewState.FullScreenLandscape)
-                ScrollViewer2.Width = 885;
             AppBar1.IsOpen = false;
         }
 
         private void ShowSpecification()
         {
             string tmp;
-            tmp = Functions.bool2string(ItemsPage.Processors[Your_PC_Index[1]].L3.Equals("-"), Functions.bool2string(ItemsPage.Processors[Your_PC_Index[1]].L2.Equals("-"), ItemsPage.Processors[Your_PC_Index[1]].L1, ItemsPage.Processors[Your_PC_Index[1]].L2), ItemsPage.Processors[Your_PC_Index[1]].L3);
-            TextBlock1.Text = "Processor: " + ItemsPage.Processors[Your_PC_Index[1]].Name + " " + ItemsPage.Processors[Your_PC_Index[1]].Speed + " " + tmp;
-            TextBlock2.Text = "Motherboard: " + ItemsPage.MotherBoards[Your_PC_Index[0]].Company + " " + ItemsPage.MotherBoards[Your_PC_Index[0]].Name;
+            tmp = Functions.bool2string(HubPage.Processors[Your_PC_Index[1]].L3.Equals("-"), Functions.bool2string(HubPage.Processors[Your_PC_Index[1]].L2.Equals("-"), HubPage.Processors[Your_PC_Index[1]].L1, HubPage.Processors[Your_PC_Index[1]].L2), HubPage.Processors[Your_PC_Index[1]].L3);
+            TextBlock1.Text = "Processor: " + HubPage.Processors[Your_PC_Index[1]].Name + " " + HubPage.Processors[Your_PC_Index[1]].Speed + " " + tmp;
+            TextBlock2.Text = "Motherboard: " + HubPage.MotherBoards[Your_PC_Index[0]].Company + " " + HubPage.MotherBoards[Your_PC_Index[0]].Name;
             if (Your_PC[11] == "0")
             {
-                TextBlock3.Text = "Graphic Card: " + Functions.bool2string((ItemsPage.MotherBoards[Your_PC_Index[0]].Graphic_Processor.ToLower().Contains("Processor".ToLower())), ItemsPage.Processors[Your_PC_Index[1]].Graphic_Processor, ItemsPage.MotherBoards[Your_PC_Index[0]].Graphic_Processor);
-                ToggleSwitch1.IsOn = (ItemsPage.MotherBoards[Your_PC_Index[0]].MultiGPU != 0);
+                TextBlock3.Text = "Graphic Card: " + Functions.bool2string((HubPage.MotherBoards[Your_PC_Index[0]].Graphic_Processor.ToLower().Contains("Processor".ToLower())), HubPage.Processors[Your_PC_Index[1]].Graphic_Processor, HubPage.MotherBoards[Your_PC_Index[0]].Graphic_Processor);
+                ToggleSwitch1.IsOn = (HubPage.MotherBoards[Your_PC_Index[0]].MultiGPU != 0);
             }
             else
             {
-                TextBlock3.Text = "Graphic Card: " + ItemsPage.Graphigc_Cards[Your_PC_Index[3]].Company + " " + ItemsPage.Graphigc_Cards[Your_PC_Index[3]].Name + " " + ItemsPage.Graphigc_Cards[Your_PC_Index[3]].Mem_Size;
-                ToggleSwitch1.IsOn = ((ItemsPage.MotherBoards[Your_PC_Index[0]].MultiGPU != 0) && (ItemsPage.Graphigc_Cards[Your_PC_Index[3]].MultiGPU != 0));
+                TextBlock3.Text = "Graphic Card: " + HubPage.Graphigc_Cards[Your_PC_Index[3]].Company + " " + HubPage.Graphigc_Cards[Your_PC_Index[3]].Name + " " + HubPage.Graphigc_Cards[Your_PC_Index[3]].Mem_Size;
+                ToggleSwitch1.IsOn = ((HubPage.MotherBoards[Your_PC_Index[0]].MultiGPU != 0) && (HubPage.Graphigc_Cards[Your_PC_Index[3]].MultiGPU != 0));
             }
             TextBlock4.Text = "Memory: " + Your_PC[5] + " " + Your_PC[6];
-            TextBlock5.Text = "Hard Disk: " + ItemsPage.Hard_Disks[Your_PC_Index[2]].Company + " " + ItemsPage.Hard_Disks[Your_PC_Index[2]].Capacity;
-            ToggleSwitch2.IsOn = ItemsPage.Processors[Your_PC_Index[1]].Virtualization_Technology;
-            ToggleSwitch3.IsOn = (!(ItemsPage.Processors[Your_PC_Index[1]].Max_Speed == "-"));
-            TextBlock6.Text = Functions.bool2string(ToggleSwitch3.IsOn, "Up To: " + ItemsPage.Processors[Your_PC_Index[1]].Max_Speed, "");
+            TextBlock5.Text = "Hard Disk: " + HubPage.Hard_Disks[Your_PC_Index[2]].Company + " " + HubPage.Hard_Disks[Your_PC_Index[2]].Capacity;
+            ToggleSwitch2.IsOn = HubPage.Processors[Your_PC_Index[1]].Virtualization_Technology;
+            ToggleSwitch3.IsOn = (!(HubPage.Processors[Your_PC_Index[1]].Max_Speed == "-"));
+            TextBlock6.Text = Functions.bool2string(ToggleSwitch3.IsOn, "Up To: " + HubPage.Processors[Your_PC_Index[1]].Max_Speed, "");
         }
 
         private void WindowSizeChanged(object sender, WindowSizeChangedEventArgs e)
@@ -711,41 +748,38 @@ namespace Computer_2
         private void Initialisation()
         {
             bool LandScape = false;
-            ApplicationViewState viewState = ApplicationView.Value;
-            LandScape = (viewState == ApplicationViewState.FullScreenLandscape) || (Window.Current.Bounds.Width > 1300);
-            if ((viewState == ApplicationViewState.Filled) || (Window.Current.Bounds.Width < 1300))
-                ScrollViewer2.Width = 700;
+            LandScape = (ApplicationView.Value == ApplicationViewState.FullScreenLandscape) || (Window.Current.Bounds.Width > 1300);
             List<Control> controlList;
             List<TextBlock> TextBlockList;
             if (!LandScape)
                 ApplyStyle(out controlList, out TextBlockList, 50, 320, 18, 20, 380, 550, 785, 1020, 1430, 40, 14, 0, 25, 200, 40, 15, 65);
             else
-                ApplyStyle(out controlList, out TextBlockList, 60, 475, 24, 28, 310, 460, 660, 860, 1180, 60, 22, 3, 0, 263, 50, 20, 50);
+                ApplyStyle(out controlList, out TextBlockList, 60, 480, 24, 28, 310, 460, 660, 860, 1180, 60, 22, 3, 0, 263, 50, 20, 50);
         }
 
-        private void ApplyStyle(out List<Control> controlList, out List<TextBlock> TextBlockList, double Top, double Grid1Width, double ScrollViewer2FontSize, double TextBlock0iFontSize, double TextBlock02Margin, double TextBlock03Margin, double TextBlock04Margin, double Rectangle1Margin, double Button1Margin, double Button1Height, double Button1FontSize, double TextBlockListAdd, double controlListAdd, double controlListWidth, int firstAdd, int lastAdd, int add)
+        private void ApplyStyle(out List<Control> controlList, out List<TextBlock> TextBlockList, double Top, double Grid1Width, double ScrollViewer2FontSize, double TextBlock0iFontSize, double TextBlock02Margin, double TextBlock03Margin, double TextBlock04Margin, double Rectangle1Margin, double doneMargin, double doneHeight, double doneFontSize, double TextBlockListAdd, double controlListAdd, double controlListWidth, int firstAdd, int lastAdd, int add)
         {
             controlList = new List<Control>();
             TextBlockList = new List<TextBlock>();
-            controlList.Add(ComboBox1); TextBlockList.Add(TextBlock_1);
-            controlList.Add(ComboBox2); TextBlockList.Add(TextBlock_2);
-            controlList.Add(ComboBox3); TextBlockList.Add(TextBlock_3);
-            controlList.Add(ComboBox4); TextBlockList.Add(TextBlock_4);
-            controlList.Add(ComboBox5); TextBlockList.Add(TextBlock_5);
-            controlList.Add(ComboBox6); TextBlockList.Add(TextBlock_6);
-            controlList.Add(ComboBox7); TextBlockList.Add(TextBlock_7);
-            controlList.Add(ComboBox8); TextBlockList.Add(TextBlock_8);
-            controlList.Add(ComboBox9); TextBlockList.Add(TextBlock_9);
-            controlList.Add(ComboBox10); TextBlockList.Add(TextBlock_10);
-            controlList.Add(ComboBox11); TextBlockList.Add(TextBlock_11);
-            controlList.Add(ComboBox12); TextBlockList.Add(TextBlock_12);
-            controlList.Add(ComboBox13); TextBlockList.Add(TextBlock_13);
-            controlList.Add(ComboBox14); TextBlockList.Add(TextBlock_14);
-            controlList.Add(ComboBox15); TextBlockList.Add(TextBlock_15);
-            controlList.Add(ComboBox16); TextBlockList.Add(TextBlock_16);
-            controlList.Add(ComboBox17); TextBlockList.Add(TextBlock_17);
-            controlList.Add(ComboBox18); TextBlockList.Add(TextBlock_18);
-            controlList.Add(ComboBox19); TextBlockList.Add(TextBlock_19);
+            controlList.Add(pc_kind); TextBlockList.Add(TextBlock_1);
+            controlList.Add(mb_company); TextBlockList.Add(TextBlock_2);
+            controlList.Add(motherboard); TextBlockList.Add(TextBlock_3);
+            controlList.Add(cpu_model); TextBlockList.Add(TextBlock_4);
+            controlList.Add(processor); TextBlockList.Add(TextBlock_5);
+            controlList.Add(ram_company); TextBlockList.Add(TextBlock_6);
+            controlList.Add(ram_model); TextBlockList.Add(TextBlock_7);
+            controlList.Add(disk_type); TextBlockList.Add(TextBlock_8);
+            controlList.Add(disk_company); TextBlockList.Add(TextBlock_9);
+            controlList.Add(disk_model); TextBlockList.Add(TextBlock_10);
+            controlList.Add(gpu_type); TextBlockList.Add(TextBlock_11);
+            controlList.Add(gpu_company); TextBlockList.Add(TextBlock_12);
+            controlList.Add(gpu_model); TextBlockList.Add(TextBlock_13);
+            controlList.Add(power_supply); TextBlockList.Add(TextBlock_14);
+            controlList.Add(_case); TextBlockList.Add(TextBlock_15);
+            controlList.Add(optical_drive); TextBlockList.Add(TextBlock_16);
+            controlList.Add(monitor); TextBlockList.Add(TextBlock_17);
+            controlList.Add(mouse); TextBlockList.Add(TextBlock_18);
+            controlList.Add(keyboard); TextBlockList.Add(TextBlock_19);
             Grid1.Width = Grid1Width;
             ScrollViewer2.Margin = new Thickness(Grid1Width, 0, 0, 0);
             ScrollViewer1.FontSize = ScrollViewer2.FontSize = ToggleSwitch1.FontSize = ToggleSwitch2.FontSize = ToggleSwitch3.FontSize = ScrollViewer2FontSize;
@@ -754,9 +788,9 @@ namespace Computer_2
             TextBlock03.Margin = new Thickness(0, TextBlock03Margin, 0, 0);
             TextBlock04.Margin = new Thickness(0, TextBlock04Margin, 0, 0);
             Rectangle1.Margin = new Thickness(40, Rectangle1Margin, 40, 0);
-            Button1.Margin = new Thickness(40, Button1Margin, 40, 0);
-            Button1.Height = Button1Height;
-            Button1.FontSize = Button1FontSize;
+            done.Margin = new Thickness(40, doneMargin, 40, 0);
+            done.Height = doneHeight;
+            done.FontSize = doneFontSize;
             for (int i = 0; i < TextBlockList.Count; i++)
             {
                 TextBlockList[i].Margin = new Thickness(10, Top + TextBlockListAdd, 0, 0);
@@ -769,5 +803,28 @@ namespace Computer_2
                 Top += add;
             }
         }
+
+        #region NavigationHelper registration
+
+        /// The methods provided in this section are simply used to allow
+        /// NavigationHelper to respond to the page's navigation methods.
+        /// 
+        /// Page specific logic should be placed in event handlers for the  
+        /// <see cref="GridCS.Common.NavigationHelper.LoadState"/>
+        /// and <see cref="GridCS.Common.NavigationHelper.SaveState"/>.
+        /// The navigation parameter is available in the LoadState method 
+        /// in addition to page state preserved during an earlier session.
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            navigationHelper.OnNavigatedTo(e);
+        }
+
+        protected override void OnNavigatedFrom(NavigationEventArgs e)
+        {
+            navigationHelper.OnNavigatedFrom(e);
+        }
+
+        #endregion
     }
-}//812 //773
+}

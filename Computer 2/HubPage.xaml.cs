@@ -1,13 +1,13 @@
-﻿using Computer_2.Data;
+﻿using Computer_2.Common;
+using Computer_2.Data;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
-using Windows.Graphics.Display;
 using Windows.Storage;
-using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -16,16 +16,15 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
+// The Hub Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=321224
 
 namespace Computer_2
 {
-    public sealed partial class ItemsPage : Computer_2.Common.LayoutAwarePage
+    /// <summary>
+    /// A page that displays a grouped collection of items.
+    /// </summary>
+    public sealed partial class HubPage : Page
     {
-        public ItemsPage()
-        {
-            this.InitializeComponent();
-        }
-
         public static List<Processor> Processors = new List<Processor>();
         public static List<MB> MotherBoards = new List<MB>();
         public static List<VGA> Graphigc_Cards = new List<VGA>();
@@ -33,48 +32,103 @@ namespace Computer_2
         public static List<Laptop> Laptops = new List<Laptop>();
         public static List<TabletPC> Tablet_PCs = new List<TabletPC>();
         string current_path = Windows.Storage.ApplicationData.Current.RoamingFolder.Path + @"\Computer";
-        protected override void LoadState(Object navigationParameter, Dictionary<String, Object> pageState)
+
+        private NavigationHelper navigationHelper;
+        private ObservableDictionary defaultViewModel = new ObservableDictionary();
+
+        /// <summary>
+        /// NavigationHelper is used on each page to aid in navigation and 
+        /// process lifetime management
+        /// </summary>
+        public NavigationHelper NavigationHelper
         {
-            var sampleDataGroups = SampleDataSource.GetGroups((String)navigationParameter);
-            this.DefaultViewModel["Items"] = sampleDataGroups;
+            get { return this.navigationHelper; }
         }
 
+        /// <summary>
+        /// This can be changed to a strongly typed view model.
+        /// </summary>
+        public ObservableDictionary DefaultViewModel
+        {
+            get { return this.defaultViewModel; }
+        }
+
+        public HubPage()
+        {
+            this.InitializeComponent();
+            this.navigationHelper = new NavigationHelper(this);
+            this.navigationHelper.LoadState += navigationHelper_LoadState;
+        }
+
+        /// <summary>
+        /// Populates the page with content passed during navigation.  Any saved state is also
+        /// provided when recreating a page from a prior session.
+        /// </summary>
+        /// <param name="sender">
+        /// The source of the event; typically <see cref="NavigationHelper"/>
+        /// </param>
+        /// <param name="e">Event data that provides both the navigation parameter passed to
+        /// <see cref="Frame.Navigate(Type, Object)"/> when this page was initially requested and
+        /// a dictionary of state preserved by this page during an earlier
+        /// session.  The state will be null the first time a page is visited.</param>
+        private async void navigationHelper_LoadState(object sender, LoadStateEventArgs e)
+        {
+            // TODO: Create an appropriate data model for your problem domain to replace the sample data
+            var sampleDataGroup = await SampleDataSource.GetGroupAsync("Group-1");
+            this.DefaultViewModel["Section3Items"] = sampleDataGroup;
+        }
+
+        /// <summary>
+        /// Invoked when a HubSection header is clicked.
+        /// </summary>
+        /// <param name="sender">The Hub that contains the HubSection whose header was clicked.</param>
+        /// <param name="e">Event data that describes how the click was initiated.</param>
+        void Hub_SectionHeaderClick(object sender, HubSectionHeaderClickEventArgs e)
+        {
+            HubSection section = e.Section;
+            var group = section.DataContext;
+            this.Frame.Navigate(typeof(ItemPage), ((SampleDataGroup)group).UniqueId);
+        }
+
+        /// <summary>
+        /// Invoked when an item within a section is clicked.
+        /// </summary>
+        /// <param name="sender">The GridView or ListView
+        /// displaying the item clicked.</param>
+        /// <param name="e">Event data that describes the item clicked.</param>
         void ItemView_ItemClick(object sender, ItemClickEventArgs e)
         {
-            var groupId = ((SampleDataGroup)e.ClickedItem).UniqueId;
-            switch (groupId)
-            {
-                case "Group-1":
-                    this.Frame.Navigate(typeof(desktop));
-                    break;
-                case "Group-2":
-                    this.Frame.Navigate(typeof(laptop));
-                    break;
-                case "Group-3":
-                    this.Frame.Navigate(typeof(Tablet));
-                    break;
-                case "Group-4":
-                    this.Frame.Navigate(typeof(SplitPage), groupId);
-                    break;
-                case "Group-6":
-                    this.Frame.Navigate(typeof(Mobile));
-                    break;
-                default:
-                    this.Frame.Navigate(typeof(SplitPage), groupId);
-                    break;
-            }
+            // Navigate to the appropriate destination page, configuring the new page
+            // by passing required information as a navigation parameter
+            var itemId = ((SampleDataItem)e.ClickedItem).UniqueId;
+            this.Frame.Navigate(typeof(ItemPage), itemId);
+        }
+        #region NavigationHelper registration
+
+        /// The methods provided in this section are simply used to allow
+        /// NavigationHelper to respond to the page's navigation methods.
+        /// 
+        /// Page specific logic should be placed in event handlers for the  
+        /// <see cref="GridCS.Common.NavigationHelper.LoadState"/>
+        /// and <see cref="GridCS.Common.NavigationHelper.SaveState"/>.
+        /// The navigation parameter is available in the LoadState method 
+        /// in addition to page state preserved during an earlier session.
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            navigationHelper.OnNavigatedTo(e);
         }
 
-        private void pageRoot_Loaded(object sender, RoutedEventArgs e)
+        protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
-            if (Processors.Count == 0)
-            {
-                itemGridView.IsEnabled = false;
-                itemListView.IsEnabled = false;
-                Laptop();
-                Intel();
-                Tablet_PC();
-            }
+            navigationHelper.OnNavigatedFrom(e);
+        }
+
+        #endregion
+
+        private void Desktop_Click(object sender, ItemClickEventArgs e)
+        {
+            Frame.Navigate(typeof(Desktop), null);
         }
 
         private async void Laptop()
@@ -170,7 +224,7 @@ namespace Computer_2
                 temp.Socket = current_file[35];
                 temp.Virtualization_Technology = current_file[37].Contains("VT-x");
                 temp.Advanced_Technologies = "64-bit Instruction Set" + Functions.bool2string(current_file[37].Contains("-"), "", " , " + current_file[37]);
-                ItemsPage.Processors.Add(temp);
+                Processors.Add(temp);
                 current_file.Clear();
             }
             AMD();
@@ -211,7 +265,7 @@ namespace Computer_2
                 temp.Virtualization_Technology = current_file[29].Contains("Virtualization");
                 temp.Advanced_Technologies = "64-bit Instruction Set" + Functions.bool2string(current_file[29].Contains("-"), "", " , " + current_file[29]);
                 temp.Socket = current_file[31];
-                ItemsPage.Processors.Add(temp);
+                Processors.Add(temp);
                 current_file.Clear();
             }
             APU();
@@ -254,7 +308,7 @@ namespace Computer_2
                 temp.Advanced_Technologies = "64-bit Instruction Set" + Functions.bool2string(current_file[33].Contains("-"), "", " , " + current_file[33]);
                 temp.Socket = current_file[35];
                 current_file.Clear();
-                ItemsPage.Processors.Add(temp);
+                Processors.Add(temp);
             }
             MB();
         }
@@ -395,7 +449,7 @@ namespace Computer_2
                     temp.MultiGPU = temp.MultiGPU + 2;
                 if ((temp.Advanced_Technologies.Contains("SLI") || temp.Advanced_Technologies.Contains("CrossFire")) && temp.MultiGPU == 0)
                     temp.MultiGPU = -1;
-                ItemsPage.Graphigc_Cards.Add(temp);
+                Graphigc_Cards.Add(temp);
             }
             HD();
         }
@@ -453,9 +507,7 @@ namespace Computer_2
                 }
                 temp.Socket = current_file[count];
                 current_file.Clear();
-                ItemsPage.Hard_Disks.Add(temp);
-                itemGridView.IsEnabled = true;
-                itemListView.IsEnabled = true;
+                Hard_Disks.Add(temp);
             }
         }
 
@@ -506,6 +558,16 @@ namespace Computer_2
                 temp.Price = 10;
                 current_file.Clear();
                 Tablet_PCs.Add(temp);
+            }
+        }
+
+        private void pageRoot_Loaded(object sender, RoutedEventArgs e)
+        {
+            if (Processors.Count == 0)
+            {
+                Laptop();
+                Intel();
+                Tablet_PC();
             }
         }
     }
