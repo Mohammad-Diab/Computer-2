@@ -1,0 +1,62 @@
+﻿<Application
+    x:Class="Computer.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Computer"
+    RequestedTheme="Dark">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceDictionary x:Key="Default">
+                    <SolidColorBrush x:Key="SystemControlFocusVisualPrimaryBrush" Color="#FF00E5FF"/>
+                    <SolidColorBrush x:Key="SystemControlFocusVisualSecondaryBrush" Color="#00000000"/>
+                    <SolidColorBrush x:Key="SystemControlHighlightAccentBrush" Color="#FF00B4D8"/>
+                    <SolidColorBrush x:Key="SystemControlHighlightListAccentLowBrush" Color="#5500B4D8"/>
+                    <SolidColorBrush x:Key="SystemControlHighlightListAccentMediumBrush" Color="#7700B4D8"/>
+                    <SolidColorBrush x:Key="SystemControlHighlightListAccentHighBrush" Color="#9900B4D8"/>
+                    <SolidColorBrush x:Key="SystemControlHighlightListLowBrush" Color="#2200E5FF"/>
+                    <SolidColorBrush x:Key="SystemControlHighlightListMediumBrush" Color="#4400E5FF"/>
+                    <SolidColorBrush x:Key="GridViewItemBackgroundPointerOver" Color="#2200E5FF"/>
+                    <SolidColorBrush x:Key="GridViewItemBackgroundPressed" Color="#4400E5FF"/>
+                    <SolidColorBrush x:Key="GridViewItemBackgroundSelected" Color="#5500B4D8"/>
+                    <SolidColorBrush x:Key="GridViewItemBackgroundSelectedPointerOver" Color="#7700B4D8"/>
+                    <SolidColorBrush x:Key="GridViewItemBackgroundSelectedPressed" Color="#9900B4D8"/>
+                    <SolidColorBrush x:Key="GridViewItemFocusBorderBrush" Color="#FF00E5FF"/>
+                    <SolidColorBrush x:Key="GridViewItemFocusSecondaryBorderBrush" Color="#00000000"/>
+                    <SolidColorBrush x:Key="ListViewItemBackgroundPointerOver" Color="#2200E5FF"/>
+                    <SolidColorBrush x:Key="ListViewItemBackgroundPressed" Color="#4400E5FF"/>
+                    <SolidColorBrush x:Key="ListViewItemBackgroundSelected" Color="#5500B4D8"/>
+                    <SolidColorBrush x:Key="ListViewItemBackgroundSelectedPointerOver" Color="#7700B4D8"/>
+                    <SolidColorBrush x:Key="ListViewItemBackgroundSelectedPressed" Color="#9900B4D8"/>
+                    <SolidColorBrush x:Key="ListViewItemFocusBorderBrush" Color="#FF00E5FF"/>
+                    <SolidColorBrush x:Key="ListViewItemFocusSecondaryBorderBrush" Color="#00000000"/>
+                    <SolidColorBrush x:Key="ListViewItemPointerOverBackgroundThemeBrush" Color="#2200E5FF"/>
+                    <SolidColorBrush x:Key="ListViewItemSelectedBackgroundThemeBrush" Color="#5500B4D8"/>
+                    <SolidColorBrush x:Key="ListViewItemSelectedPointerOverBackgroundThemeBrush" Color="#7700B4D8"/>
+                    <SolidColorBrush x:Key="ListViewItemSelectedPointerOverBorderThemeBrush" Color="#7700B4D8"/>
+                    <SolidColorBrush x:Key="ListViewItemFocusBorderThemeBrush" Color="#FF00E5FF"/>
+                </ResourceDictionary>
+            </ResourceDictionary.ThemeDictionaries>
+            <Style x:Key="SectionHeaderTextStyle" TargetType="TextBlock">
+                <Setter Property="FontFamily" Value="Segoe UI"/>
+                <Setter Property="FontWeight" Value="SemiLight"/>
+                <Setter Property="FontSize" Value="34"/>
+                <Setter Property="Foreground" Value="White"/>
+                <Setter Property="TextWrapping" Value="NoWrap"/>
+            </Style>
+            <Style x:Key="TileTitleTextStyle" TargetType="TextBlock">
+                <Setter Property="FontFamily" Value="Segoe UI"/>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="Foreground" Value="White"/>
+                <Setter Property="TextWrapping" Value="Wrap"/>
+                <Setter Property="TextTrimming" Value="CharacterEllipsis"/>
+                <Setter Property="TextAlignment" Value="Left"/>
+            </Style>
+            <Style x:Key="TileItemStyle" TargetType="GridViewItem">
+                <Setter Property="Margin" Value="0,0,24,24"/>
+                <Setter Property="Padding" Value="0"/>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
