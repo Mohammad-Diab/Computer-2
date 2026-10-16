@@ -1,0 +1,9 @@
+<Project>
+  <ItemGroup>
+    <Reference Remove="RibbonControlsLibrary" />
+    <Reference Remove="Microsoft.Windows.Shell" />
+    <Reference Include="System.Windows.Controls.Ribbon" />
+    <Import Remove="Microsoft.Windows.Controls.Ribbon" />
+    <Import Include="System.Windows.Controls.Ribbon" />
+  </ItemGroup>
+</Project>

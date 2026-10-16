@@ -1,0 +1,26 @@
+<Project>
+  <PropertyGroup>
+    <PackageCertificateKeyFile></PackageCertificateKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppxManifest Remove="@(AppxManifest)" />
+    <AppxManifest Include="$(MSBuildThisFileDirectory)_uwp\Package.appxmanifest" />
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.2.8" />
+    <Content Include="$(MSBuildThisFileDirectory)_uwp\Default.rd.xml">
+      <Link>Properties\Default.rd.xml</Link>
+    </Content>
+  </ItemGroup>
+  <Target Name="StampBuildDate" BeforeTargets="CoreCompile">
+    <Exec Command="git log -1 --format=%%cs" WorkingDirectory="$(MSBuildProjectDirectory)" ConsoleToMSBuild="true" IgnoreExitCode="true" StandardOutputImportance="low" StandardErrorImportance="low">
+      <Output TaskParameter="ConsoleOutput" PropertyName="BuildDateStamp" />
+      <Output TaskParameter="ExitCode" PropertyName="BuildDateExit" />
+    </Exec>
+    <PropertyGroup>
+      <BuildDateStamp Condition="'$(BuildDateExit)' != '0' or '$(BuildDateStamp.Length)' != '10'">$([System.DateTime]::Now.ToString('yyyy-MM-dd'))</BuildDateStamp>
+    </PropertyGroup>
+    <WriteLinesToFile File="$(IntermediateOutputPath)BuildDate.cs" Lines="[assembly: System.Reflection.AssemblyMetadata(&quot;BuildDate&quot;, &quot;$(BuildDateStamp)&quot;)]" Overwrite="true" />
+    <ItemGroup>
+      <Compile Include="$(IntermediateOutputPath)BuildDate.cs" />
+    </ItemGroup>
+  </Target>
+</Project>
