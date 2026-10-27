@@ -97,6 +97,7 @@ MSBuild Tools\Do-it\WpfApplication1.sln /p:Configuration=Release /p:TargetFramew
 - Product pictures: from his specification files and the product pages he saved.
 - Icons and app pictures: drawn for this app; their sources are in `Computer\_uwp\icon` and `Computer\_uwp\art`.
 - Computer glyph in the logos and splash screens of `v2.1.0` to `v3.0.0-beta.1` (and in the splash draft `Computer\_uwp\art\xaml\SplashScreen.xaml`): based on "computer-symbolic" from the GNOME Symbolic Icon Theme (now part of the Adwaita icon theme) by the [GNOME Project](https://www.gnome.org), licensed under [CC BY-SA 3.0 US](https://creativecommons.org/licenses/by-sa/3.0/us/). Those images are under the same licence.
+- `Computer\_uwp\art\xaml\computer-symbolic.png`, the symbol that the splash screen art (`Computer\_uwp\art\xaml\SplashScreen.xaml`) draws: "computer-symbolic" from the [GNOME Symbolic Icon Theme](https://gitlab.gnome.org/Archive/gnome-icon-theme-symbolic) (now part of the [Adwaita icon theme](https://gitlab.gnome.org/GNOME/adwaita-icon-theme)) by the [GNOME Project](https://www.gnome.org), licensed under [CC BY-SA 3.0 US](https://creativecommons.org/licenses/by-sa/3.0/us/). It is not covered by the Apache 2.0 licence of this repository.
 - Brand logos and product names belong to their owners.
 - The memory, power supply, case, optical drive, monitor, mouse and keyboard options in the desktop builder are generic: they are not from the data.
 
@@ -106,4 +107,4 @@ Mohammad Diab
 
 ## License
 
-[Apache 2.0](LICENSE), except the images based on the GNOME icon listed under Credits (CC BY-SA 3.0 US).
+[Apache 2.0](LICENSE), except the GNOME icon `Computer\_uwp\art\xaml\computer-symbolic.png` and the images based on it, listed under Credits (CC BY-SA 3.0 US).
