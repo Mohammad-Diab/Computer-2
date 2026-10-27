@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import os, sys, argparse
+import os, sys, argparse, shutil
 ap = argparse.ArgumentParser()
 ap.add_argument('--research', help='research folder that contains "Computer2 (Projects Temp Files)"')
 RES = ap.parse_args().research or input('Research folder: ').strip().strip('"')
@@ -202,11 +202,9 @@ hero += group(icons['laptop'], '1.25,0,0,1.25,40,420') + group(icons['tablet'], 
 hero += r(0, 762, 780, 6, C)
 open(os.path.join(D, 'hero.xaml'), 'w', encoding='utf-8').write(canvas(hero, 780, 768))
 
-try:
-    SYM = os.path.relpath(os.path.join(MISC, 'computer-symbolic.png'), D)
-except ValueError:
-    SYM = os.path.abspath(os.path.join(MISC, 'computer-symbolic.png'))
-splash = '<Rectangle Canvas.Left="250" Canvas.Top="40" Width="120" Height="137" Fill="White"><Rectangle.OpacityMask><ImageBrush Stretch="Uniform" ImageSource="%s"/></Rectangle.OpacityMask></Rectangle>' % (SYM.replace(chr(92), '/'))
+SYM = 'computer-symbolic.png'
+shutil.copyfile(os.path.join(MISC, SYM), os.path.join(D, SYM))
+splash = '<Rectangle Canvas.Left="250" Canvas.Top="40" Width="120" Height="137" Fill="White"><Rectangle.OpacityMask><ImageBrush Stretch="Uniform" ImageSource="%s"/></Rectangle.OpacityMask></Rectangle>' % SYM
 splash += '<TextBlock Canvas.Left="0" Canvas.Top="196" Width="620" TextAlignment="Center" FontFamily="Segoe UI Light" FontSize="44" Foreground="White" Text="Computer"/>'
 splash += r(250, 254, 120, 4, C, 2)
 open(os.path.join(D, 'SplashScreen.xaml'), 'w', encoding='utf-8').write(canvas(splash, 620, 300, '1,2'))
