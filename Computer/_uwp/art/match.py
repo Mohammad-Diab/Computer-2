@@ -7,7 +7,6 @@ WORK = os.path.join(ROOT, 'bin', 'art-work')
 I = os.path.join(WORK, 'img')
 DATA = os.path.join(ROOT, 'Data', 'Computer')
 ASSETS = os.path.join(ROOT, 'Computer', 'Assets', 'Images', 'Desktop')
-DOCX_ROOT = os.path.join(ROOT, '_Research', 'Computer 2 (Old Projects Temp)')
 ISO2 = os.path.join(WORK, 'isox', '2', 'Asus Laptop')
 media = json.load(open(os.path.join(I, 'docx_media.json'), encoding='utf-8'))
 existing = {f.lower(): f for f in os.listdir(ASSETS)}

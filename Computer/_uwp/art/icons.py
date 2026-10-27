@@ -1,10 +1,15 @@
 # -*- coding: utf-8 -*-
-import os
+import os, sys, argparse
+ap = argparse.ArgumentParser()
+ap.add_argument('--research', help='research folder that contains "Computer2 (Projects Temp Files)"')
+RES = ap.parse_args().research or input('Research folder: ').strip().strip('"')
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, '..', '..', '..'))
 WORK = os.path.join(ROOT, 'bin', 'art-work')
 D = os.path.join(HERE, 'xaml')
-MISC = os.path.join(ROOT, '_Research', 'Computer2 (Projects Temp Files)')
+MISC = os.path.join(RES, 'Computer2 (Projects Temp Files)')
+if not RES or not os.path.isdir(MISC):
+    sys.exit('Research folder not found or without "Computer2 (Projects Temp Files)": ' + RES)
 os.makedirs(D, exist_ok=True)
 for f in os.listdir(D):
     os.remove(os.path.join(D, f))
@@ -197,7 +202,11 @@ hero += group(icons['laptop'], '1.25,0,0,1.25,40,420') + group(icons['tablet'], 
 hero += r(0, 762, 780, 6, C)
 open(os.path.join(D, 'hero.xaml'), 'w', encoding='utf-8').write(canvas(hero, 780, 768))
 
-splash = '<Rectangle Canvas.Left="250" Canvas.Top="40" Width="120" Height="137" Fill="White"><Rectangle.OpacityMask><ImageBrush Stretch="Uniform" ImageSource="%s"/></Rectangle.OpacityMask></Rectangle>' % (os.path.relpath(os.path.join(MISC, 'computer-symbolic.png'), D).replace(chr(92), '/'))
+try:
+    SYM = os.path.relpath(os.path.join(MISC, 'computer-symbolic.png'), D)
+except ValueError:
+    SYM = os.path.abspath(os.path.join(MISC, 'computer-symbolic.png'))
+splash = '<Rectangle Canvas.Left="250" Canvas.Top="40" Width="120" Height="137" Fill="White"><Rectangle.OpacityMask><ImageBrush Stretch="Uniform" ImageSource="%s"/></Rectangle.OpacityMask></Rectangle>' % (SYM.replace(chr(92), '/'))
 splash += '<TextBlock Canvas.Left="0" Canvas.Top="196" Width="620" TextAlignment="Center" FontFamily="Segoe UI Light" FontSize="44" Foreground="White" Text="Computer"/>'
 splash += r(250, 254, 120, 4, C, 2)
 open(os.path.join(D, 'SplashScreen.xaml'), 'w', encoding='utf-8').write(canvas(splash, 620, 300, '1,2'))

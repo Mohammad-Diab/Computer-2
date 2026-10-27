@@ -1,12 +1,17 @@
 # -*- coding: utf-8 -*-
-import os, sys, json
+import os, sys, json, argparse
 sys.stdout.reconfigure(encoding='utf-8')
+ap = argparse.ArgumentParser()
+ap.add_argument('--research', help='research folder that contains "logos"')
+RES = ap.parse_args().research or input('Research folder: ').strip().strip('"')
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, '..', '..', '..'))
 WORK = os.path.join(ROOT, 'bin', 'art-work')
 I = os.path.join(WORK, 'img')
 OUT = os.path.join(WORK, 'newassets', 'Assets', 'Images')
-LOGOS = os.path.join(ROOT, '_Research', 'logos')
+LOGOS = os.path.join(RES, 'logos')
+if not RES or not os.path.isdir(LOGOS):
+    sys.exit('Research folder not found or without "logos": ' + RES)
 ISO1 = os.path.join(WORK, 'isox', '1', 'Temp')
 plan = json.load(open(os.path.join(I, 'plan.json'), encoding='utf-8'))
 jobs = []
@@ -30,7 +35,7 @@ logos = {
 }
 for k, v in logos.items():
     jobs.append({'src': os.path.join(LOGOS, v), 'dest': os.path.join(OUT, 'Desktop', k + '.png'), 'mode': 'white'})
-    plan.append({'category': 'Company logo', 'item': k, 'source': os.path.join(LOGOS, v) + ' | from _Research\\logos\\' + v, 'dest': 'Desktop\\' + k + '.png', 'kind': 'real (logos folder)'})
+    plan.append({'category': 'Company logo', 'item': k, 'source': os.path.join(LOGOS, v) + ' | from logos\\' + v, 'dest': 'Desktop\\' + k + '.png', 'kind': 'real (logos folder)'})
 json.dump(jobs, open(os.path.join(I, 'jobs.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 json.dump(plan, open(os.path.join(I, 'plan2.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 print(len(jobs), 'jobs')

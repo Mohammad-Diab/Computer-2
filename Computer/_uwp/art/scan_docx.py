@@ -1,10 +1,15 @@
 # -*- coding: utf-8 -*-
-import os, sys, zipfile, collections, hashlib, json
+import os, sys, zipfile, collections, hashlib, json, argparse
 sys.stdout.reconfigure(encoding='utf-8')
+ap = argparse.ArgumentParser()
+ap.add_argument('--research', help='research folder that contains "Computer 2 (Old Projects Temp)"')
+RES = ap.parse_args().research or input('Research folder: ').strip().strip('"')
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.normpath(os.path.join(HERE, '..', '..', '..'))
 WORK = os.path.join(ROOT, 'bin', 'art-work')
-roots = [os.path.join(ROOT, '_Research')]
+if not RES or not os.path.isdir(os.path.join(RES, 'Computer 2 (Old Projects Temp)')):
+    sys.exit('Research folder not found or without "Computer 2 (Old Projects Temp)": ' + RES)
+roots = [RES]
 out = []
 cnt = collections.Counter()
 withimg = collections.Counter()
